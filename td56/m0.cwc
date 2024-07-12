@@ -1,0 +1,170 @@
+<chipwatcher project_name="sd_isp_hdmi" bit_file="sd_isp_hdmi_Runs/phy_1/sd_isp_hdmi.bit" bid_file="sd_isp_hdmi_Runs/phy_1/sd_isp_hdmi_inst.bid" chip_name="EG4S20BG256">
+<!-- HMAC is: 19ea37ff523ce1cec8a0b2002b87151bd1f883246763ec75cb4c913615086ea3 -->
+	<instance name="auto_chipwatcher_0" id="0" enabled="yes">
+		<clock clk_name="sysclk" polarity="posedge"/>
+		<config bram_name="auto_chipwatcher_0_logicbram" sample_depth="1024"/>
+		<signal_vec>
+			<data_nets>
+				<net name="GPIO/tmp[0]"/>
+				<net name="GPIO/tmp[1]"/>
+				<net name="GPIO/tmp[2]"/>
+				<net name="GPIO/tmp[3]"/>
+				<net name="GPIO/tmp[4]"/>
+				<net name="GPIO/tmp[5]"/>
+				<net name="GPIO/tmp[6]"/>
+				<net name="GPIO/tmp[7]"/>
+				<net name="isp_data_num0to7[0]"/>
+				<net name="isp_data_num0to7[10]"/>
+				<net name="isp_data_num0to7[11]"/>
+				<net name="isp_data_num0to7[12]"/>
+				<net name="isp_data_num0to7[13]"/>
+				<net name="isp_data_num0to7[14]"/>
+				<net name="isp_data_num0to7[15]"/>
+				<net name="isp_data_num0to7[16]"/>
+				<net name="isp_data_num0to7[17]"/>
+				<net name="isp_data_num0to7[18]"/>
+				<net name="isp_data_num0to7[19]"/>
+				<net name="isp_data_num0to7[1]"/>
+				<net name="isp_data_num0to7[20]"/>
+				<net name="isp_data_num0to7[21]"/>
+				<net name="isp_data_num0to7[22]"/>
+				<net name="isp_data_num0to7[23]"/>
+				<net name="isp_data_num0to7[24]"/>
+				<net name="isp_data_num0to7[25]"/>
+				<net name="isp_data_num0to7[26]"/>
+				<net name="isp_data_num0to7[27]"/>
+				<net name="isp_data_num0to7[28]"/>
+				<net name="isp_data_num0to7[29]"/>
+				<net name="isp_data_num0to7[2]"/>
+				<net name="isp_data_num0to7[30]"/>
+				<net name="isp_data_num0to7[31]"/>
+				<net name="isp_data_num0to7[3]"/>
+				<net name="isp_data_num0to7[4]"/>
+				<net name="isp_data_num0to7[5]"/>
+				<net name="isp_data_num0to7[6]"/>
+				<net name="isp_data_num0to7[7]"/>
+				<net name="isp_data_num0to7[8]"/>
+				<net name="isp_data_num0to7[9]"/>
+				<net name="isp_data_num8to15[0]"/>
+				<net name="isp_data_num8to15[10]"/>
+				<net name="isp_data_num8to15[11]"/>
+				<net name="isp_data_num8to15[12]"/>
+				<net name="isp_data_num8to15[13]"/>
+				<net name="isp_data_num8to15[14]"/>
+				<net name="isp_data_num8to15[15]"/>
+				<net name="isp_data_num8to15[16]"/>
+				<net name="isp_data_num8to15[17]"/>
+				<net name="isp_data_num8to15[18]"/>
+				<net name="isp_data_num8to15[19]"/>
+				<net name="isp_data_num8to15[1]"/>
+				<net name="isp_data_num8to15[20]"/>
+				<net name="isp_data_num8to15[21]"/>
+				<net name="isp_data_num8to15[22]"/>
+				<net name="isp_data_num8to15[23]"/>
+				<net name="isp_data_num8to15[24]"/>
+				<net name="isp_data_num8to15[25]"/>
+				<net name="isp_data_num8to15[26]"/>
+				<net name="isp_data_num8to15[27]"/>
+				<net name="isp_data_num8to15[28]"/>
+				<net name="isp_data_num8to15[29]"/>
+				<net name="isp_data_num8to15[2]"/>
+				<net name="isp_data_num8to15[30]"/>
+				<net name="isp_data_num8to15[31]"/>
+				<net name="isp_data_num8to15[3]"/>
+				<net name="isp_data_num8to15[4]"/>
+				<net name="isp_data_num8to15[5]"/>
+				<net name="isp_data_num8to15[6]"/>
+				<net name="isp_data_num8to15[7]"/>
+				<net name="isp_data_num8to15[8]"/>
+				<net name="isp_data_num8to15[9]"/>
+			</data_nets>
+			<watcher_nodes>
+				<bus name="GPIO/tmp" radix="bin" state="collapse" op="dont_care" type="reg">
+					<net name="GPIO/tmp[7]" type="reg" trigger="enable"/>
+					<net name="GPIO/tmp[6]" type="reg" trigger="enable"/>
+					<net name="GPIO/tmp[5]" type="reg" trigger="enable"/>
+					<net name="GPIO/tmp[4]" type="reg" trigger="enable"/>
+					<net name="GPIO/tmp[3]" type="reg" trigger="enable"/>
+					<net name="GPIO/tmp[2]" type="reg" trigger="enable"/>
+					<net name="GPIO/tmp[1]" type="reg" trigger="enable"/>
+					<net name="GPIO/tmp[0]" type="reg" trigger="enable"/>
+				</bus>
+				<bus name="isp_data_num0to7" radix="bin" state="collapse" op="dont_care" type="reg">
+					<net name="isp_data_num0to7[31]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[30]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[29]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[28]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[27]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[26]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[25]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[24]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[23]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[22]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[21]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[20]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[19]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[18]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[17]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[16]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[15]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[14]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[13]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[12]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[11]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[10]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[9]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[8]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[7]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[6]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[5]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[4]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[3]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[2]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[1]" type="reg" trigger="enable"/>
+					<net name="isp_data_num0to7[0]" type="reg" trigger="enable"/>
+				</bus>
+				<bus name="isp_data_num8to15" radix="bin" state="collapse" op="dont_care" type="reg">
+					<net name="isp_data_num8to15[31]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[30]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[29]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[28]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[27]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[26]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[25]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[24]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[23]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[22]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[21]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[20]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[19]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[18]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[17]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[16]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[15]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[14]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[13]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[12]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[11]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[10]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[9]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[8]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[7]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[6]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[5]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[4]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[3]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[2]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[1]" type="reg" trigger="enable"/>
+					<net name="isp_data_num8to15[0]" type="reg" trigger="enable"/>
+				</bus>
+			</watcher_nodes>
+		</signal_vec>
+		<trigger name="auto_chipwatcher_0_trigger" position="pre">
+			<condition level="1" enabled="yes" type="basic_and">
+				GPIO/tmp[0] == low && GPIO/tmp[1] == low && GPIO/tmp[2] == low && GPIO/tmp[3] == low && GPIO/tmp[4] == low && GPIO/tmp[5] == low && GPIO/tmp[6] == low && GPIO/tmp[7] == low && isp_data_num0to7[0] == low && isp_data_num0to7[10] == low && isp_data_num0to7[11] == low && isp_data_num0to7[12] == low && isp_data_num0to7[13] == low && isp_data_num0to7[14] == low && isp_data_num0to7[15] == low && isp_data_num0to7[16] == low && isp_data_num0to7[17] == low && isp_data_num0to7[18] == low && isp_data_num0to7[19] == low && isp_data_num0to7[1] == low && isp_data_num0to7[20] == low && isp_data_num0to7[21] == low && isp_data_num0to7[22] == low && isp_data_num0to7[23] == low && isp_data_num0to7[24] == low && isp_data_num0to7[25] == low && isp_data_num0to7[26] == low && isp_data_num0to7[27] == low && isp_data_num0to7[28] == low && isp_data_num0to7[29] == low && isp_data_num0to7[2] == low && isp_data_num0to7[30] == low && isp_data_num0to7[31] == low && isp_data_num0to7[3] == low && isp_data_num0to7[4] == low && isp_data_num0to7[5] == low && isp_data_num0to7[6] == low && isp_data_num0to7[7] == low && isp_data_num0to7[8] == low && isp_data_num0to7[9] == low && isp_data_num8to15[0] == low && isp_data_num8to15[10] == low && isp_data_num8to15[11] == low && isp_data_num8to15[12] == low && isp_data_num8to15[13] == low && isp_data_num8to15[14] == low && isp_data_num8to15[15] == low && isp_data_num8to15[16] == low && isp_data_num8to15[17] == low && isp_data_num8to15[18] == low && isp_data_num8to15[19] == low && isp_data_num8to15[1] == low && isp_data_num8to15[20] == low && isp_data_num8to15[21] == low && isp_data_num8to15[22] == low && isp_data_num8to15[23] == low && isp_data_num8to15[24] == low && isp_data_num8to15[25] == low && isp_data_num8to15[26] == low && isp_data_num8to15[27] == low && isp_data_num8to15[28] == low && isp_data_num8to15[29] == low && isp_data_num8to15[2] == low && isp_data_num8to15[30] == low && isp_data_num8to15[31] == low && isp_data_num8to15[3] == low && isp_data_num8to15[4] == low && isp_data_num8to15[5] == low && isp_data_num8to15[6] == low && isp_data_num8to15[7] == low && isp_data_num8to15[8] == low && isp_data_num8to15[9] == low
+			</condition>
+			<log>
+			</log>
+		</trigger>
+	</instance>
+</chipwatcher>

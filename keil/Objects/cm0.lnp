@@ -1,0 +1,11 @@
+--cpu Cortex-M0
+".\objects\startup_cmsdk_cm0.o"
+".\objects\code_def.o"
+".\objects\keyboard.o"
+".\objects\main.o"
+".\objects\handler.o"
+".\objects\isp.o"
+--library_type=microlib --strict --scatter ".\Objects\cm0.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\cm0.map" -o .\Objects\cm0.axf

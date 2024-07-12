@@ -1,0 +1,739 @@
+eagle_s20
+13 2414 753 567 2510 142062 18 0
+-2.317 0.186 sd_isp_hdmi_top eagle_s20 EG4S20BG256 Detail NA 24 8
+clock: sys_clk
+15 0 0 0
+
+clock: sdcard_clk
+23 106548 1734 2
+Setup check
+33 3
+Endpoint: u_sd_top/u_sd_operation/reg19_syn_189
+33 1.054000 1121 3
+Timing path: u_sd_top/u_sd_operation/reg8_syn_105.clk->u_sd_top/u_sd_operation/reg19_syn_189
+u_sd_top/u_sd_operation/reg8_syn_105.clk
+u_sd_top/u_sd_operation/reg19_syn_189
+35 1.054000 12.096000 11.042000 13 13
+u_sd_top/u_sd_operation/sddata_num_max[6] u_sd_top/u_sd_operation/sub0_syn_187.b[1]
+u_sd_top/u_sd_operation/sub0_syn_161 u_sd_top/u_sd_operation/sub0_syn_188.fci
+u_sd_top/u_sd_operation/sub0_syn_165 u_sd_top/u_sd_operation/sub0_syn_189.fci
+u_sd_top/u_sd_operation/sub0_syn_169 u_sd_top/u_sd_operation/sub0_syn_190.fci
+u_sd_top/u_sd_operation/sub0_syn_173 u_sd_top/u_sd_operation/sub0_syn_191.fci
+u_sd_top/u_sd_operation/sub0_syn_177 u_sd_top/u_sd_operation/sub0_syn_192.fci
+u_sd_top/u_sd_operation/sub0_syn_181 u_sd_top/u_sd_operation/sub0_syn_193.fci
+u_sd_top/u_sd_operation/delay_num_b2[28] u_sd_top/u_sd_operation/reg8_syn_116.a[1]
+u_sd_top/u_sd_operation/reg8_syn_11 u_sd_top/u_sd_operation/reg8_syn_105.d[1]
+u_sd_top/u_sd_operation/reg8_syn_13 u_sd_top/u_sd_operation/outdata_b_n_syn_140.a[0]
+u_sd_top/u_sd_operation/reg8_syn_17 u_sd_top/u_sd_operation/reg18_syn_166.a[1]
+u_sd_top/u_sd_operation/reg8_syn_27 u_sd_top/u_sd_operation/reg18_syn_166.a[0]
+u_sd_top/u_sd_operation/delay_num_b_n u_sd_top/u_sd_operation/reg19_syn_189.a[1]
+
+Timing path: u_sd_top/u_sd_operation/reg8_syn_105.clk->u_sd_top/u_sd_operation/reg19_syn_189
+u_sd_top/u_sd_operation/reg8_syn_105.clk
+u_sd_top/u_sd_operation/reg19_syn_189
+93 1.054000 12.096000 11.042000 13 13
+u_sd_top/u_sd_operation/sddata_num_max[6] u_sd_top/u_sd_operation/sub0_syn_187.b[1]
+u_sd_top/u_sd_operation/sub0_syn_161 u_sd_top/u_sd_operation/sub0_syn_188.fci
+u_sd_top/u_sd_operation/sub0_syn_165 u_sd_top/u_sd_operation/sub0_syn_189.fci
+u_sd_top/u_sd_operation/sub0_syn_169 u_sd_top/u_sd_operation/sub0_syn_190.fci
+u_sd_top/u_sd_operation/sub0_syn_173 u_sd_top/u_sd_operation/sub0_syn_191.fci
+u_sd_top/u_sd_operation/sub0_syn_177 u_sd_top/u_sd_operation/sub0_syn_192.fci
+u_sd_top/u_sd_operation/sub0_syn_181 u_sd_top/u_sd_operation/sub0_syn_193.fci
+u_sd_top/u_sd_operation/delay_num_b2[28] u_sd_top/u_sd_operation/reg8_syn_116.a[1]
+u_sd_top/u_sd_operation/reg8_syn_11 u_sd_top/u_sd_operation/reg8_syn_105.d[1]
+u_sd_top/u_sd_operation/reg8_syn_13 u_sd_top/u_sd_operation/outdata_b_n_syn_140.a[0]
+u_sd_top/u_sd_operation/reg8_syn_17 u_sd_top/u_sd_operation/reg18_syn_166.a[1]
+u_sd_top/u_sd_operation/reg8_syn_27 u_sd_top/u_sd_operation/reg18_syn_166.a[0]
+u_sd_top/u_sd_operation/delay_num_b_n u_sd_top/u_sd_operation/reg19_syn_189.a[0]
+
+Timing path: u_sd_top/u_sd_operation/reg35_syn_199.clk->u_sd_top/u_sd_operation/reg19_syn_189
+u_sd_top/u_sd_operation/reg35_syn_199.clk
+u_sd_top/u_sd_operation/reg19_syn_189
+151 1.101000 12.096000 10.995000 14 14
+u_sd_top/u_sd_operation/sddata_num_max[2] u_sd_top/u_sd_operation/sub0_syn_186.b[1]
+u_sd_top/u_sd_operation/sub0_syn_157 u_sd_top/u_sd_operation/sub0_syn_187.fci
+u_sd_top/u_sd_operation/sub0_syn_161 u_sd_top/u_sd_operation/sub0_syn_188.fci
+u_sd_top/u_sd_operation/sub0_syn_165 u_sd_top/u_sd_operation/sub0_syn_189.fci
+u_sd_top/u_sd_operation/sub0_syn_169 u_sd_top/u_sd_operation/sub0_syn_190.fci
+u_sd_top/u_sd_operation/sub0_syn_173 u_sd_top/u_sd_operation/sub0_syn_191.fci
+u_sd_top/u_sd_operation/sub0_syn_177 u_sd_top/u_sd_operation/sub0_syn_192.fci
+u_sd_top/u_sd_operation/sub0_syn_181 u_sd_top/u_sd_operation/sub0_syn_193.fci
+u_sd_top/u_sd_operation/delay_num_b2[28] u_sd_top/u_sd_operation/reg8_syn_116.a[1]
+u_sd_top/u_sd_operation/reg8_syn_11 u_sd_top/u_sd_operation/reg8_syn_105.d[1]
+u_sd_top/u_sd_operation/reg8_syn_13 u_sd_top/u_sd_operation/outdata_b_n_syn_140.a[0]
+u_sd_top/u_sd_operation/reg8_syn_17 u_sd_top/u_sd_operation/reg18_syn_166.a[1]
+u_sd_top/u_sd_operation/reg8_syn_27 u_sd_top/u_sd_operation/reg18_syn_166.a[0]
+u_sd_top/u_sd_operation/delay_num_b_n u_sd_top/u_sd_operation/reg19_syn_189.a[1]
+
+
+Endpoint: u_sd_top/u_sd_operation/reg13_syn_22
+211 1.067000 1569 3
+Timing path: u_sd_top/u_sd_operation/reg8_syn_105.clk->u_sd_top/u_sd_operation/reg13_syn_22
+u_sd_top/u_sd_operation/reg8_syn_105.clk
+u_sd_top/u_sd_operation/reg13_syn_22
+213 1.067000 12.096000 11.029000 13 13
+u_sd_top/u_sd_operation/sddata_num_max[6] u_sd_top/u_sd_operation/sub0_syn_187.b[1]
+u_sd_top/u_sd_operation/sub0_syn_161 u_sd_top/u_sd_operation/sub0_syn_188.fci
+u_sd_top/u_sd_operation/sub0_syn_165 u_sd_top/u_sd_operation/sub0_syn_189.fci
+u_sd_top/u_sd_operation/sub0_syn_169 u_sd_top/u_sd_operation/sub0_syn_190.fci
+u_sd_top/u_sd_operation/sub0_syn_173 u_sd_top/u_sd_operation/sub0_syn_191.fci
+u_sd_top/u_sd_operation/sub0_syn_177 u_sd_top/u_sd_operation/sub0_syn_192.fci
+u_sd_top/u_sd_operation/sub0_syn_181 u_sd_top/u_sd_operation/sub0_syn_193.fci
+u_sd_top/u_sd_operation/delay_num_b2[28] u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_150.a[1]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_23 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_156.d[1]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_25 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_125.a[0]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_29 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_162.b[0]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_47 u_sd_top/u_sd_operation/reg18_syn_161.a[0]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_57 u_sd_top/u_sd_operation/reg13_syn_22.a[1]
+
+Timing path: u_sd_top/u_sd_operation/reg8_syn_105.clk->u_sd_top/u_sd_operation/reg13_syn_22
+u_sd_top/u_sd_operation/reg8_syn_105.clk
+u_sd_top/u_sd_operation/reg13_syn_22
+271 1.067000 12.096000 11.029000 13 13
+u_sd_top/u_sd_operation/sddata_num_max[6] u_sd_top/u_sd_operation/sub0_syn_187.b[1]
+u_sd_top/u_sd_operation/sub0_syn_161 u_sd_top/u_sd_operation/sub0_syn_188.fci
+u_sd_top/u_sd_operation/sub0_syn_165 u_sd_top/u_sd_operation/sub0_syn_189.fci
+u_sd_top/u_sd_operation/sub0_syn_169 u_sd_top/u_sd_operation/sub0_syn_190.fci
+u_sd_top/u_sd_operation/sub0_syn_173 u_sd_top/u_sd_operation/sub0_syn_191.fci
+u_sd_top/u_sd_operation/sub0_syn_177 u_sd_top/u_sd_operation/sub0_syn_192.fci
+u_sd_top/u_sd_operation/sub0_syn_181 u_sd_top/u_sd_operation/sub0_syn_193.fci
+u_sd_top/u_sd_operation/delay_num_b2[28] u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_150.a[1]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_23 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_156.d[1]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_25 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_125.a[1]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_29 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_162.b[0]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_47 u_sd_top/u_sd_operation/reg18_syn_161.a[0]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_57 u_sd_top/u_sd_operation/reg13_syn_22.a[0]
+
+Timing path: u_sd_top/u_sd_operation/reg8_syn_105.clk->u_sd_top/u_sd_operation/reg13_syn_22
+u_sd_top/u_sd_operation/reg8_syn_105.clk
+u_sd_top/u_sd_operation/reg13_syn_22
+329 1.067000 12.096000 11.029000 13 13
+u_sd_top/u_sd_operation/sddata_num_max[6] u_sd_top/u_sd_operation/sub0_syn_187.b[1]
+u_sd_top/u_sd_operation/sub0_syn_161 u_sd_top/u_sd_operation/sub0_syn_188.fci
+u_sd_top/u_sd_operation/sub0_syn_165 u_sd_top/u_sd_operation/sub0_syn_189.fci
+u_sd_top/u_sd_operation/sub0_syn_169 u_sd_top/u_sd_operation/sub0_syn_190.fci
+u_sd_top/u_sd_operation/sub0_syn_173 u_sd_top/u_sd_operation/sub0_syn_191.fci
+u_sd_top/u_sd_operation/sub0_syn_177 u_sd_top/u_sd_operation/sub0_syn_192.fci
+u_sd_top/u_sd_operation/sub0_syn_181 u_sd_top/u_sd_operation/sub0_syn_193.fci
+u_sd_top/u_sd_operation/delay_num_b2[28] u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_150.a[1]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_23 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_156.d[1]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_25 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_125.a[0]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_29 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_162.b[0]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_47 u_sd_top/u_sd_operation/reg18_syn_161.a[0]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_57 u_sd_top/u_sd_operation/reg13_syn_22.a[0]
+
+
+Endpoint: u_sd_top/u_sd_operation/reg19_syn_185
+387 1.074000 1117 3
+Timing path: u_sd_top/u_sd_operation/reg8_syn_105.clk->u_sd_top/u_sd_operation/reg19_syn_185
+u_sd_top/u_sd_operation/reg8_syn_105.clk
+u_sd_top/u_sd_operation/reg19_syn_185
+389 1.074000 12.096000 11.022000 13 13
+u_sd_top/u_sd_operation/sddata_num_max[6] u_sd_top/u_sd_operation/sub0_syn_187.b[1]
+u_sd_top/u_sd_operation/sub0_syn_161 u_sd_top/u_sd_operation/sub0_syn_188.fci
+u_sd_top/u_sd_operation/sub0_syn_165 u_sd_top/u_sd_operation/sub0_syn_189.fci
+u_sd_top/u_sd_operation/sub0_syn_169 u_sd_top/u_sd_operation/sub0_syn_190.fci
+u_sd_top/u_sd_operation/sub0_syn_173 u_sd_top/u_sd_operation/sub0_syn_191.fci
+u_sd_top/u_sd_operation/sub0_syn_177 u_sd_top/u_sd_operation/sub0_syn_192.fci
+u_sd_top/u_sd_operation/sub0_syn_181 u_sd_top/u_sd_operation/sub0_syn_193.fci
+u_sd_top/u_sd_operation/delay_num_b2[28] u_sd_top/u_sd_operation/reg8_syn_116.a[1]
+u_sd_top/u_sd_operation/reg8_syn_11 u_sd_top/u_sd_operation/reg8_syn_105.d[1]
+u_sd_top/u_sd_operation/reg8_syn_13 u_sd_top/u_sd_operation/outdata_b_n_syn_140.a[0]
+u_sd_top/u_sd_operation/reg8_syn_17 u_sd_top/u_sd_operation/reg18_syn_166.a[1]
+u_sd_top/u_sd_operation/reg8_syn_27 u_sd_top/u_sd_operation/reg18_syn_166.a[0]
+u_sd_top/u_sd_operation/delay_num_b_n u_sd_top/u_sd_operation/reg19_syn_185.a[1]
+
+Timing path: u_sd_top/u_sd_operation/reg8_syn_105.clk->u_sd_top/u_sd_operation/reg19_syn_185
+u_sd_top/u_sd_operation/reg8_syn_105.clk
+u_sd_top/u_sd_operation/reg19_syn_185
+447 1.074000 12.096000 11.022000 13 13
+u_sd_top/u_sd_operation/sddata_num_max[6] u_sd_top/u_sd_operation/sub0_syn_187.b[1]
+u_sd_top/u_sd_operation/sub0_syn_161 u_sd_top/u_sd_operation/sub0_syn_188.fci
+u_sd_top/u_sd_operation/sub0_syn_165 u_sd_top/u_sd_operation/sub0_syn_189.fci
+u_sd_top/u_sd_operation/sub0_syn_169 u_sd_top/u_sd_operation/sub0_syn_190.fci
+u_sd_top/u_sd_operation/sub0_syn_173 u_sd_top/u_sd_operation/sub0_syn_191.fci
+u_sd_top/u_sd_operation/sub0_syn_177 u_sd_top/u_sd_operation/sub0_syn_192.fci
+u_sd_top/u_sd_operation/sub0_syn_181 u_sd_top/u_sd_operation/sub0_syn_193.fci
+u_sd_top/u_sd_operation/delay_num_b2[28] u_sd_top/u_sd_operation/reg8_syn_116.a[1]
+u_sd_top/u_sd_operation/reg8_syn_11 u_sd_top/u_sd_operation/reg8_syn_105.d[1]
+u_sd_top/u_sd_operation/reg8_syn_13 u_sd_top/u_sd_operation/outdata_b_n_syn_140.a[0]
+u_sd_top/u_sd_operation/reg8_syn_17 u_sd_top/u_sd_operation/reg18_syn_166.a[1]
+u_sd_top/u_sd_operation/reg8_syn_27 u_sd_top/u_sd_operation/reg18_syn_166.a[0]
+u_sd_top/u_sd_operation/delay_num_b_n u_sd_top/u_sd_operation/reg19_syn_185.a[0]
+
+Timing path: u_sd_top/u_sd_operation/reg35_syn_199.clk->u_sd_top/u_sd_operation/reg19_syn_185
+u_sd_top/u_sd_operation/reg35_syn_199.clk
+u_sd_top/u_sd_operation/reg19_syn_185
+505 1.121000 12.096000 10.975000 14 14
+u_sd_top/u_sd_operation/sddata_num_max[2] u_sd_top/u_sd_operation/sub0_syn_186.b[1]
+u_sd_top/u_sd_operation/sub0_syn_157 u_sd_top/u_sd_operation/sub0_syn_187.fci
+u_sd_top/u_sd_operation/sub0_syn_161 u_sd_top/u_sd_operation/sub0_syn_188.fci
+u_sd_top/u_sd_operation/sub0_syn_165 u_sd_top/u_sd_operation/sub0_syn_189.fci
+u_sd_top/u_sd_operation/sub0_syn_169 u_sd_top/u_sd_operation/sub0_syn_190.fci
+u_sd_top/u_sd_operation/sub0_syn_173 u_sd_top/u_sd_operation/sub0_syn_191.fci
+u_sd_top/u_sd_operation/sub0_syn_177 u_sd_top/u_sd_operation/sub0_syn_192.fci
+u_sd_top/u_sd_operation/sub0_syn_181 u_sd_top/u_sd_operation/sub0_syn_193.fci
+u_sd_top/u_sd_operation/delay_num_b2[28] u_sd_top/u_sd_operation/reg8_syn_116.a[1]
+u_sd_top/u_sd_operation/reg8_syn_11 u_sd_top/u_sd_operation/reg8_syn_105.d[1]
+u_sd_top/u_sd_operation/reg8_syn_13 u_sd_top/u_sd_operation/outdata_b_n_syn_140.a[0]
+u_sd_top/u_sd_operation/reg8_syn_17 u_sd_top/u_sd_operation/reg18_syn_166.a[1]
+u_sd_top/u_sd_operation/reg8_syn_27 u_sd_top/u_sd_operation/reg18_syn_166.a[0]
+u_sd_top/u_sd_operation/delay_num_b_n u_sd_top/u_sd_operation/reg19_syn_185.a[1]
+
+
+
+Hold check
+565 3
+Endpoint: u_sd_top/u_crc7_bram/inst_256x8_sub_000000_000
+567 0.186000 8 3
+Timing path: u_sd_top/u_crc7/sel1_syn_449.clk->u_sd_top/u_crc7_bram/inst_256x8_sub_000000_000
+u_sd_top/u_crc7/sel1_syn_449.clk
+u_sd_top/u_crc7_bram/inst_256x8_sub_000000_000
+569 0.186000 2.183000 2.369000 1 1
+u_sd_top/u_crc7/table_read_address[6] u_sd_top/u_crc7_bram/inst_256x8_sub_000000_000.addra[9]
+
+Timing path: u_sd_top/u_crc7/sel1_syn_447.clk->u_sd_top/u_crc7_bram/inst_256x8_sub_000000_000
+u_sd_top/u_crc7/sel1_syn_447.clk
+u_sd_top/u_crc7_bram/inst_256x8_sub_000000_000
+603 0.196000 2.183000 2.379000 1 1
+u_sd_top/u_crc7/table_read_address[5] u_sd_top/u_crc7_bram/inst_256x8_sub_000000_000.addra[8]
+
+Timing path: u_sd_top/u_crc7/sel1_syn_445.clk->u_sd_top/u_crc7_bram/inst_256x8_sub_000000_000
+u_sd_top/u_crc7/sel1_syn_445.clk
+u_sd_top/u_crc7_bram/inst_256x8_sub_000000_000
+637 0.205000 2.183000 2.388000 1 1
+u_sd_top/u_crc7/table_read_address[4] u_sd_top/u_crc7_bram/inst_256x8_sub_000000_000.addra[7]
+
+
+Endpoint: u_sd_top/u_sd_operation/reg18_syn_170
+671 0.322000 1 1
+Timing path: u_sd_top/u_sd_operation/reg19_syn_226.clk->u_sd_top/u_sd_operation/reg18_syn_170
+u_sd_top/u_sd_operation/reg19_syn_226.clk
+u_sd_top/u_sd_operation/reg18_syn_170
+673 0.322000 2.044000 2.366000 0 1
+u_sd_top/u_sd_operation/outdata_num_reg[23] u_sd_top/u_sd_operation/reg18_syn_170.mi[1]
+
+
+Endpoint: u_sd_top/u_sd_operation/send_tran_cmd_b[36]_syn_18
+707 0.323000 1 1
+Timing path: u_sd_top/u_sd_operation/reg40_syn_253.clk->u_sd_top/u_sd_operation/send_tran_cmd_b[36]_syn_18
+u_sd_top/u_sd_operation/reg40_syn_253.clk
+u_sd_top/u_sd_operation/send_tran_cmd_b[36]_syn_18
+709 0.323000 2.044000 2.367000 0 1
+u_sd_top/u_sd_operation/sddata_wait_flag0[3] u_sd_top/u_sd_operation/send_tran_cmd_b[36]_syn_18.mi[0]
+
+
+
+
+clock: hdmi_clk
+743 35056 632 4
+Setup check
+753 3
+Endpoint: u_hdmi_top/u_rgb2dvi_0/encoder_r/reg3_syn_26
+753 -2.317000 503 3
+Timing path: u_hdmi_top/u_rgb2dvi_0/encoder_r/reg4_syn_32.clk->u_hdmi_top/u_rgb2dvi_0/encoder_r/reg3_syn_26
+u_hdmi_top/u_rgb2dvi_0/encoder_r/reg4_syn_32.clk
+u_hdmi_top/u_rgb2dvi_0/encoder_r/reg3_syn_26
+755 -2.317000 8.964000 11.281000 11 11
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n1d[1] u_hdmi_top/u_rgb2dvi_0/encoder_r/reg1_syn_37.c[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n0q_m_b[3]_syn_2 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_59.a[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/reg6_syn_21 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_71.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n0q_m_b[3]_syn_5 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_63.c[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/q_m[2] u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_71.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/q_m[3] u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_68.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/q_m[4] u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_66.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/q_m[5] u_hdmi_top/u_rgb2dvi_0/encoder_r/reg6_syn_59.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n0q_m_b[3]_syn_7 u_white_balenceb_top/u_isp_wb/reg0_syn_17.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n0q_m_b[3]_syn_11 u_isp_ccm/reg18_syn_24.b[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n0q_m_b[3]_syn_19 u_hdmi_top/u_rgb2dvi_0/encoder_r/reg3_syn_26.a[1]
+
+Timing path: u_hdmi_top/u_rgb2dvi_0/encoder_r/reg4_syn_32.clk->u_hdmi_top/u_rgb2dvi_0/encoder_r/reg3_syn_26
+u_hdmi_top/u_rgb2dvi_0/encoder_r/reg4_syn_32.clk
+u_hdmi_top/u_rgb2dvi_0/encoder_r/reg3_syn_26
+809 -2.235000 8.964000 11.199000 11 11
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n1d[0] u_hdmi_top/u_rgb2dvi_0/encoder_r/reg1_syn_37.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n0q_m_b[3]_syn_2 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_59.a[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/reg6_syn_21 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_71.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n0q_m_b[3]_syn_5 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_63.c[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/q_m[2] u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_71.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/q_m[3] u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_68.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/q_m[4] u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_66.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/q_m[5] u_hdmi_top/u_rgb2dvi_0/encoder_r/reg6_syn_59.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n0q_m_b[3]_syn_7 u_white_balenceb_top/u_isp_wb/reg0_syn_17.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n0q_m_b[3]_syn_11 u_isp_ccm/reg18_syn_24.b[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n0q_m_b[3]_syn_19 u_hdmi_top/u_rgb2dvi_0/encoder_r/reg3_syn_26.a[1]
+
+Timing path: u_hdmi_top/u_rgb2dvi_0/encoder_r/reg4_syn_32.clk->u_hdmi_top/u_rgb2dvi_0/encoder_r/reg3_syn_26
+u_hdmi_top/u_rgb2dvi_0/encoder_r/reg4_syn_32.clk
+u_hdmi_top/u_rgb2dvi_0/encoder_r/reg3_syn_26
+863 -1.868000 8.964000 10.832000 10 10
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n1d[1] u_hdmi_top/u_rgb2dvi_0/encoder_r/reg1_syn_37.c[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n0q_m_b[3]_syn_2 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_59.a[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/reg6_syn_21 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_71.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n0q_m_b[3]_syn_5 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_63.c[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/q_m[2] u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_71.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/q_m[3] u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_68.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/q_m[4] u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_66.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/q_m[5] u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_66.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/q_m[6] u_isp_ccm/reg18_syn_24.a[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n0q_m_b[3]_syn_19 u_hdmi_top/u_rgb2dvi_0/encoder_r/reg3_syn_26.a[1]
+
+
+Endpoint: u_hdmi_top/u_rgb2dvi_0/encoder_r/reg3_syn_26
+915 -2.245000 467 3
+Timing path: u_hdmi_top/u_rgb2dvi_0/encoder_r/reg4_syn_32.clk->u_hdmi_top/u_rgb2dvi_0/encoder_r/reg3_syn_26
+u_hdmi_top/u_rgb2dvi_0/encoder_r/reg4_syn_32.clk
+u_hdmi_top/u_rgb2dvi_0/encoder_r/reg3_syn_26
+917 -2.245000 8.964000 11.209000 11 11
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n1d[1] u_hdmi_top/u_rgb2dvi_0/encoder_r/reg1_syn_37.c[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n0q_m_b[3]_syn_2 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_59.a[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/reg6_syn_21 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_71.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n0q_m_b[3]_syn_5 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_63.c[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/q_m[2] u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_71.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/q_m[3] u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_68.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/q_m[4] u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_66.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/q_m[5] u_hdmi_top/u_rgb2dvi_0/encoder_r/reg6_syn_59.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n0q_m_b[3]_syn_7 u_white_balenceb_top/u_isp_wb/reg0_syn_17.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n0q_m_b[3]_syn_11 u_isp_ccm/reg18_syn_24.b[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n0q_m_b[3]_syn_19 u_hdmi_top/u_rgb2dvi_0/encoder_r/reg3_syn_26.b[0]
+
+Timing path: u_hdmi_top/u_rgb2dvi_0/encoder_r/reg4_syn_32.clk->u_hdmi_top/u_rgb2dvi_0/encoder_r/reg3_syn_26
+u_hdmi_top/u_rgb2dvi_0/encoder_r/reg4_syn_32.clk
+u_hdmi_top/u_rgb2dvi_0/encoder_r/reg3_syn_26
+971 -2.163000 8.964000 11.127000 11 11
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n1d[0] u_hdmi_top/u_rgb2dvi_0/encoder_r/reg1_syn_37.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n0q_m_b[3]_syn_2 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_59.a[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/reg6_syn_21 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_71.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n0q_m_b[3]_syn_5 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_63.c[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/q_m[2] u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_71.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/q_m[3] u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_68.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/q_m[4] u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_66.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/q_m[5] u_hdmi_top/u_rgb2dvi_0/encoder_r/reg6_syn_59.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n0q_m_b[3]_syn_7 u_white_balenceb_top/u_isp_wb/reg0_syn_17.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n0q_m_b[3]_syn_11 u_isp_ccm/reg18_syn_24.b[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n0q_m_b[3]_syn_19 u_hdmi_top/u_rgb2dvi_0/encoder_r/reg3_syn_26.b[0]
+
+Timing path: u_hdmi_top/u_rgb2dvi_0/encoder_r/reg4_syn_32.clk->u_hdmi_top/u_rgb2dvi_0/encoder_r/reg3_syn_26
+u_hdmi_top/u_rgb2dvi_0/encoder_r/reg4_syn_32.clk
+u_hdmi_top/u_rgb2dvi_0/encoder_r/reg3_syn_26
+1025 -1.796000 8.964000 10.760000 10 10
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n1d[1] u_hdmi_top/u_rgb2dvi_0/encoder_r/reg1_syn_37.c[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n0q_m_b[3]_syn_2 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_59.a[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/reg6_syn_21 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_71.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n0q_m_b[3]_syn_5 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_63.c[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/q_m[2] u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_71.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/q_m[3] u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_68.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/q_m[4] u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_66.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/q_m[5] u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_66.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/q_m[6] u_isp_ccm/reg18_syn_24.a[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_r/n0q_m_b[3]_syn_19 u_hdmi_top/u_rgb2dvi_0/encoder_r/reg3_syn_26.b[0]
+
+
+Endpoint: u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_26
+1077 -1.813000 467 3
+Timing path: u_hdmi_top/u_rgb2dvi_0/encoder_g/reg4_syn_30.clk->u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_26
+u_hdmi_top/u_rgb2dvi_0/encoder_g/reg4_syn_30.clk
+u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_26
+1079 -1.813000 8.964000 10.777000 11 11
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n1d[0] u_hdmi_top/u_rgb2dvi_0/encoder_g/reg1_syn_48.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_2 u_hdmi_top/u_rgb2dvi_0/encoder_g/reg6_syn_61.a[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_21 u_hdmi_top/u_rgb2dvi_0/encoder_g/reg6_syn_61.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_5 u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[2]_syn_37.c[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[2] u_hdmi_top/u_rgb2dvi_0/encoder_b/reg1_syn_39.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[3] u_hdmi_top/u_rgb2dvi_0/encoder_b/reg1_syn_37.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[4] u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[5]_syn_40.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[5] u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[5]_syn_40.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_7 u_hdmi_top/u_rgb2dvi_0/encoder_g/reg6_syn_56.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_11 u_hdmi_top/u_rgb2dvi_0/encoder_g/reg6_syn_56.b[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_19 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_26.b[1]
+
+Timing path: u_hdmi_top/u_rgb2dvi_0/encoder_b/reg4_syn_31.clk->u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_26
+u_hdmi_top/u_rgb2dvi_0/encoder_b/reg4_syn_31.clk
+u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_26
+1133 -1.730000 8.964000 10.694000 11 11
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n1d[1] u_hdmi_top/u_rgb2dvi_0/encoder_g/reg1_syn_48.c[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_2 u_hdmi_top/u_rgb2dvi_0/encoder_g/reg6_syn_61.a[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_21 u_hdmi_top/u_rgb2dvi_0/encoder_g/reg6_syn_61.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_5 u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[2]_syn_37.c[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[2] u_hdmi_top/u_rgb2dvi_0/encoder_b/reg1_syn_39.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[3] u_hdmi_top/u_rgb2dvi_0/encoder_b/reg1_syn_37.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[4] u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[5]_syn_40.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[5] u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[5]_syn_40.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_7 u_hdmi_top/u_rgb2dvi_0/encoder_g/reg6_syn_56.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_11 u_hdmi_top/u_rgb2dvi_0/encoder_g/reg6_syn_56.b[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_19 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_26.b[1]
+
+Timing path: u_hdmi_top/u_rgb2dvi_0/encoder_g/reg4_syn_30.clk->u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_26
+u_hdmi_top/u_rgb2dvi_0/encoder_g/reg4_syn_30.clk
+u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_26
+1187 -1.717000 8.964000 10.681000 10 10
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n1d[0] u_hdmi_top/u_rgb2dvi_0/encoder_g/reg1_syn_48.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_2 u_hdmi_top/u_rgb2dvi_0/encoder_g/reg6_syn_61.a[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_21 u_hdmi_top/u_rgb2dvi_0/encoder_g/reg6_syn_61.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_5 u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[2]_syn_37.c[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[2] u_hdmi_top/u_rgb2dvi_0/encoder_b/reg1_syn_39.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[3] u_hdmi_top/u_rgb2dvi_0/encoder_b/reg1_syn_37.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[4] u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[5]_syn_40.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[5] u_hdmi_top/u_rgb2dvi_0/encoder_b/de_q_reg_syn_8.a[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_14 u_hdmi_top/u_rgb2dvi_0/encoder_g/reg6_syn_56.c[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_19 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_26.b[1]
+
+
+
+Hold check
+1239 3
+Endpoint: u_hdmi_top/u1_Driver/add1_syn_74
+1241 0.314000 1 1
+Timing path: u_hdmi_top/u_rgb2dvi_0/encoder_b/c0_q_reg_syn_8.clk->u_hdmi_top/u1_Driver/add1_syn_74
+u_hdmi_top/u_rgb2dvi_0/encoder_b/c0_q_reg_syn_8.clk
+u_hdmi_top/u1_Driver/add1_syn_74
+1243 0.314000 2.135000 2.449000 0 1
+u_hdmi_top/u_rgb2dvi_0/encoder_b/c0_q u_hdmi_top/u1_Driver/add1_syn_74.mi[0]
+
+
+Endpoint: u_hdmi_top/u_rgb2dvi_0/encoder_g/n0q_m_b[3]_syn_47
+1277 0.323000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/ram_inst/reg2_syn_68.clk->u_hdmi_top/u_rgb2dvi_0/encoder_g/n0q_m_b[3]_syn_47
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/ram_inst/reg2_syn_68.clk
+u_hdmi_top/u_rgb2dvi_0/encoder_g/n0q_m_b[3]_syn_47
+1279 0.323000 2.135000 2.458000 0 1
+sdram_rd_data[6] u_hdmi_top/u_rgb2dvi_0/encoder_g/n0q_m_b[3]_syn_47.mi[0]
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg1_syn_47
+1313 0.330000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_42.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg1_syn_47
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_42.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg1_syn_47
+1315 0.330000 2.119000 2.449000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/sync_r1[7] u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg1_syn_47.mi[0]
+
+
+
+Recovery check
+1349 3
+Endpoint: u_hdmi_top/u_rgb2dvi_0/encoder_r/reg2_syn_54
+1351 4.830000 1 1
+Timing path: u_hdmi_top/u_rgb2dvi_0/reset_syn/reset_2_reg_syn_5.clk->u_hdmi_top/u_rgb2dvi_0/encoder_r/reg2_syn_54
+u_hdmi_top/u_rgb2dvi_0/reset_syn/reset_2_reg_syn_5.clk
+u_hdmi_top/u_rgb2dvi_0/encoder_r/reg2_syn_54
+1353 4.830000 8.708000 3.878000 0 1
+u_hdmi_top/u_rgb2dvi_0/reset_syn/reset_2 u_hdmi_top/u_rgb2dvi_0/encoder_r/reg2_syn_54.sr
+
+
+Endpoint: u_hdmi_top/u_rgb2dvi_0/encoder_g/reg2_syn_59
+1387 4.859000 1 1
+Timing path: u_hdmi_top/u_rgb2dvi_0/reset_syn/reset_2_reg_syn_5.clk->u_hdmi_top/u_rgb2dvi_0/encoder_g/reg2_syn_59
+u_hdmi_top/u_rgb2dvi_0/reset_syn/reset_2_reg_syn_5.clk
+u_hdmi_top/u_rgb2dvi_0/encoder_g/reg2_syn_59
+1389 4.859000 8.780000 3.921000 0 1
+u_hdmi_top/u_rgb2dvi_0/reset_syn/reset_2 u_hdmi_top/u_rgb2dvi_0/encoder_g/reg2_syn_59.sr
+
+
+Endpoint: u_hdmi_top/u_rgb2dvi_0/encoder_b/cnt_b[1]_syn_12
+1423 4.859000 1 1
+Timing path: u_hdmi_top/u_rgb2dvi_0/reset_syn/reset_2_reg_syn_5.clk->u_hdmi_top/u_rgb2dvi_0/encoder_b/cnt_b[1]_syn_12
+u_hdmi_top/u_rgb2dvi_0/reset_syn/reset_2_reg_syn_5.clk
+u_hdmi_top/u_rgb2dvi_0/encoder_b/cnt_b[1]_syn_12
+1425 4.859000 8.780000 3.921000 0 1
+u_hdmi_top/u_rgb2dvi_0/reset_syn/reset_2 u_hdmi_top/u_rgb2dvi_0/encoder_b/cnt_b[1]_syn_12.sr
+
+
+
+Removal check
+1459 3
+Endpoint: u_hdmi_top/u_rgb2dvi_0/encoder_b/reg0_syn_28
+1461 0.300000 1 1
+Timing path: u_hdmi_top/u_rgb2dvi_0/reset_syn/reset_2_reg_syn_5.clk->u_hdmi_top/u_rgb2dvi_0/encoder_b/reg0_syn_28
+u_hdmi_top/u_rgb2dvi_0/reset_syn/reset_2_reg_syn_5.clk
+u_hdmi_top/u_rgb2dvi_0/encoder_b/reg0_syn_28
+1463 0.300000 2.327000 2.627000 0 1
+u_hdmi_top/u_rgb2dvi_0/reset_syn/reset_2 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg0_syn_28.sr
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/ram_inst/ramread0_syn_19
+1497 0.313000 1 1
+Timing path: u_sd_top/u_sd_operation/sd_command_out_syn_5.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/ram_inst/ramread0_syn_19
+u_sd_top/u_sd_operation/sd_command_out_syn_5.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/ram_inst/ramread0_syn_19
+1499 0.313000 2.324000 2.637000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/asy_r_rst1 u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/ram_inst/ramread0_syn_19.rstb
+
+
+Endpoint: u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m_reg[8]_syn_37
+1533 0.316000 1 1
+Timing path: u_hdmi_top/u_rgb2dvi_0/reset_syn/reset_2_reg_syn_5.clk->u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m_reg[8]_syn_37
+u_hdmi_top/u_rgb2dvi_0/reset_syn/reset_2_reg_syn_5.clk
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m_reg[8]_syn_37
+1535 0.316000 2.327000 2.643000 0 1
+u_hdmi_top/u_rgb2dvi_0/reset_syn/reset_2 u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m_reg[8]_syn_37.sr
+
+
+
+
+clock: hdmi_clk_5
+1569 418 104 2
+Setup check
+1579 3
+Endpoint: u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_29
+1579 -0.995000 3 3
+Timing path: u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_18.clk->u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_29
+u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_18.clk
+u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_29
+1581 -0.995000 3.433000 4.428000 1 2
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt[1] u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_25.b[0]
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt_b_n u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_29.sr
+
+Timing path: u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21.clk->u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_29
+u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21.clk
+u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_29
+1617 -0.920000 3.433000 4.353000 1 2
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt[0] u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_25.d[0]
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt_b_n u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_29.sr
+
+Timing path: u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21.clk->u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_29
+u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21.clk
+u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_29
+1653 -0.569000 3.433000 4.002000 1 2
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt[2] u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_25.c[0]
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt_b_n u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_29.sr
+
+
+Endpoint: u_hdmi_top/u_rgb2dvi_0/serializer_b/reg1_syn_33
+1689 -0.813000 3 3
+Timing path: u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_18.clk->u_hdmi_top/u_rgb2dvi_0/serializer_b/reg1_syn_33
+u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_18.clk
+u_hdmi_top/u_rgb2dvi_0/serializer_b/reg1_syn_33
+1691 -0.813000 3.548000 4.361000 1 2
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt[1] u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_25.b[0]
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt_b_n u_hdmi_top/u_rgb2dvi_0/serializer_b/reg1_syn_33.sr
+
+Timing path: u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21.clk->u_hdmi_top/u_rgb2dvi_0/serializer_b/reg1_syn_33
+u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21.clk
+u_hdmi_top/u_rgb2dvi_0/serializer_b/reg1_syn_33
+1727 -0.738000 3.548000 4.286000 1 2
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt[0] u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_25.d[0]
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt_b_n u_hdmi_top/u_rgb2dvi_0/serializer_b/reg1_syn_33.sr
+
+Timing path: u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21.clk->u_hdmi_top/u_rgb2dvi_0/serializer_b/reg1_syn_33
+u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21.clk
+u_hdmi_top/u_rgb2dvi_0/serializer_b/reg1_syn_33
+1763 -0.387000 3.548000 3.935000 1 2
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt[2] u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_25.c[0]
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt_b_n u_hdmi_top/u_rgb2dvi_0/serializer_b/reg1_syn_33.sr
+
+
+Endpoint: u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21
+1799 -0.756000 3 3
+Timing path: u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_18.clk->u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21
+u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_18.clk
+u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21
+1801 -0.756000 3.548000 4.304000 1 2
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt[1] u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_25.b[0]
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt_b_n u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21.sr
+
+Timing path: u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21.clk->u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21
+u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21.clk
+u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21
+1837 -0.660000 3.548000 4.208000 1 2
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt[0] u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_25.d[0]
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt_b_n u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21.sr
+
+Timing path: u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21.clk->u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21
+u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21.clk
+u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21
+1873 -0.309000 3.548000 3.857000 1 2
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt[2] u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_25.c[0]
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt_b_n u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21.sr
+
+
+
+Hold check
+1909 3
+Endpoint: u_hdmi_top/u_rgb2dvi_0/serializer_g/reg1_syn_33
+1911 0.349000 1 1
+Timing path: u_hdmi_top/u_rgb2dvi_0/encoder_b/cnt_b[1]_syn_12.clk->u_hdmi_top/u_rgb2dvi_0/serializer_g/reg1_syn_33
+u_hdmi_top/u_rgb2dvi_0/encoder_b/cnt_b[1]_syn_12.clk
+u_hdmi_top/u_rgb2dvi_0/serializer_g/reg1_syn_33
+1913 0.349000 2.291000 2.640000 0 1
+u_hdmi_top/u_rgb2dvi_0/serializer_g/paralell_data[8] u_hdmi_top/u_rgb2dvi_0/serializer_g/reg1_syn_33.mi[0]
+
+
+Endpoint: u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg2_syn_14
+1947 0.357000 1 1
+Timing path: u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_25.clk->u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg2_syn_14
+u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_25.clk
+u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg2_syn_14
+1949 0.357000 2.198000 2.555000 0 1
+u_hdmi_top/u_rgb2dvi_0/serializer_clk/datain_fall_shift[3] u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg2_syn_14.mi[0]
+
+
+Endpoint: u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_31
+1983 0.367000 1 1
+Timing path: u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg2_syn_14.clk->u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_31
+u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg2_syn_14.clk
+u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_31
+1985 0.367000 2.198000 2.565000 0 1
+u_hdmi_top/u_rgb2dvi_0/serializer_clk/datain_rise_shift[2] u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_31.mi[0]
+
+
+
+
+Path delay: 6.434ns max
+2019 10 10 1
+Max path
+2029 3
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_60
+2029 5.396000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg0_syn_58.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_60
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg0_syn_58.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_60
+2031 5.396000 8.728000 3.332000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/primary_addr_gray_reg[5] u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_60.mi[0]
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_57
+2059 5.543000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg2_syn_62.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_57
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg2_syn_62.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_57
+2061 5.543000 8.728000 3.185000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/primary_addr_gray_reg[8] u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_57.mi[0]
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_57
+2089 5.609000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg0_syn_61.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_57
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg0_syn_61.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_57
+2091 5.609000 8.728000 3.119000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/primary_addr_gray_reg[7] u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_57.mi[1]
+
+
+
+
+Path delay: 6.434ns max
+2121 10 10 1
+Max path
+2131 3
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_39
+2131 5.427000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg0_syn_63.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_39
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg0_syn_63.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_39
+2133 5.427000 6.318000 0.891000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/primary_addr_gray_reg[6] u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_39.mi[1]
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_39
+2162 5.427000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg0_syn_60.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_39
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg0_syn_60.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_39
+2164 5.427000 6.318000 0.891000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/primary_addr_gray_reg[8] u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_39.mi[0]
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_36
+2193 5.427000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg0_syn_51.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_36
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg0_syn_51.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_36
+2195 5.427000 6.318000 0.891000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/primary_addr_gray_reg[0] u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_36.mi[1]
+
+
+
+
+Path delay: 9.7ns max
+2226 10 10 1
+Max path
+2236 3
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg3_syn_35
+2236 8.722000 1 1
+Timing path: u_sdram_top/sdram_ctrl_inst/sdram_read_inst/cnt_clk_b[8]_syn_18.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg3_syn_35
+u_sdram_top/sdram_ctrl_inst/sdram_read_inst/cnt_clk_b[8]_syn_18.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg3_syn_35
+2238 8.722000 9.584000 0.862000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/primary_addr_gray_reg[9] u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg3_syn_35.mi[0]
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg3_syn_48
+2263 8.772000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg0_syn_61.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg3_syn_48
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg0_syn_61.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg3_syn_48
+2265 8.772000 9.584000 0.812000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/primary_addr_gray_reg[2] u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg3_syn_48.mi[0]
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg3_syn_45
+2290 8.786000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg0_syn_61.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg3_syn_45
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg0_syn_61.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg3_syn_45
+2292 8.786000 9.584000 0.798000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/primary_addr_gray_reg[0] u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg3_syn_45.mi[1]
+
+
+
+
+Path delay: 9.7ns max
+2319 10 10 1
+Max path
+2329 3
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/add2_syn_62
+2329 8.728000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_52.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/add2_syn_62
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_52.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/add2_syn_62
+2331 8.728000 9.584000 0.856000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/primary_addr_gray_reg[0] u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/add2_syn_62.mi[0]
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/sub0_syn_54
+2356 8.785000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_58.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/sub0_syn_54
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_58.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/sub0_syn_54
+2358 8.785000 9.584000 0.799000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/primary_addr_gray_reg[5] u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/sub0_syn_54.mi[0]
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_40
+2383 8.809000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_55.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_40
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_55.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_40
+2385 8.809000 9.584000 0.775000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/primary_addr_gray_reg[3] u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_40.mi[0]
+
+
+
+
+
+Timing group statistics: 
+	Clock constraints: 
+	  Clock Name                                  Min Period     Max Freq           Skew      Fanout            TNS
+	  sdcard_clk (100.0MHz)                          8.946ns     111.782MHz        0.326ns       463        0.000ns
+	  hdmi_clk (148.5MHz)                            9.051ns     110.485MHz        0.326ns       148      -26.408ns
+	  hdmi_clk_5 (742.9MHz)                          2.341ns     427.000MHz        0.480ns        30      -18.839ns
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+Warning: No clock constraint on 4 clock net(s): 
+	isp_clk
+	sdram_clk_100m
+	sdram_clk_dup_1
+	u_tx_pll/clk0_out
+
+	Exceptions:
+
+		Check Type:	MIN
+		----------------------------------------------------------------------------------------------------
+		       Path Num     Constraint                                                                      
+		             10     set_false_path -hold -from [ get_regs {rd_to_wr_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {rd_to_wr_cross_inst/sync_r1[*]} ]
+		             10     set_false_path -hold -from [ get_regs {wr_to_rd_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {wr_to_rd_cross_inst/sync_r1[*]} ]
+		             10     set_false_path -hold -from [ get_regs {rd_to_wr_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {rd_to_wr_cross_inst/sync_r1[*]} ]
+		             10     set_false_path -hold -from [ get_regs {wr_to_rd_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {wr_to_rd_cross_inst/sync_r1[*]} ]
+

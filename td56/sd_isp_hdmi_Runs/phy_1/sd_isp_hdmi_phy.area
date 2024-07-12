@@ -1,0 +1,194 @@
+standard
+***Report Model: sd_isp_hdmi_top Device: EG4S20BG256***
+
+IO Statistics
+#IO                        51
+  #input                    2
+  #output                  28
+  #inout                   21
+
+Utilization Statistics
+#lut                     5870   out of  19600   29.95%
+#reg                     3315   out of  19600   16.91%
+#le                      6653
+  #lut only              3338   out of   6653   50.17%
+  #reg only               783   out of   6653   11.77%
+  #lut&reg               2532   out of   6653   38.06%
+#dsp                       23   out of     29   79.31%
+#bram                      29   out of     64   45.31%
+  #bram9k                  29
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#pad                       55   out of    188   29.26%
+  #ireg                    16
+  #oreg                     5
+  #treg                    21
+#pll                        3   out of      4   75.00%
+#gclk                       3   out of     16   18.75%
+
+Clock Resource Statistics
+Index     ClockNet              Type               DriverType         Driver                      Fanout
+#1        raw_clk               GCLK               pll                u_sd_pll/pll_inst.clkc1     454
+#2        u_sd_pll/clk0_buf     GCLK               pll                u_sd_pll/pll_inst.clkc0     425
+#3        mux_clk               GCLK               pll                u_sd_pll/pll_inst.clkc2     404
+#4        rgb_clk               GCLK               pll                u_sd_pll/pll_inst.clkc3     307
+#5        u_pll_gen/clk0_buf    GCLK               pll                u_pll_gen/pll_inst.clkc0    186
+#6        yuv_clk               GCLK               pll                u_sd_pll/pll_inst.clkc4     173
+#7        u_tx_pll/clk1_buf     GCLK               pll                u_tx_pll/pll_inst.clkc1     154
+#8        hdmi_clk_5            GCLK               pll                u_tx_pll/pll_inst.clkc2     30
+#9        sys_clk_dup_1         GCLK               io                 sys_clk_syn_2.di            3
+#10       sdram_clk_dup_1       GCLK               pll                u_pll_gen/pll_inst.clkc1    0
+
+
+Detailed IO Report
+
+       Name         Direction    Location    IOStandard    DriveStrength    PullType     PackReg   
+     sys_clk          INPUT         R7        LVCMOS25          N/A          PULLUP       NONE     
+    sys_rst_n         INPUT        A14        LVCMOS25          N/A          PULLUP       NONE     
+    HDMI_CLK_P       OUTPUT         P4         LVDS25           NA            NONE       ODDRX1    
+  HDMI_CLK_P(n)      OUTPUT         N4         LVDS25           NA            NONE        NONE     
+    HDMI_D0_P        OUTPUT         J3         LVDS25           NA            NONE       ODDRX1    
+   HDMI_D0_P(n)      OUTPUT         J4         LVDS25           NA            NONE        NONE     
+    HDMI_D1_P        OUTPUT         N1         LVDS25           NA            NONE       ODDRX1    
+   HDMI_D1_P(n)      OUTPUT         M1         LVDS25           NA            NONE        NONE     
+    HDMI_D2_P        OUTPUT         P1         LVDS25           NA            NONE       ODDRX1    
+   HDMI_D2_P(n)      OUTPUT         R1         LVDS25           NA            NONE        NONE     
+       LED           OUTPUT        B14        LVCMOS25           8            NONE        OREG     
+      sd_clk         OUTPUT         J1        LVCMOS25           8            NONE        NONE     
+  sdram_addr[11]     OUTPUT        M14        LVCMOS25           8            NONE        NONE     
+  sdram_addr[10]     OUTPUT        J16        LVCMOS25           8            NONE        NONE     
+  sdram_addr[9]      OUTPUT        N14        LVCMOS25           8            NONE        NONE     
+  sdram_addr[8]      OUTPUT        P14        LVCMOS25           8            NONE        NONE     
+  sdram_addr[7]      OUTPUT        P16        LVCMOS25           8            NONE        NONE     
+  sdram_addr[6]      OUTPUT        L16        LVCMOS25           8            NONE        NONE     
+  sdram_addr[5]      OUTPUT        P15        LVCMOS25           8            NONE        NONE     
+  sdram_addr[4]      OUTPUT        M16        LVCMOS25           8            NONE        NONE     
+  sdram_addr[3]      OUTPUT        J12        LVCMOS25           8            NONE        NONE     
+  sdram_addr[2]      OUTPUT        L14        LVCMOS25           8            NONE        NONE     
+  sdram_addr[1]      OUTPUT        J13        LVCMOS25           8            NONE        NONE     
+  sdram_addr[0]      OUTPUT        K14        LVCMOS25           8            NONE        NONE     
+   sdram_ba[1]       OUTPUT        J14        LVCMOS25           8            NONE        NONE     
+   sdram_ba[0]       OUTPUT        K16        LVCMOS25           8            NONE        NONE     
+   sdram_cas_n       OUTPUT        M13        LVCMOS25           8            NONE        NONE     
+    sdram_cke        OUTPUT        N16        LVCMOS25           8            NONE        NONE     
+    sdram_clk        OUTPUT        L13        LVCMOS25           8            NONE        NONE     
+    sdram_cs_n       OUTPUT        K11        LVCMOS25           8            NONE        NONE     
+   sdram_dqm[1]      OUTPUT        E16        LVCMOS25           8            N/A         NONE     
+   sdram_dqm[0]      OUTPUT         F2        LVCMOS25           8            N/A         NONE     
+   sdram_ras_n       OUTPUT        K12        LVCMOS25           8            NONE        NONE     
+    sdram_we_n       OUTPUT        M15        LVCMOS25           8            NONE        NONE     
+      sd_cmd          INOUT         H1        LVCMOS25           8           PULLUP       TREG     
+    sd_dat[3]         INOUT         K2        LVCMOS25           8           PULLUP       TREG     
+    sd_dat[2]         INOUT         K1        LVCMOS25           8           PULLUP       TREG     
+    sd_dat[1]         INOUT         H2        LVCMOS25           8           PULLUP       TREG     
+    sd_dat[0]         INOUT         G1        LVCMOS25           8           PULLUP       TREG     
+  sdram_data[15]      INOUT        E15        LVCMOS25           8           PULLUP     IREG;TREG  
+  sdram_data[14]      INOUT        D16        LVCMOS25           8           PULLUP     IREG;TREG  
+  sdram_data[13]      INOUT        D14        LVCMOS25           8           PULLUP     IREG;TREG  
+  sdram_data[12]      INOUT        F15        LVCMOS25           8           PULLUP     IREG;TREG  
+  sdram_data[11]      INOUT        F14        LVCMOS25           8           PULLUP     IREG;TREG  
+  sdram_data[10]      INOUT        F13        LVCMOS25           8           PULLUP     IREG;TREG  
+  sdram_data[9]       INOUT        G14        LVCMOS25           8           PULLUP     IREG;TREG  
+  sdram_data[8]       INOUT        G12        LVCMOS25           8           PULLUP     IREG;TREG  
+  sdram_data[7]       INOUT        H14        LVCMOS25           8           PULLUP     IREG;TREG  
+  sdram_data[6]       INOUT        H13        LVCMOS25           8           PULLUP     IREG;TREG  
+  sdram_data[5]       INOUT        H16        LVCMOS25           8           PULLUP     IREG;TREG  
+  sdram_data[4]       INOUT        H15        LVCMOS25           8           PULLUP     IREG;TREG  
+  sdram_data[3]       INOUT        G16        LVCMOS25           8           PULLUP     IREG;TREG  
+  sdram_data[2]       INOUT        J11        LVCMOS25           8           PULLUP     IREG;TREG  
+  sdram_data[1]       INOUT        K15        LVCMOS25           8           PULLUP     IREG;TREG  
+  sdram_data[0]       INOUT        G11        LVCMOS25           8           PULLUP     IREG;TREG  
+
+Report Hierarchy Area:
++---------------------------------------------------------------------------------------------------------------------------------------+
+|Instance                             |Module                                      |le     |lut     |ripple  |seq     |bram    |dsp     |
++---------------------------------------------------------------------------------------------------------------------------------------+
+|top                                  |sd_isp_hdmi_top                             |6653   |4861    |1009    |3357    |29      |23      |
+|  u_hdmi_top                         |hdmi_top                                    |547    |407     |122     |191     |0       |0       |
+|    u1_Driver                        |Driver                                      |123    |72      |48      |24      |0       |0       |
+|    u_rgb2dvi_0                      |dvi_transmitter_top                         |424    |335     |74      |167     |0       |0       |
+|      encoder_b                      |dvi_encoder                                 |118    |92      |26      |38      |0       |0       |
+|      encoder_g                      |dvi_encoder                                 |137    |108     |24      |45      |0       |0       |
+|      encoder_r                      |dvi_encoder                                 |120    |96      |24      |44      |0       |0       |
+|      serializer_b                   |serializer_10_to_1                          |19     |15      |0       |16      |0       |0       |
+|      serializer_clk                 |serializer_10_to_1                          |8      |4       |0       |8       |0       |0       |
+|      serializer_g                   |serializer_10_to_1                          |14     |12      |0       |12      |0       |0       |
+|      serializer_r                   |serializer_10_to_1                          |8      |8       |0       |4       |0       |0       |
+|  u_ispMUX                           |ispMUX                                      |3509   |2493    |502     |1621    |16      |23      |
+|    u_VIP_RGB888_YCbCr444            |VIP_RGB888_YCbCr444                         |225    |124     |69      |92      |0       |9       |
+|    u_VIP_YCbCr444_RGB888            |VIP_YCbCr444_RGB888                         |188    |108     |55      |90      |0       |2       |
+|    u_bayer2rgb                      |bayer2rgb                                   |179    |83      |24      |143     |4       |0       |
+|      u_vip_matrix_generate_3x3_8bit |vip_matrix_generate_3x3_8bit                |119    |40      |12      |100     |4       |0       |
+|        u_line_shift_ram_8bit_3x3    |line_shift_ram_8bit_3x3                     |30     |15      |3       |26      |4       |0       |
+|          bram_256_8bit_inst0        |bram_256_8bit                               |0      |0       |0       |0       |4       |0       |
+|    u_dpc_top                        |dpc_top                                     |1020   |584     |245     |586     |8       |0       |
+|      linebuffer                     |shift_register                              |49     |30      |16      |21      |8       |0       |
+|        gen_ram_inst[0]$u_ram        |simple_dp_ram                               |0      |0       |0       |0       |2       |0       |
+|        gen_ram_inst[1]$u_ram        |simple_dp_ram                               |0      |0       |0       |0       |2       |0       |
+|        gen_ram_inst[2]$u_ram        |simple_dp_ram                               |0      |0       |0       |0       |2       |0       |
+|        gen_ram_inst[3]$u_ram        |simple_dp_ram                               |0      |0       |0       |0       |2       |0       |
+|    u_isp_ccm                        |isp_ccm                                     |3      |2       |0       |2       |0       |0       |
+|    u_laplacian_sharpen_proc         |laplacian_sharpen_proc                      |222    |108     |25      |179     |4       |0       |
+|      u_vip_matrix_generate_3x3_8bit |vip_matrix_generate_3x3_8bit                |126    |79      |16      |90      |4       |0       |
+|        u_line_shift_ram_8bit_3x3    |line_shift_ram_8bit_3x3                     |34     |25      |3       |29      |4       |0       |
+|          bram_256_8bit_inst0        |bram_256_8bit                               |0      |0       |0       |0       |4       |0       |
+|    u_white_balenceb_top             |white_balenceb_top                          |1147   |1017    |84      |363     |0       |12      |
+|      u_isp_wb                       |isp_wb                                      |135    |81      |33      |81      |0       |6       |
+|      u_wb_gain                      |wb_gain                                     |1012   |936     |51      |282     |0       |6       |
+|        Reciprocal_B                 |Reciprocal                                  |104    |104     |0       |0       |0       |0       |
+|        Reciprocal_G                 |Reciprocal                                  |166    |166     |0       |0       |0       |0       |
+|        Reciprocal_R                 |Reciprocal                                  |168    |168     |0       |0       |0       |0       |
+|  u_pll_gen                          |pll_gen                                     |0      |0       |0       |0       |0       |0       |
+|  u_sd_pll                           |sd_pll                                      |0      |0       |0       |0       |0       |0       |
+|  u_sd_top                           |sd_top                                      |1037   |951     |65      |632     |1       |0       |
+|    u_crc7                           |crc7                                        |94     |94      |0       |62      |0       |0       |
+|    u_crc7_bram                      |crc7_bram                                   |0      |0       |0       |0       |1       |0       |
+|    u_sd_operation                   |sd_operation                                |845    |781     |48      |515     |0       |0       |
+|  u_sdram_top                        |sdram_top                                   |569    |408     |87      |338     |4       |0       |
+|    fifo_ctrl_inst                   |fifo_ctrl                                   |340    |208     |58      |233     |4       |0       |
+|      etr_fifo_rddata                |SDRAMFIFO                                   |125    |66      |18      |96      |2       |0       |
+|        ram_inst                     |ram_infer_SDRAMFIFO                         |7      |0       |0       |7       |2       |0       |
+|        rd_to_wr_cross_inst          |fifo_cross_domain_addr_process_al_SDRAMFIFO |30     |23      |0       |30      |0       |0       |
+|        wr_to_rd_cross_inst          |fifo_cross_domain_addr_process_al_SDRAMFIFO |34     |21      |0       |34      |0       |0       |
+|      etr_fifo_wrdata                |SDRAMFIFO                                   |135    |84      |18      |106     |2       |0       |
+|        ram_inst                     |ram_infer_SDRAMFIFO                         |12     |6       |0       |11      |2       |0       |
+|        rd_to_wr_cross_inst          |fifo_cross_domain_addr_process_al_SDRAMFIFO |32     |20      |0       |32      |0       |0       |
+|        wr_to_rd_cross_inst          |fifo_cross_domain_addr_process_al_SDRAMFIFO |36     |24      |0       |36      |0       |0       |
+|    sdram_ctrl_inst                  |sdram_ctrl                                  |229    |200     |29      |105     |0       |0       |
+|      sdram_arbit_inst               |sdram_arbit                                 |35     |35      |0       |11      |0       |0       |
+|      sdram_init_inst                |sdram_init                                  |52     |47      |5       |33      |0       |0       |
+|      sdram_read_inst                |sdram_read                                  |76     |61      |15      |31      |0       |0       |
+|      sdram_write_inst               |sdram_write                                 |66     |57      |9       |30      |0       |0       |
+|  u_tx_pll                           |tx_pll                                      |0      |0       |0       |0       |0       |0       |
+|  u_window_split                     |window_split                                |936    |564     |226     |508     |8       |0       |
+|    u_tempfifoL0                     |tempfifo                                    |130    |83      |18      |95      |2       |0       |
+|      ram_inst                       |ram_infer_tempfifo                          |0      |0       |0       |0       |2       |0       |
+|      rd_to_wr_cross_inst            |fifo_cross_domain_addr_process_al_tempfifo  |34     |25      |0       |33      |0       |0       |
+|      wr_to_rd_cross_inst            |fifo_cross_domain_addr_process_al_tempfifo  |35     |34      |0       |35      |0       |0       |
+|    u_tempfifoL1                     |tempfifo                                    |128    |79      |18      |99      |2       |0       |
+|      ram_inst                       |ram_infer_tempfifo                          |0      |0       |0       |0       |2       |0       |
+|      rd_to_wr_cross_inst            |fifo_cross_domain_addr_process_al_tempfifo  |37     |30      |0       |37      |0       |0       |
+|      wr_to_rd_cross_inst            |fifo_cross_domain_addr_process_al_tempfifo  |32     |28      |0       |32      |0       |0       |
+|    u_tempfifoR0                     |tempfifo                                    |130    |78      |18      |102     |2       |0       |
+|      ram_inst                       |ram_infer_tempfifo                          |0      |0       |0       |0       |2       |0       |
+|      rd_to_wr_cross_inst            |fifo_cross_domain_addr_process_al_tempfifo  |34     |27      |0       |34      |0       |0       |
+|      wr_to_rd_cross_inst            |fifo_cross_domain_addr_process_al_tempfifo  |38     |31      |0       |38      |0       |0       |
+|    u_tempfifoR1                     |tempfifo                                    |138    |78      |18      |102     |2       |0       |
+|      ram_inst                       |ram_infer_tempfifo                          |0      |0       |0       |0       |2       |0       |
+|      rd_to_wr_cross_inst            |fifo_cross_domain_addr_process_al_tempfifo  |34     |21      |0       |34      |0       |0       |
+|      wr_to_rd_cross_inst            |fifo_cross_domain_addr_process_al_tempfifo  |37     |29      |0       |37      |0       |0       |
++---------------------------------------------------------------------------------------------------------------------------------------+
+
+
+DataNet Average Fanout:
+
+   Index     Fanout    Nets  
+    #1         1       4963  
+    #2         2       1354  
+    #3         3       444   
+    #4         4       272   
+    #5        5-10     642   
+    #6       11-50     253   
+    #7       51-100     42   
+    #8        >500      1    
+  Average     3.00           

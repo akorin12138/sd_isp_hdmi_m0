@@ -1,0 +1,1856 @@
+eagle_s20
+13 6650 2729 667 16432 521867000 48 0
+-3.822 0.006 CortexM0_SoC eagle_s20 EG4S20BG256 Detail NA 34 16
+clock: sys_clk
+13 521460084 5456 4
+Setup check
+23 3
+Endpoint: u_logic/Bfjpw6_reg_syn_3643
+23 -1.701000 6708989 3
+Timing path: u_logic/Ydopw6_reg_syn_10.clk->u_logic/Bfjpw6_reg_syn_3643
+u_logic/Ydopw6_reg_syn_10.clk
+u_logic/Bfjpw6_reg_syn_3643
+25 -1.701000 23.800000 25.501000 16 16
+u_logic/Ydopw6 u_logic/Glphu6_syn_4010.c[1]
+u_logic/Glphu6_syn_23 u_logic/Tgfpw6[16]_syn_30.c[1]
+u_logic/Xuzhu6 u_logic/Mifpw6[21]_syn_11.b[0]
+u_logic/Mifpw6[21] u_logic/mult0_syn_201.a[3]
+u_logic/mult0_syn_6 u_logic/mult0_syn_381.a[0]
+u_logic/mult0_syn_205[6] u_logic/mult0_syn_385.e[1]
+u_logic/mult0_syn_372 u_logic/mult0_syn_386.fci
+u_logic/mult0_syn_220[8] u_logic/Bfjpw6_reg_syn_4398.d[0]
+u_logic/Bfjpw6_reg_syn_1441 u_logic/Bfjpw6_reg_syn_3869.b[1]
+u_logic/Bfjpw6_reg_syn_1450 u_logic/Bfjpw6_reg_syn_4413.d[0]
+u_logic/Bfjpw6_reg_syn_1465 u_logic/Bqyiu6_syn_273.d[1]
+u_logic/Bqyiu6_syn_64 u_logic/Bfjpw6_reg_syn_4060.a[0]
+u_logic/Bqyiu6_syn_66 u_logic/Bqyiu6_syn_271.a[1]
+u_logic/Bqyiu6_syn_68 u_logic/Bfjpw6_reg_syn_3687.a[0]
+u_logic/Bqyiu6_syn_77 u_logic/Bqyiu6_syn_264.a[1]
+u_logic/Bqyiu6_syn_86 u_logic/Bfjpw6_reg_syn_3643.a[0]
+
+Timing path: u_logic/Ydopw6_reg_syn_10.clk->u_logic/Bfjpw6_reg_syn_3643
+u_logic/Ydopw6_reg_syn_10.clk
+u_logic/Bfjpw6_reg_syn_3643
+93 -1.701000 23.800000 25.501000 16 16
+u_logic/Ydopw6 u_logic/Glphu6_syn_4010.c[1]
+u_logic/Glphu6_syn_23 u_logic/Tgfpw6[16]_syn_30.c[0]
+u_logic/Xuzhu6 u_logic/Mifpw6[21]_syn_11.b[0]
+u_logic/Mifpw6[21] u_logic/mult0_syn_201.a[3]
+u_logic/mult0_syn_6 u_logic/mult0_syn_381.a[0]
+u_logic/mult0_syn_205[6] u_logic/mult0_syn_385.e[1]
+u_logic/mult0_syn_372 u_logic/mult0_syn_386.fci
+u_logic/mult0_syn_220[8] u_logic/Bfjpw6_reg_syn_4398.d[0]
+u_logic/Bfjpw6_reg_syn_1441 u_logic/Bfjpw6_reg_syn_3869.b[1]
+u_logic/Bfjpw6_reg_syn_1450 u_logic/Bfjpw6_reg_syn_4413.d[0]
+u_logic/Bfjpw6_reg_syn_1465 u_logic/Bqyiu6_syn_273.d[1]
+u_logic/Bqyiu6_syn_64 u_logic/Bfjpw6_reg_syn_4060.a[0]
+u_logic/Bqyiu6_syn_66 u_logic/Bqyiu6_syn_271.a[1]
+u_logic/Bqyiu6_syn_68 u_logic/Bfjpw6_reg_syn_3687.a[0]
+u_logic/Bqyiu6_syn_77 u_logic/Bqyiu6_syn_264.a[1]
+u_logic/Bqyiu6_syn_86 u_logic/Bfjpw6_reg_syn_3643.a[0]
+
+Timing path: u_logic/Ydopw6_reg_syn_10.clk->u_logic/Bfjpw6_reg_syn_3643
+u_logic/Ydopw6_reg_syn_10.clk
+u_logic/Bfjpw6_reg_syn_3643
+161 -1.701000 23.800000 25.501000 16 16
+u_logic/Ydopw6 u_logic/Glphu6_syn_4010.c[1]
+u_logic/Glphu6_syn_23 u_logic/Tgfpw6[16]_syn_30.c[1]
+u_logic/Xuzhu6 u_logic/Mifpw6[21]_syn_11.b[0]
+u_logic/Mifpw6[21] u_logic/mult0_syn_201.a[3]
+u_logic/mult0_syn_6 u_logic/mult0_syn_381.a[0]
+u_logic/mult0_syn_205[6] u_logic/mult0_syn_385.e[1]
+u_logic/mult0_syn_372 u_logic/mult0_syn_386.fci
+u_logic/mult0_syn_220[8] u_logic/Bfjpw6_reg_syn_4398.d[0]
+u_logic/Bfjpw6_reg_syn_1441 u_logic/Bfjpw6_reg_syn_3869.b[0]
+u_logic/Bfjpw6_reg_syn_1450 u_logic/Bfjpw6_reg_syn_4413.d[0]
+u_logic/Bfjpw6_reg_syn_1465 u_logic/Bqyiu6_syn_273.d[1]
+u_logic/Bqyiu6_syn_64 u_logic/Bfjpw6_reg_syn_4060.a[0]
+u_logic/Bqyiu6_syn_66 u_logic/Bqyiu6_syn_271.a[1]
+u_logic/Bqyiu6_syn_68 u_logic/Bfjpw6_reg_syn_3687.a[0]
+u_logic/Bqyiu6_syn_77 u_logic/Bqyiu6_syn_264.a[0]
+u_logic/Bqyiu6_syn_86 u_logic/Bfjpw6_reg_syn_3643.a[0]
+
+
+Endpoint: u_logic/Ozopw6_reg_syn_5
+229 -1.525000 351861 3
+Timing path: u_logic/Glphu6_syn_3809.clk->u_logic/Ozopw6_reg_syn_5
+u_logic/Glphu6_syn_3809.clk
+u_logic/Ozopw6_reg_syn_5
+231 -1.525000 23.700000 25.225000 17 18
+u_logic/Yxrpw6 u_logic/Glphu6_syn_4659.c[1]
+u_logic/Glphu6_syn_1331 u_logic/Hbgbx6_reg_syn_5.a[1]
+u_logic/Glphu6_syn_1333 u_logic/Unyax6_reg_syn_5.c[0]
+u_logic/Glphu6_syn_1417 u_logic/Glphu6_syn_3809.a[1]
+u_logic/Digow6 u_logic/Ohyax6_reg_syn_5.c[1]
+u_logic/Glphu6_syn_1422 u_logic/Glphu6_syn_3775.d[1]
+u_logic/Glphu6_syn_1437 u_logic/Cy4bx6_reg_syn_5.a[0]
+u_logic/Glphu6_syn_1441 u_logic/Wr4bx6_reg_syn_5.c[1]
+u_logic/L9tow6 u_logic/Pjgbx6_reg_syn_5.a[1]
+u_logic/Anrow6 u_logic/Glphu6_syn_4164.a[0]
+u_logic/Glphu6_syn_1575 u_logic/Glphu6_syn_4696.c[0]
+u_logic/Glphu6_syn_1643 u_logic/Glphu6_syn_4096.a[0]
+u_logic/Glphu6_syn_1660 u_logic/Glphu6_syn_4075.a[1]
+u_logic/Glphu6_syn_1690 u_logic/W2vhu6_syn_662.a[0]
+u_logic/Glphu6_syn_1695 u_logic/Qijpw6_reg_syn_302.a[0]
+u_logic/Glphu6_syn_1764 u_logic/Bnohu6_syn_20.a[0]
+u_logic/Bnohu6_syn_4 u_logic/T80qw6_reg_syn_5.d[1]
+u_logic/E1miu6 u_logic/Ozopw6_reg_syn_5.mi[1]
+
+Timing path: u_logic/Glphu6_syn_3809.clk->u_logic/Ozopw6_reg_syn_5
+u_logic/Glphu6_syn_3809.clk
+u_logic/Ozopw6_reg_syn_5
+303 -1.525000 23.700000 25.225000 17 18
+u_logic/Yxrpw6 u_logic/Glphu6_syn_4659.c[1]
+u_logic/Glphu6_syn_1331 u_logic/Hbgbx6_reg_syn_5.a[1]
+u_logic/Glphu6_syn_1333 u_logic/Unyax6_reg_syn_5.c[0]
+u_logic/Glphu6_syn_1417 u_logic/Glphu6_syn_3809.a[1]
+u_logic/Digow6 u_logic/Ohyax6_reg_syn_5.c[1]
+u_logic/Glphu6_syn_1422 u_logic/Glphu6_syn_3775.d[1]
+u_logic/Glphu6_syn_1437 u_logic/Cy4bx6_reg_syn_5.a[0]
+u_logic/Glphu6_syn_1441 u_logic/Wr4bx6_reg_syn_5.c[1]
+u_logic/L9tow6 u_logic/Pjgbx6_reg_syn_5.a[1]
+u_logic/Anrow6 u_logic/Glphu6_syn_4164.a[0]
+u_logic/Glphu6_syn_1575 u_logic/Glphu6_syn_4696.c[0]
+u_logic/Glphu6_syn_1643 u_logic/Glphu6_syn_4096.a[0]
+u_logic/Glphu6_syn_1660 u_logic/Glphu6_syn_4075.a[1]
+u_logic/Glphu6_syn_1690 u_logic/W2vhu6_syn_662.a[0]
+u_logic/Glphu6_syn_1695 u_logic/Qijpw6_reg_syn_302.a[0]
+u_logic/Glphu6_syn_1764 u_logic/Bnohu6_syn_20.a[1]
+u_logic/Bnohu6_syn_4 u_logic/T80qw6_reg_syn_5.d[0]
+u_logic/E1miu6 u_logic/Ozopw6_reg_syn_5.mi[1]
+
+Timing path: u_logic/Glphu6_syn_3809.clk->u_logic/Ozopw6_reg_syn_5
+u_logic/Glphu6_syn_3809.clk
+u_logic/Ozopw6_reg_syn_5
+375 -1.525000 23.700000 25.225000 17 18
+u_logic/Yxrpw6 u_logic/Glphu6_syn_4659.c[1]
+u_logic/Glphu6_syn_1331 u_logic/Hbgbx6_reg_syn_5.a[1]
+u_logic/Glphu6_syn_1333 u_logic/Unyax6_reg_syn_5.c[0]
+u_logic/Glphu6_syn_1417 u_logic/Glphu6_syn_3809.a[1]
+u_logic/Digow6 u_logic/Ohyax6_reg_syn_5.c[1]
+u_logic/Glphu6_syn_1422 u_logic/Glphu6_syn_3775.d[1]
+u_logic/Glphu6_syn_1437 u_logic/Cy4bx6_reg_syn_5.a[0]
+u_logic/Glphu6_syn_1441 u_logic/Wr4bx6_reg_syn_5.c[1]
+u_logic/L9tow6 u_logic/Pjgbx6_reg_syn_5.a[1]
+u_logic/Anrow6 u_logic/Glphu6_syn_4164.a[0]
+u_logic/Glphu6_syn_1575 u_logic/Glphu6_syn_4696.c[0]
+u_logic/Glphu6_syn_1643 u_logic/Glphu6_syn_4096.a[0]
+u_logic/Glphu6_syn_1660 u_logic/Glphu6_syn_4075.a[0]
+u_logic/Glphu6_syn_1690 u_logic/W2vhu6_syn_662.a[0]
+u_logic/Glphu6_syn_1695 u_logic/Qijpw6_reg_syn_302.a[0]
+u_logic/Glphu6_syn_1764 u_logic/Bnohu6_syn_20.a[1]
+u_logic/Bnohu6_syn_4 u_logic/T80qw6_reg_syn_5.d[0]
+u_logic/E1miu6 u_logic/Ozopw6_reg_syn_5.mi[1]
+
+
+Endpoint: u_logic/Bfjpw6_reg_syn_3613
+447 -1.271000 351861 3
+Timing path: u_logic/Glphu6_syn_3809.clk->u_logic/Bfjpw6_reg_syn_3613
+u_logic/Glphu6_syn_3809.clk
+u_logic/Bfjpw6_reg_syn_3613
+449 -1.271000 23.700000 24.971000 17 18
+u_logic/Yxrpw6 u_logic/Glphu6_syn_4659.c[1]
+u_logic/Glphu6_syn_1331 u_logic/Hbgbx6_reg_syn_5.a[1]
+u_logic/Glphu6_syn_1333 u_logic/Unyax6_reg_syn_5.c[0]
+u_logic/Glphu6_syn_1417 u_logic/Glphu6_syn_3809.a[1]
+u_logic/Digow6 u_logic/Ohyax6_reg_syn_5.c[1]
+u_logic/Glphu6_syn_1422 u_logic/Glphu6_syn_3775.d[1]
+u_logic/Glphu6_syn_1437 u_logic/Cy4bx6_reg_syn_5.a[0]
+u_logic/Glphu6_syn_1441 u_logic/Wr4bx6_reg_syn_5.c[1]
+u_logic/L9tow6 u_logic/Pjgbx6_reg_syn_5.a[1]
+u_logic/Anrow6 u_logic/Glphu6_syn_4164.a[0]
+u_logic/Glphu6_syn_1575 u_logic/Glphu6_syn_4696.c[0]
+u_logic/Glphu6_syn_1643 u_logic/Glphu6_syn_4096.a[0]
+u_logic/Glphu6_syn_1660 u_logic/Glphu6_syn_4075.a[1]
+u_logic/Glphu6_syn_1690 u_logic/W2vhu6_syn_662.a[0]
+u_logic/Glphu6_syn_1695 u_logic/Qijpw6_reg_syn_302.a[0]
+u_logic/Glphu6_syn_1764 u_logic/Bnohu6_syn_20.a[0]
+u_logic/Bnohu6_syn_4 u_logic/T80qw6_reg_syn_5.d[1]
+u_logic/E1miu6 u_logic/Bfjpw6_reg_syn_3613.mi[0]
+
+Timing path: u_logic/Glphu6_syn_3809.clk->u_logic/Bfjpw6_reg_syn_3613
+u_logic/Glphu6_syn_3809.clk
+u_logic/Bfjpw6_reg_syn_3613
+521 -1.271000 23.700000 24.971000 17 18
+u_logic/Yxrpw6 u_logic/Glphu6_syn_4659.c[1]
+u_logic/Glphu6_syn_1331 u_logic/Hbgbx6_reg_syn_5.a[1]
+u_logic/Glphu6_syn_1333 u_logic/Unyax6_reg_syn_5.c[0]
+u_logic/Glphu6_syn_1417 u_logic/Glphu6_syn_3809.a[1]
+u_logic/Digow6 u_logic/Ohyax6_reg_syn_5.c[1]
+u_logic/Glphu6_syn_1422 u_logic/Glphu6_syn_3775.d[1]
+u_logic/Glphu6_syn_1437 u_logic/Cy4bx6_reg_syn_5.a[0]
+u_logic/Glphu6_syn_1441 u_logic/Wr4bx6_reg_syn_5.c[1]
+u_logic/L9tow6 u_logic/Pjgbx6_reg_syn_5.a[1]
+u_logic/Anrow6 u_logic/Glphu6_syn_4164.a[0]
+u_logic/Glphu6_syn_1575 u_logic/Glphu6_syn_4696.c[0]
+u_logic/Glphu6_syn_1643 u_logic/Glphu6_syn_4096.a[0]
+u_logic/Glphu6_syn_1660 u_logic/Glphu6_syn_4075.a[1]
+u_logic/Glphu6_syn_1690 u_logic/W2vhu6_syn_662.a[0]
+u_logic/Glphu6_syn_1695 u_logic/Qijpw6_reg_syn_302.a[0]
+u_logic/Glphu6_syn_1764 u_logic/Bnohu6_syn_20.a[1]
+u_logic/Bnohu6_syn_4 u_logic/T80qw6_reg_syn_5.d[0]
+u_logic/E1miu6 u_logic/Bfjpw6_reg_syn_3613.mi[0]
+
+Timing path: u_logic/Glphu6_syn_3809.clk->u_logic/Bfjpw6_reg_syn_3613
+u_logic/Glphu6_syn_3809.clk
+u_logic/Bfjpw6_reg_syn_3613
+593 -1.271000 23.700000 24.971000 17 18
+u_logic/Yxrpw6 u_logic/Glphu6_syn_4659.c[1]
+u_logic/Glphu6_syn_1331 u_logic/Hbgbx6_reg_syn_5.a[1]
+u_logic/Glphu6_syn_1333 u_logic/Unyax6_reg_syn_5.c[0]
+u_logic/Glphu6_syn_1417 u_logic/Glphu6_syn_3809.a[1]
+u_logic/Digow6 u_logic/Ohyax6_reg_syn_5.c[1]
+u_logic/Glphu6_syn_1422 u_logic/Glphu6_syn_3775.d[1]
+u_logic/Glphu6_syn_1437 u_logic/Cy4bx6_reg_syn_5.a[0]
+u_logic/Glphu6_syn_1441 u_logic/Wr4bx6_reg_syn_5.c[1]
+u_logic/L9tow6 u_logic/Pjgbx6_reg_syn_5.a[1]
+u_logic/Anrow6 u_logic/Glphu6_syn_4164.a[0]
+u_logic/Glphu6_syn_1575 u_logic/Glphu6_syn_4696.c[0]
+u_logic/Glphu6_syn_1643 u_logic/Glphu6_syn_4096.a[0]
+u_logic/Glphu6_syn_1660 u_logic/Glphu6_syn_4075.a[0]
+u_logic/Glphu6_syn_1690 u_logic/W2vhu6_syn_662.a[0]
+u_logic/Glphu6_syn_1695 u_logic/Qijpw6_reg_syn_302.a[0]
+u_logic/Glphu6_syn_1764 u_logic/Bnohu6_syn_20.a[1]
+u_logic/Bnohu6_syn_4 u_logic/T80qw6_reg_syn_5.d[0]
+u_logic/E1miu6 u_logic/Bfjpw6_reg_syn_3613.mi[0]
+
+
+
+Hold check
+665 3
+Endpoint: u_logic/U31bx6_reg_syn_5
+667 0.006000 4 3
+Timing path: u_logic/Vnfpw6[3]_syn_5.clk->u_logic/U31bx6_reg_syn_5
+u_logic/Vnfpw6[3]_syn_5.clk
+u_logic/U31bx6_reg_syn_5
+669 0.006000 4.026000 4.032000 2 2
+u_sd_top/sd_done_r u_logic/J4xhu6_syn_730.b[1]
+u_logic/J4xhu6_syn_145 u_logic/U31bx6_reg_syn_5.d[1]
+
+Timing path: u_logic/Vnfpw6[3]_syn_5.clk->u_logic/U31bx6_reg_syn_5
+u_logic/Vnfpw6[3]_syn_5.clk
+u_logic/U31bx6_reg_syn_5
+707 0.006000 4.026000 4.032000 2 2
+u_sd_top/sd_done_r u_logic/J4xhu6_syn_730.b[1]
+u_logic/J4xhu6_syn_145 u_logic/U31bx6_reg_syn_5.d[0]
+
+Timing path: u_sd_top/u_sd_operation/get_sddata_overflag_reg_syn_8.clk->u_logic/U31bx6_reg_syn_5
+u_sd_top/u_sd_operation/get_sddata_overflag_reg_syn_8.clk
+u_logic/U31bx6_reg_syn_5
+745 0.636000 4.026000 4.662000 2 2
+u_sd_top/u_sd_operation/get_sddata_overflag u_logic/J4xhu6_syn_730.c[1]
+u_logic/J4xhu6_syn_145 u_logic/U31bx6_reg_syn_5.d[1]
+
+
+Endpoint: u_logic/S11bx6_reg_syn_5
+783 0.084000 4 3
+Timing path: u_logic/Vnfpw6[3]_syn_5.clk->u_logic/S11bx6_reg_syn_5
+u_logic/Vnfpw6[3]_syn_5.clk
+u_logic/S11bx6_reg_syn_5
+785 0.084000 4.026000 4.110000 3 3
+u_sd_top/sd_done_r u_logic/Mivhu6_syn_29.c[1]
+u_logic/Mivhu6_syn_8 u_logic/Mivhu6_syn_31.c[0]
+u_logic/Mivhu6_syn_10 u_logic/S11bx6_reg_syn_5.d[1]
+
+Timing path: u_logic/Vnfpw6[3]_syn_5.clk->u_logic/S11bx6_reg_syn_5
+u_logic/Vnfpw6[3]_syn_5.clk
+u_logic/S11bx6_reg_syn_5
+825 0.084000 4.026000 4.110000 3 3
+u_sd_top/sd_done_r u_logic/Mivhu6_syn_29.c[1]
+u_logic/Mivhu6_syn_8 u_logic/Mivhu6_syn_31.c[0]
+u_logic/Mivhu6_syn_10 u_logic/S11bx6_reg_syn_5.d[0]
+
+Timing path: u_sd_top/u_sd_operation/get_sddata_overflag_reg_syn_8.clk->u_logic/S11bx6_reg_syn_5
+u_sd_top/u_sd_operation/get_sddata_overflag_reg_syn_8.clk
+u_logic/S11bx6_reg_syn_5
+865 1.074000 4.026000 5.100000 3 3
+u_sd_top/u_sd_operation/get_sddata_overflag u_logic/Mivhu6_syn_29.d[1]
+u_logic/Mivhu6_syn_8 u_logic/Mivhu6_syn_31.c[0]
+u_logic/Mivhu6_syn_10 u_logic/S11bx6_reg_syn_5.d[1]
+
+
+Endpoint: RAM_CODE/ramread0_syn_48
+905 0.130000 10 3
+Timing path: RAMCODE_Interface/reg0_syn_57.clk->RAM_CODE/ramread0_syn_48
+RAMCODE_Interface/reg0_syn_57.clk
+RAM_CODE/ramread0_syn_48
+907 0.130000 3.311000 3.441000 1 1
+RAMCODE_Interface/addr_reg[2] RAM_CODE/ramread0_syn_48.addra[5]
+
+Timing path: RAMCODE_Interface/reg0_syn_65.clk->RAM_CODE/ramread0_syn_48
+RAMCODE_Interface/reg0_syn_65.clk
+RAM_CODE/ramread0_syn_48
+945 0.137000 3.311000 3.448000 1 1
+RAMCODE_Interface/addr_reg[3] RAM_CODE/ramread0_syn_48.addra[6]
+
+Timing path: RAMCODE_Interface/reg0_syn_71.clk->RAM_CODE/ramread0_syn_48
+RAMCODE_Interface/reg0_syn_71.clk
+RAM_CODE/ramread0_syn_48
+983 0.244000 3.311000 3.555000 1 1
+RAMCODE_Interface/addr_reg[4] RAM_CODE/ramread0_syn_48.addra[7]
+
+
+
+Recovery check
+1021 3
+Endpoint: u_AHBlite_ISP/reg2_syn_146
+1023 15.854000 1 1
+Timing path: cpuresetn_reg_syn_53.clk->u_AHBlite_ISP/reg2_syn_146
+cpuresetn_reg_syn_53.clk
+u_AHBlite_ISP/reg2_syn_146
+1025 15.854000 23.516000 7.662000 0 1
+cpuresetn_dup_22 u_AHBlite_ISP/reg2_syn_146.sr
+
+
+Endpoint: u_logic/Bfjpw6_reg_syn_3563
+1063 16.185000 1 1
+Timing path: u_logic/Pzkpw6_reg_syn_469.clk->u_logic/Bfjpw6_reg_syn_3563
+u_logic/Pzkpw6_reg_syn_469.clk
+u_logic/Bfjpw6_reg_syn_3563
+1065 16.185000 23.588000 7.403000 0 1
+cpuresetn_dup_29 u_logic/Bfjpw6_reg_syn_3563.sr
+
+
+Endpoint: u_logic/Knhax6_reg_syn_5
+1103 16.423000 1 1
+Timing path: u_logic/Mpohu6_syn_12.clk->u_logic/Knhax6_reg_syn_5
+u_logic/Mpohu6_syn_12.clk
+u_logic/Knhax6_reg_syn_5
+1105 16.423000 23.588000 7.165000 0 1
+cpuresetn_dup_23 u_logic/Knhax6_reg_syn_5.sr
+
+
+
+Removal check
+1143 3
+Endpoint: RAMDATA_Interface/reg1_syn_173
+1145 0.262000 1 1
+Timing path: u_logic/Zcqhu6_syn_10.clk->RAMDATA_Interface/reg1_syn_173
+u_logic/Zcqhu6_syn_10.clk
+RAMDATA_Interface/reg1_syn_173
+1147 0.262000 3.364000 3.626000 0 1
+cpuresetn_dup_26 RAMDATA_Interface/reg1_syn_173.sr
+
+
+Endpoint: u_logic/Glphu6_syn_3771
+1185 0.263000 1 1
+Timing path: u_logic/Glphu6_syn_3685.clk->u_logic/Glphu6_syn_3771
+u_logic/Glphu6_syn_3685.clk
+u_logic/Glphu6_syn_3771
+1187 0.263000 3.364000 3.627000 0 1
+cpuresetn_dup_30 u_logic/Glphu6_syn_3771.sr
+
+
+Endpoint: u_logic/Pzkpw6_reg_syn_475
+1225 0.263000 1 1
+Timing path: u_logic/Pzkpw6_reg_syn_469.clk->u_logic/Pzkpw6_reg_syn_475
+u_logic/Pzkpw6_reg_syn_469.clk
+u_logic/Pzkpw6_reg_syn_475
+1227 0.263000 3.364000 3.627000 0 1
+cpuresetn_dup_29 u_logic/Pzkpw6_reg_syn_475.sr
+
+
+
+
+clock: sdcard_clk
+1265 65082 1750 2
+Setup check
+1275 3
+Endpoint: u_sd_top/u_sd_operation/reg14_syn_21
+1275 1.454000 269 3
+Timing path: u_sd_top/u_sd_operation/reg34_syn_33.clk->u_sd_top/u_sd_operation/reg14_syn_21
+u_sd_top/u_sd_operation/reg34_syn_33.clk
+u_sd_top/u_sd_operation/reg14_syn_21
+1277 1.454000 12.096000 10.642000 8 8
+u_sd_top/u_sd_operation/sd_tran_state[2] u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_118.c[1]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_7 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_99.d[1]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_9 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_114.a[1]
+u_sd_top/u_sd_operation/get_respone_state_b3[0] u_sd_top/u_sd_operation/reg9_syn_101.d[0]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_40 u_window_split/u_tempfifoR0/rd_to_wr_cross_inst/reg3_syn_50.a[1]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_42 u_sd_top/u_sd_operation/reg9_syn_85.a[0]
+u_sd_top/u_sd_operation/get_sddata_state_b[0]_syn_6 u_sd_top/u_sd_operation/reg13_syn_108.a[0]
+u_sd_top/u_sd_operation/get_sddata_state_b[0]_syn_8 u_sd_top/u_sd_operation/reg14_syn_21.a[1]
+
+Timing path: u_sd_top/u_sd_operation/reg34_syn_33.clk->u_sd_top/u_sd_operation/reg14_syn_21
+u_sd_top/u_sd_operation/reg34_syn_33.clk
+u_sd_top/u_sd_operation/reg14_syn_21
+1325 1.454000 12.096000 10.642000 8 8
+u_sd_top/u_sd_operation/sd_tran_state[2] u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_118.c[1]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_7 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_99.d[1]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_9 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_114.a[1]
+u_sd_top/u_sd_operation/get_respone_state_b3[0] u_sd_top/u_sd_operation/reg9_syn_101.d[0]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_40 u_window_split/u_tempfifoR0/rd_to_wr_cross_inst/reg3_syn_50.a[1]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_42 u_sd_top/u_sd_operation/reg9_syn_85.a[0]
+u_sd_top/u_sd_operation/get_sddata_state_b[0]_syn_6 u_sd_top/u_sd_operation/reg13_syn_108.a[0]
+u_sd_top/u_sd_operation/get_sddata_state_b[0]_syn_8 u_sd_top/u_sd_operation/reg14_syn_21.a[0]
+
+Timing path: u_sd_top/u_sd_operation/sd_tran_state_b[1]_syn_41.clk->u_sd_top/u_sd_operation/reg14_syn_21
+u_sd_top/u_sd_operation/sd_tran_state_b[1]_syn_41.clk
+u_sd_top/u_sd_operation/reg14_syn_21
+1373 1.481000 12.096000 10.615000 8 8
+u_sd_top/u_sd_operation/sd_tran_state[1] u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_118.d[1]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_7 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_99.d[1]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_9 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_114.a[1]
+u_sd_top/u_sd_operation/get_respone_state_b3[0] u_sd_top/u_sd_operation/reg9_syn_101.d[0]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_40 u_window_split/u_tempfifoR0/rd_to_wr_cross_inst/reg3_syn_50.a[1]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_42 u_sd_top/u_sd_operation/reg9_syn_85.a[0]
+u_sd_top/u_sd_operation/get_sddata_state_b[0]_syn_6 u_sd_top/u_sd_operation/reg13_syn_108.a[0]
+u_sd_top/u_sd_operation/get_sddata_state_b[0]_syn_8 u_sd_top/u_sd_operation/reg14_syn_21.a[1]
+
+
+Endpoint: u_sd_top/u_sd_operation/reg20_syn_206
+1421 1.710000 134 3
+Timing path: u_sd_top/u_sd_operation/reg34_syn_33.clk->u_sd_top/u_sd_operation/reg20_syn_206
+u_sd_top/u_sd_operation/reg34_syn_33.clk
+u_sd_top/u_sd_operation/reg20_syn_206
+1423 1.710000 12.096000 10.386000 8 8
+u_sd_top/u_sd_operation/sd_tran_state[2] u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_118.c[1]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_7 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_99.d[1]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_9 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_114.a[1]
+u_sd_top/u_sd_operation/get_respone_state_b3[0] u_sd_top/u_sd_operation/reg9_syn_91.a[1]
+u_sd_top/u_sd_operation/reg9_syn_31 u_sd_top/u_sd_operation/reg9_syn_93.b[1]
+u_sd_top/u_sd_operation/reg9_syn_41 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_110.d[0]
+u_sd_top/u_sd_operation/outdata_reg_b[3]_syn_4 u_window_split/u_tempfifoR0/rd_to_wr_cross_inst/reg1_syn_54.d[0]
+u_sd_top/u_sd_operation/outdata_num_reg_b[29]_syn_2 u_sd_top/u_sd_operation/reg20_syn_206.a[0]
+
+Timing path: u_sd_top/u_sd_operation/sd_tran_state_b[1]_syn_41.clk->u_sd_top/u_sd_operation/reg20_syn_206
+u_sd_top/u_sd_operation/sd_tran_state_b[1]_syn_41.clk
+u_sd_top/u_sd_operation/reg20_syn_206
+1471 1.737000 12.096000 10.359000 8 8
+u_sd_top/u_sd_operation/sd_tran_state[1] u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_118.d[1]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_7 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_99.d[1]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_9 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_114.a[1]
+u_sd_top/u_sd_operation/get_respone_state_b3[0] u_sd_top/u_sd_operation/reg9_syn_91.a[1]
+u_sd_top/u_sd_operation/reg9_syn_31 u_sd_top/u_sd_operation/reg9_syn_93.b[1]
+u_sd_top/u_sd_operation/reg9_syn_41 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_110.d[0]
+u_sd_top/u_sd_operation/outdata_reg_b[3]_syn_4 u_window_split/u_tempfifoR0/rd_to_wr_cross_inst/reg1_syn_54.d[0]
+u_sd_top/u_sd_operation/outdata_num_reg_b[29]_syn_2 u_sd_top/u_sd_operation/reg20_syn_206.a[0]
+
+Timing path: u_sd_top/u_sd_operation/send_tran_cmd_b[36]_syn_23.clk->u_sd_top/u_sd_operation/reg20_syn_206
+u_sd_top/u_sd_operation/send_tran_cmd_b[36]_syn_23.clk
+u_sd_top/u_sd_operation/reg20_syn_206
+1519 2.109000 12.096000 9.987000 7 7
+u_sd_top/u_sd_operation/sd_int_req u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_99.b[0]
+u_sd_top/u_sd_operation/sd_clk_n u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_114.b[1]
+u_sd_top/u_sd_operation/get_respone_state_b3[0] u_sd_top/u_sd_operation/reg9_syn_91.a[1]
+u_sd_top/u_sd_operation/reg9_syn_31 u_sd_top/u_sd_operation/reg9_syn_93.b[1]
+u_sd_top/u_sd_operation/reg9_syn_41 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_110.d[0]
+u_sd_top/u_sd_operation/outdata_reg_b[3]_syn_4 u_window_split/u_tempfifoR0/rd_to_wr_cross_inst/reg1_syn_54.d[0]
+u_sd_top/u_sd_operation/outdata_num_reg_b[29]_syn_2 u_sd_top/u_sd_operation/reg20_syn_206.a[0]
+
+
+Endpoint: u_sd_top/u_sd_operation/reg20_syn_206
+1565 1.710000 134 3
+Timing path: u_sd_top/u_sd_operation/reg34_syn_33.clk->u_sd_top/u_sd_operation/reg20_syn_206
+u_sd_top/u_sd_operation/reg34_syn_33.clk
+u_sd_top/u_sd_operation/reg20_syn_206
+1567 1.710000 12.096000 10.386000 8 8
+u_sd_top/u_sd_operation/sd_tran_state[2] u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_118.c[1]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_7 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_99.d[1]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_9 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_114.a[1]
+u_sd_top/u_sd_operation/get_respone_state_b3[0] u_sd_top/u_sd_operation/reg9_syn_91.a[1]
+u_sd_top/u_sd_operation/reg9_syn_31 u_sd_top/u_sd_operation/reg9_syn_93.b[1]
+u_sd_top/u_sd_operation/reg9_syn_41 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_110.d[0]
+u_sd_top/u_sd_operation/outdata_reg_b[3]_syn_4 u_window_split/u_tempfifoR0/rd_to_wr_cross_inst/reg1_syn_54.d[0]
+u_sd_top/u_sd_operation/outdata_num_reg_b[29]_syn_2 u_sd_top/u_sd_operation/reg20_syn_206.a[1]
+
+Timing path: u_sd_top/u_sd_operation/sd_tran_state_b[1]_syn_41.clk->u_sd_top/u_sd_operation/reg20_syn_206
+u_sd_top/u_sd_operation/sd_tran_state_b[1]_syn_41.clk
+u_sd_top/u_sd_operation/reg20_syn_206
+1615 1.737000 12.096000 10.359000 8 8
+u_sd_top/u_sd_operation/sd_tran_state[1] u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_118.d[1]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_7 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_99.d[1]
+u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_9 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_114.a[1]
+u_sd_top/u_sd_operation/get_respone_state_b3[0] u_sd_top/u_sd_operation/reg9_syn_91.a[1]
+u_sd_top/u_sd_operation/reg9_syn_31 u_sd_top/u_sd_operation/reg9_syn_93.b[1]
+u_sd_top/u_sd_operation/reg9_syn_41 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_110.d[0]
+u_sd_top/u_sd_operation/outdata_reg_b[3]_syn_4 u_window_split/u_tempfifoR0/rd_to_wr_cross_inst/reg1_syn_54.d[0]
+u_sd_top/u_sd_operation/outdata_num_reg_b[29]_syn_2 u_sd_top/u_sd_operation/reg20_syn_206.a[1]
+
+Timing path: u_sd_top/u_sd_operation/send_tran_cmd_b[36]_syn_23.clk->u_sd_top/u_sd_operation/reg20_syn_206
+u_sd_top/u_sd_operation/send_tran_cmd_b[36]_syn_23.clk
+u_sd_top/u_sd_operation/reg20_syn_206
+1663 2.109000 12.096000 9.987000 7 7
+u_sd_top/u_sd_operation/sd_int_req u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_99.b[0]
+u_sd_top/u_sd_operation/sd_clk_n u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_114.b[1]
+u_sd_top/u_sd_operation/get_respone_state_b3[0] u_sd_top/u_sd_operation/reg9_syn_91.a[1]
+u_sd_top/u_sd_operation/reg9_syn_31 u_sd_top/u_sd_operation/reg9_syn_93.b[1]
+u_sd_top/u_sd_operation/reg9_syn_41 u_sd_top/u_sd_operation/get_sddata_state_b[1]_syn_110.d[0]
+u_sd_top/u_sd_operation/outdata_reg_b[3]_syn_4 u_window_split/u_tempfifoR0/rd_to_wr_cross_inst/reg1_syn_54.d[0]
+u_sd_top/u_sd_operation/outdata_num_reg_b[29]_syn_2 u_sd_top/u_sd_operation/reg20_syn_206.a[1]
+
+
+
+Hold check
+1709 3
+Endpoint: u_sd_top/u_sd_operation/reg25_syn_213
+1711 0.314000 1 1
+Timing path: u_sd_top/u_sd_operation/reg29_syn_943.clk->u_sd_top/u_sd_operation/reg25_syn_213
+u_sd_top/u_sd_operation/reg29_syn_943.clk
+u_sd_top/u_sd_operation/reg25_syn_213
+1713 0.314000 2.044000 2.358000 0 1
+u_sd_top/u_sd_operation/sd_command_intemp[27] u_sd_top/u_sd_operation/reg25_syn_213.mi[0]
+
+
+Endpoint: u_sd_top/u_sd_operation/reg25_syn_209
+1747 0.330000 1 1
+Timing path: u_sd_top/u_sd_operation/reg29_syn_943.clk->u_sd_top/u_sd_operation/reg25_syn_209
+u_sd_top/u_sd_operation/reg29_syn_943.clk
+u_sd_top/u_sd_operation/reg25_syn_209
+1749 0.330000 2.044000 2.374000 0 1
+u_sd_top/u_sd_operation/sd_command_intemp[34] u_sd_top/u_sd_operation/reg25_syn_209.mi[1]
+
+
+Endpoint: u_sd_top/u_sd_operation/reg38_syn_36
+1783 0.339000 1 1
+Timing path: u_sd_top/u_sd_operation/reg38_syn_38.clk->u_sd_top/u_sd_operation/reg38_syn_36
+u_sd_top/u_sd_operation/reg38_syn_38.clk
+u_sd_top/u_sd_operation/reg38_syn_36
+1785 0.339000 2.028000 2.367000 0 1
+u_sd_top/u_sd_operation/sddata_wait_flag0[1] u_sd_top/u_sd_operation/reg38_syn_36.mi[1]
+
+
+
+
+clock: mux_clk
+1819 100640 2090 4
+Setup check
+1829 3
+Endpoint: u_ispMUX/u_white_balenceb_top/u_isp_wb/mult1_syn_93
+1829 -3.382000 22 3
+Timing path: u_ispMUX/u_bayer2rgb/reg1_syn_58.clk->u_ispMUX/u_white_balenceb_top/u_isp_wb/mult1_syn_93
+u_ispMUX/u_bayer2rgb/reg1_syn_58.clk
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult1_syn_93
+1831 -3.382000 3.423000 6.805000 4 4
+u_ispMUX/u_bayer2rgb/RGB_G[3] u_ispMUX/ispTempData[4]_b[11]_syn_11.e[1]
+u_ispMUX/ispTempData[4]_b[11]_syn_2 u_ispMUX/ispTempData[4]_b[11]_syn_11.c[0]
+u_ispMUX/ispTempData[4]_b[11]_syn_4 u_ispMUX/reg10_syn_129.a[1]
+u_ispMUX/ispTempData[4]_b[11] u_ispMUX/u_white_balenceb_top/u_isp_wb/mult1_syn_93.a[3]
+
+Timing path: u_ispMUX/u_bayer2rgb/reg1_syn_55.clk->u_ispMUX/u_white_balenceb_top/u_isp_wb/mult1_syn_93
+u_ispMUX/u_bayer2rgb/reg1_syn_55.clk
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult1_syn_93
+1871 -3.200000 3.423000 6.623000 3 3
+u_ispMUX/u_bayer2rgb/RGB_G[7] u_AHBlite_ISP/reg1_syn_149.e[0]
+u_ispMUX/ispTempData[4]_b[15]_syn_2 u_ispMUX/reg17_syn_179.b[0]
+u_ispMUX/ispTempData[4]_b[15] u_ispMUX/u_white_balenceb_top/u_isp_wb/mult1_syn_93.a[7]
+
+Timing path: u_ispMUX/u_white_balenceb_top/u_wb_gain/AverageB_recip[7]_syn_8.clk->u_ispMUX/u_white_balenceb_top/u_isp_wb/mult1_syn_93
+u_ispMUX/u_white_balenceb_top/u_wb_gain/AverageB_recip[7]_syn_8.clk
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult1_syn_93
+1909 -3.177000 3.423000 6.600000 3 3
+u_ispMUX/u_bayer2rgb/RGB_G[6] u_ispMUX/ispTempData[4]_b[14]_syn_11.c[1]
+u_ispMUX/ispTempData[4]_b[14]_syn_2 u_ispMUX/reg10_syn_142.b[1]
+u_ispMUX/ispTempData[4]_b[14] u_ispMUX/u_white_balenceb_top/u_isp_wb/mult1_syn_93.a[6]
+
+
+Endpoint: u_ispMUX/u_white_balenceb_top/u_isp_wb/mult1_syn_94
+1947 -3.382000 22 3
+Timing path: u_ispMUX/u_bayer2rgb/reg1_syn_58.clk->u_ispMUX/u_white_balenceb_top/u_isp_wb/mult1_syn_94
+u_ispMUX/u_bayer2rgb/reg1_syn_58.clk
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult1_syn_94
+1949 -3.382000 3.423000 6.805000 4 4
+u_ispMUX/u_bayer2rgb/RGB_G[3] u_ispMUX/ispTempData[4]_b[11]_syn_11.e[1]
+u_ispMUX/ispTempData[4]_b[11]_syn_2 u_ispMUX/ispTempData[4]_b[11]_syn_11.c[0]
+u_ispMUX/ispTempData[4]_b[11]_syn_4 u_ispMUX/reg10_syn_129.a[1]
+u_ispMUX/ispTempData[4]_b[11] u_ispMUX/u_white_balenceb_top/u_isp_wb/mult1_syn_94.a[3]
+
+Timing path: u_ispMUX/u_white_balenceb_top/u_wb_gain/AverageB_recip[7]_syn_8.clk->u_ispMUX/u_white_balenceb_top/u_isp_wb/mult1_syn_94
+u_ispMUX/u_white_balenceb_top/u_wb_gain/AverageB_recip[7]_syn_8.clk
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult1_syn_94
+1989 -3.185000 3.423000 6.608000 3 3
+u_ispMUX/u_bayer2rgb/RGB_G[6] u_ispMUX/ispTempData[4]_b[14]_syn_11.c[1]
+u_ispMUX/ispTempData[4]_b[14]_syn_2 u_ispMUX/reg10_syn_142.b[1]
+u_ispMUX/ispTempData[4]_b[14] u_ispMUX/u_white_balenceb_top/u_isp_wb/mult1_syn_94.a[6]
+
+Timing path: u_ispMUX/u_white_balenceb_top/u_wb_gain/AverageB_recip[7]_syn_8.clk->u_ispMUX/u_white_balenceb_top/u_isp_wb/mult1_syn_94
+u_ispMUX/u_white_balenceb_top/u_wb_gain/AverageB_recip[7]_syn_8.clk
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult1_syn_94
+2027 -3.185000 3.423000 6.608000 3 3
+u_ispMUX/u_bayer2rgb/RGB_G[6] u_ispMUX/ispTempData[4]_b[14]_syn_11.c[1]
+u_ispMUX/ispTempData[4]_b[14]_syn_2 u_ispMUX/reg10_syn_142.b[0]
+u_ispMUX/ispTempData[4]_b[14] u_ispMUX/u_white_balenceb_top/u_isp_wb/mult1_syn_94.a[6]
+
+
+Endpoint: u_ispMUX/reg5_syn_110
+2065 -3.379000 8 3
+Timing path: u_ispMUX/ispTempData[15]_b[4]_syn_60.clk->u_ispMUX/reg5_syn_110
+u_ispMUX/ispTempData[15]_b[4]_syn_60.clk
+u_ispMUX/reg5_syn_110
+2067 -3.379000 3.595000 6.974000 4 4
+u_ispMUX/u_VIP_YCbCr444_RGB888/per_frame_clken_r[1] u_ispMUX/u_VIP_YCbCr444_RGB888/reg2_syn_77.d[1]
+u_ispMUX/ispTempData[15]_b[21]_syn_4 u_ispMUX/ispTempData[15]_b[5]_syn_59.a[1]
+u_ispMUX/ispTempData[15]_b[5]_syn_19 u_ispMUX/u_VIP_RGB888_YCbCr444/reg15_syn_23.a[1]
+u_ispMUX/ispTempData[15]_b[5]_syn_21 u_ispMUX/reg5_syn_110.b[1]
+
+Timing path: u_ispMUX/ispTempData[15]_b[4]_syn_60.clk->u_ispMUX/reg5_syn_110
+u_ispMUX/ispTempData[15]_b[4]_syn_60.clk
+u_ispMUX/reg5_syn_110
+2107 -3.379000 3.595000 6.974000 4 4
+u_ispMUX/u_VIP_YCbCr444_RGB888/per_frame_clken_r[1] u_ispMUX/u_VIP_YCbCr444_RGB888/reg2_syn_77.d[1]
+u_ispMUX/ispTempData[15]_b[21]_syn_4 u_ispMUX/ispTempData[15]_b[5]_syn_59.a[1]
+u_ispMUX/ispTempData[15]_b[5]_syn_19 u_ispMUX/u_VIP_RGB888_YCbCr444/reg15_syn_23.a[1]
+u_ispMUX/ispTempData[15]_b[5]_syn_21 u_ispMUX/reg5_syn_110.b[0]
+
+Timing path: u_ispMUX/u_VIP_YCbCr444_RGB888/reg0_syn_57.clk->u_ispMUX/reg5_syn_110
+u_ispMUX/u_VIP_YCbCr444_RGB888/reg0_syn_57.clk
+u_ispMUX/reg5_syn_110
+2147 -2.184000 3.595000 5.779000 3 3
+u_ispMUX/u_VIP_YCbCr444_RGB888/img_b_r0[21] u_ispMUX/ispTempData[15]_b[5]_syn_59.d[1]
+u_ispMUX/ispTempData[15]_b[5]_syn_19 u_ispMUX/u_VIP_RGB888_YCbCr444/reg15_syn_23.a[1]
+u_ispMUX/ispTempData[15]_b[5]_syn_21 u_ispMUX/reg5_syn_110.b[1]
+
+
+
+Hold check
+2185 3
+Endpoint: u_window_split/u_tempfifoR1/ram_inst/ramread0_syn_21
+2187 0.096000 10 3
+Timing path: u_window_split/u_tempfifoR1/reg0_syn_68.clk->u_window_split/u_tempfifoR1/ram_inst/ramread0_syn_21
+u_window_split/u_tempfifoR1/reg0_syn_68.clk
+u_window_split/u_tempfifoR1/ram_inst/ramread0_syn_21
+2189 0.096000 2.183000 2.279000 1 1
+u_window_split/u_tempfifoR1/rd_addr[1] u_window_split/u_tempfifoR1/ram_inst/ramread0_syn_21.addrb[4]
+
+Timing path: u_window_split/u_tempfifoR1/reg0_syn_51.clk->u_window_split/u_tempfifoR1/ram_inst/ramread0_syn_21
+u_window_split/u_tempfifoR1/reg0_syn_51.clk
+u_window_split/u_tempfifoR1/ram_inst/ramread0_syn_21
+2223 0.212000 2.183000 2.395000 1 1
+u_window_split/u_tempfifoR1/rd_addr[0] u_window_split/u_tempfifoR1/ram_inst/ramread0_syn_21.addrb[3]
+
+Timing path: u_window_split/u_tempfifoR1/reg0_syn_56.clk->u_window_split/u_tempfifoR1/ram_inst/ramread0_syn_21
+u_window_split/u_tempfifoR1/reg0_syn_56.clk
+u_window_split/u_tempfifoR1/ram_inst/ramread0_syn_21
+2257 0.319000 2.183000 2.502000 1 1
+u_window_split/u_tempfifoR1/rd_addr[4] u_window_split/u_tempfifoR1/ram_inst/ramread0_syn_21.addrb[7]
+
+
+Endpoint: u_window_split/u_tempfifoL0/ram_inst/ramread0_syn_11
+2291 0.096000 10 3
+Timing path: u_logic/add2_syn_182.clk->u_window_split/u_tempfifoL0/ram_inst/ramread0_syn_11
+u_logic/add2_syn_182.clk
+u_window_split/u_tempfifoL0/ram_inst/ramread0_syn_11
+2293 0.096000 2.183000 2.279000 1 1
+u_window_split/u_tempfifoL0/wr_addr[8] u_window_split/u_tempfifoL0/ram_inst/ramread0_syn_11.addra[11]
+
+Timing path: u_logic/add2_syn_182.clk->u_window_split/u_tempfifoL0/ram_inst/ramread0_syn_11
+u_logic/add2_syn_182.clk
+u_window_split/u_tempfifoL0/ram_inst/ramread0_syn_11
+2327 0.104000 2.183000 2.287000 1 1
+u_window_split/u_tempfifoL0/wr_addr[7] u_window_split/u_tempfifoL0/ram_inst/ramread0_syn_11.addra[10]
+
+Timing path: u_window_split/u_tempfifoL0/reg1_syn_47.clk->u_window_split/u_tempfifoL0/ram_inst/ramread0_syn_11
+u_window_split/u_tempfifoL0/reg1_syn_47.clk
+u_window_split/u_tempfifoL0/ram_inst/ramread0_syn_11
+2361 0.246000 2.183000 2.429000 1 1
+u_window_split/u_tempfifoL0/wr_addr[4] u_window_split/u_tempfifoL0/ram_inst/ramread0_syn_11.addra[7]
+
+
+Endpoint: u_window_split/u_tempfifoL0/ram_inst/ramread0_syn_21
+2395 0.112000 10 3
+Timing path: u_logic/Y9phu6_syn_50.clk->u_window_split/u_tempfifoL0/ram_inst/ramread0_syn_21
+u_logic/Y9phu6_syn_50.clk
+u_window_split/u_tempfifoL0/ram_inst/ramread0_syn_21
+2397 0.112000 2.183000 2.295000 1 1
+u_window_split/u_tempfifoL0/rd_addr[9] u_window_split/u_tempfifoL0/ram_inst/ramread0_syn_21.addrb[12]
+
+Timing path: u_window_split/u_tempfifoL0/reg0_syn_51.clk->u_window_split/u_tempfifoL0/ram_inst/ramread0_syn_21
+u_window_split/u_tempfifoL0/reg0_syn_51.clk
+u_window_split/u_tempfifoL0/ram_inst/ramread0_syn_21
+2431 0.132000 2.183000 2.315000 1 1
+u_window_split/u_tempfifoL0/rd_addr[8] u_window_split/u_tempfifoL0/ram_inst/ramread0_syn_21.addrb[11]
+
+Timing path: u_window_split/u_tempfifoL0/reg0_syn_54.clk->u_window_split/u_tempfifoL0/ram_inst/ramread0_syn_21
+u_window_split/u_tempfifoL0/reg0_syn_54.clk
+u_window_split/u_tempfifoL0/ram_inst/ramread0_syn_21
+2465 0.148000 2.183000 2.331000 1 1
+u_window_split/u_tempfifoL0/rd_addr[3] u_window_split/u_tempfifoL0/ram_inst/ramread0_syn_21.addrb[6]
+
+
+
+Recovery check
+2499 3
+Endpoint: u_window_split/u_tempfifoR1/wr_to_rd_cross_inst/reg2_syn_64
+2501 2.598000 1 1
+Timing path: u_window_split/add0_syn_68.clk->u_window_split/u_tempfifoR1/wr_to_rd_cross_inst/reg2_syn_64
+u_window_split/add0_syn_68.clk
+u_window_split/u_tempfifoR1/wr_to_rd_cross_inst/reg2_syn_64
+2503 2.598000 6.840000 4.242000 0 1
+u_window_split/u_tempfifoR1/asy_r_rst1 u_window_split/u_tempfifoR1/wr_to_rd_cross_inst/reg2_syn_64.sr
+
+
+Endpoint: u_window_split/u_tempfifoR0/rd_to_wr_cross_inst/reg0_syn_54
+2537 2.909000 1 1
+Timing path: u_window_split/u_tempfifoR0/asy_r_rst1_reg_syn_5.clk->u_window_split/u_tempfifoR0/rd_to_wr_cross_inst/reg0_syn_54
+u_window_split/u_tempfifoR0/asy_r_rst1_reg_syn_5.clk
+u_window_split/u_tempfifoR0/rd_to_wr_cross_inst/reg0_syn_54
+2539 2.909000 6.912000 4.003000 0 1
+u_window_split/u_tempfifoR0/asy_r_rst1 u_window_split/u_tempfifoR0/rd_to_wr_cross_inst/reg0_syn_54.sr
+
+
+Endpoint: u_window_split/u_tempfifoR0/reg0_syn_44
+2573 2.909000 1 1
+Timing path: u_window_split/u_tempfifoR0/asy_r_rst1_reg_syn_5.clk->u_window_split/u_tempfifoR0/reg0_syn_44
+u_window_split/u_tempfifoR0/asy_r_rst1_reg_syn_5.clk
+u_window_split/u_tempfifoR0/reg0_syn_44
+2575 2.909000 6.912000 4.003000 0 1
+u_window_split/u_tempfifoR0/asy_r_rst1 u_window_split/u_tempfifoR0/reg0_syn_44.sr
+
+
+
+Removal check
+2609 3
+Endpoint: u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg3_syn_63
+2611 0.298000 1 1
+Timing path: u_window_split/u_tempfifoL1/asy_w_rst1_reg_syn_5.clk->u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg3_syn_63
+u_window_split/u_tempfifoL1/asy_w_rst1_reg_syn_5.clk
+u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg3_syn_63
+2613 0.298000 2.299000 2.597000 0 1
+u_window_split/u_tempfifoL1/asy_w_rst1 u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg3_syn_63.sr
+
+
+Endpoint: u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg1_syn_48
+2647 0.298000 1 1
+Timing path: u_window_split/u_tempfifoL1/asy_w_rst1_reg_syn_5.clk->u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg1_syn_48
+u_window_split/u_tempfifoL1/asy_w_rst1_reg_syn_5.clk
+u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg1_syn_48
+2649 0.298000 2.299000 2.597000 0 1
+u_window_split/u_tempfifoL1/asy_w_rst1 u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg1_syn_48.sr
+
+
+Endpoint: u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg3_syn_57
+2683 0.307000 1 1
+Timing path: u_window_split/u_tempfifoL1/asy_w_rst1_reg_syn_5.clk->u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg3_syn_57
+u_window_split/u_tempfifoL1/asy_w_rst1_reg_syn_5.clk
+u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg3_syn_57
+2685 0.307000 2.299000 2.606000 0 1
+u_window_split/u_tempfifoL1/asy_w_rst1 u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg3_syn_57.sr
+
+
+
+
+clock: rgb_clk
+2719 122526 1368 3
+Setup check
+2729 3
+Endpoint: u_ispMUX/u_white_balenceb_top/u_isp_wb/reg6_syn_51
+2729 -3.822000 347 3
+Timing path: u_ispMUX/u_white_balenceb_top/u_wb_gain/reg8_syn_228.clk->u_ispMUX/u_white_balenceb_top/u_isp_wb/reg6_syn_51
+u_ispMUX/u_white_balenceb_top/u_wb_gain/reg8_syn_228.clk
+u_ispMUX/u_white_balenceb_top/u_isp_wb/reg6_syn_51
+2731 -3.822000 7.024000 10.846000 7 8
+u_ispMUX/u_white_balenceb_top/u_wb_gain/Rgain[11] u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_93.b[4]
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_22 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_244.a[1]
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_224 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_245.fci
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_228 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_246.fci
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_232 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_247.fci
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_236 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_248.fci
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_240 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_249.fci
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_96[21] u_ispMUX/u_white_balenceb_top/u_isp_wb/reg6_syn_51.mi[0]
+
+Timing path: u_ispMUX/u_white_balenceb_top/u_wb_gain/reg8_syn_228.clk->u_ispMUX/u_white_balenceb_top/u_isp_wb/reg6_syn_51
+u_ispMUX/u_white_balenceb_top/u_wb_gain/reg8_syn_228.clk
+u_ispMUX/u_white_balenceb_top/u_isp_wb/reg6_syn_51
+2779 -3.821000 7.024000 10.845000 7 8
+u_ispMUX/u_white_balenceb_top/u_wb_gain/Rgain[20] u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_93.b[13]
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_22 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_244.a[1]
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_224 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_245.fci
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_228 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_246.fci
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_232 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_247.fci
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_236 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_248.fci
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_240 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_249.fci
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_96[21] u_ispMUX/u_white_balenceb_top/u_isp_wb/reg6_syn_51.mi[0]
+
+Timing path: u_ispMUX/u_white_balenceb_top/u_wb_gain/reg8_syn_225.clk->u_ispMUX/u_white_balenceb_top/u_isp_wb/reg6_syn_51
+u_ispMUX/u_white_balenceb_top/u_wb_gain/reg8_syn_225.clk
+u_ispMUX/u_white_balenceb_top/u_isp_wb/reg6_syn_51
+2827 -3.819000 7.024000 10.843000 7 8
+u_ispMUX/u_white_balenceb_top/u_wb_gain/Rgain[10] u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_93.b[3]
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_22 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_244.a[1]
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_224 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_245.fci
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_228 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_246.fci
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_232 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_247.fci
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_236 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_248.fci
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_240 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_249.fci
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_96[21] u_ispMUX/u_white_balenceb_top/u_isp_wb/reg6_syn_51.mi[0]
+
+
+Endpoint: u_ispMUX/u_white_balenceb_top/u_isp_wb/reg4_syn_119
+2875 -3.814000 319 3
+Timing path: u_ispMUX/u_white_balenceb_top/u_wb_gain/reg8_syn_228.clk->u_ispMUX/u_white_balenceb_top/u_isp_wb/reg4_syn_119
+u_ispMUX/u_white_balenceb_top/u_wb_gain/reg8_syn_228.clk
+u_ispMUX/u_white_balenceb_top/u_isp_wb/reg4_syn_119
+2877 -3.814000 7.024000 10.838000 6 7
+u_ispMUX/u_white_balenceb_top/u_wb_gain/Rgain[11] u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_93.b[4]
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_22 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_244.a[1]
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_224 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_245.fci
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_228 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_246.fci
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_232 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_247.fci
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_236 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_248.fci
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_96[18] u_ispMUX/u_white_balenceb_top/u_isp_wb/reg4_syn_119.mi[0]
+
+Timing path: u_ispMUX/u_white_balenceb_top/u_wb_gain/reg8_syn_228.clk->u_ispMUX/u_white_balenceb_top/u_isp_wb/reg4_syn_119
+u_ispMUX/u_white_balenceb_top/u_wb_gain/reg8_syn_228.clk
+u_ispMUX/u_white_balenceb_top/u_isp_wb/reg4_syn_119
+2923 -3.813000 7.024000 10.837000 6 7
+u_ispMUX/u_white_balenceb_top/u_wb_gain/Rgain[20] u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_93.b[13]
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_22 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_244.a[1]
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_224 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_245.fci
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_228 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_246.fci
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_232 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_247.fci
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_236 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_248.fci
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_96[18] u_ispMUX/u_white_balenceb_top/u_isp_wb/reg4_syn_119.mi[0]
+
+Timing path: u_ispMUX/u_white_balenceb_top/u_wb_gain/reg8_syn_225.clk->u_ispMUX/u_white_balenceb_top/u_isp_wb/reg4_syn_119
+u_ispMUX/u_white_balenceb_top/u_wb_gain/reg8_syn_225.clk
+u_ispMUX/u_white_balenceb_top/u_isp_wb/reg4_syn_119
+2969 -3.811000 7.024000 10.835000 6 7
+u_ispMUX/u_white_balenceb_top/u_wb_gain/Rgain[10] u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_93.b[3]
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_22 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_244.a[1]
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_224 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_245.fci
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_228 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_246.fci
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_232 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_247.fci
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_236 u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_248.fci
+u_ispMUX/u_white_balenceb_top/u_isp_wb/mult0_syn_96[18] u_ispMUX/u_white_balenceb_top/u_isp_wb/reg4_syn_119.mi[0]
+
+
+Endpoint: u_ispMUX/u_white_balenceb_top/u_wb_gain/reg3_syn_177
+3015 -3.806000 30 3
+Timing path: u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_98.clk->u_ispMUX/u_white_balenceb_top/u_wb_gain/reg3_syn_177
+u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_98.clk
+u_ispMUX/u_white_balenceb_top/u_wb_gain/reg3_syn_177
+3017 -3.806000 7.024000 10.830000 5 6
+u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_21 u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_239.b[0]
+u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_220 u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_240.fci
+u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_224 u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_241.fci
+u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_228 u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_242.fci
+u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_232 u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_243.fci
+u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_101[18] u_ispMUX/u_white_balenceb_top/u_wb_gain/reg3_syn_177.mi[1]
+
+Timing path: u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_98.clk->u_ispMUX/u_white_balenceb_top/u_wb_gain/reg3_syn_177
+u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_98.clk
+u_ispMUX/u_white_balenceb_top/u_wb_gain/reg3_syn_177
+3061 -3.740000 7.024000 10.764000 5 6
+u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_23 u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_239.b[1]
+u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_220 u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_240.fci
+u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_224 u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_241.fci
+u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_228 u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_242.fci
+u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_232 u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_243.fci
+u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_101[18] u_ispMUX/u_white_balenceb_top/u_wb_gain/reg3_syn_177.mi[1]
+
+Timing path: u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_98.clk->u_ispMUX/u_white_balenceb_top/u_wb_gain/reg3_syn_177
+u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_98.clk
+u_ispMUX/u_white_balenceb_top/u_wb_gain/reg3_syn_177
+3105 -3.690000 7.024000 10.714000 4 5
+u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_25 u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_240.b[0]
+u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_224 u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_241.fci
+u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_228 u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_242.fci
+u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_232 u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_243.fci
+u_ispMUX/u_white_balenceb_top/u_wb_gain/mult2_syn_101[18] u_ispMUX/u_white_balenceb_top/u_wb_gain/reg3_syn_177.mi[1]
+
+
+
+Hold check
+3147 3
+Endpoint: u_ispMUX/ispTempData[5]_b[4]_syn_16
+3149 0.339000 1 1
+Timing path: u_ispMUX/u_isp_ccm/reg18_syn_39.clk->u_ispMUX/ispTempData[5]_b[4]_syn_16
+u_ispMUX/u_isp_ccm/reg18_syn_39.clk
+u_ispMUX/ispTempData[5]_b[4]_syn_16
+3151 0.339000 2.028000 2.367000 0 1
+u_ispMUX/u_isp_ccm/out_ccm_rgb_en_dly[1] u_ispMUX/ispTempData[5]_b[4]_syn_16.mi[0]
+
+
+Endpoint: u_ispMUX/u_VIP_RGB888_YCbCr444/reg15_syn_23
+3185 0.465000 1 1
+Timing path: u_ispMUX/u_VIP_RGB888_YCbCr444/reg15_syn_23.clk->u_ispMUX/u_VIP_RGB888_YCbCr444/reg15_syn_23
+u_ispMUX/u_VIP_RGB888_YCbCr444/reg15_syn_23.clk
+u_ispMUX/u_VIP_RGB888_YCbCr444/reg15_syn_23
+3187 0.465000 1.999000 2.464000 0 1
+u_ispMUX/u_VIP_RGB888_YCbCr444/per_frame_clken_r[0] u_ispMUX/u_VIP_RGB888_YCbCr444/reg15_syn_23.mi[0]
+
+
+Endpoint: u_ispMUX/u_isp_ccm/reg18_syn_39
+3221 0.475000 1 1
+Timing path: u_ispMUX/ispTempData[7]_b[8]_syn_19.clk->u_ispMUX/u_isp_ccm/reg18_syn_39
+u_ispMUX/ispTempData[7]_b[8]_syn_19.clk
+u_ispMUX/u_isp_ccm/reg18_syn_39
+3223 0.475000 2.191000 2.666000 0 1
+u_ispMUX/u_isp_ccm/in_rgb_data_en u_ispMUX/u_isp_ccm/reg18_syn_39.mi[0]
+
+
+
+Period check
+3257 3
+Endpoint: u_ispMUX/u_isp_ccm/mult5_syn_3.clk
+3261 1.586000 1 0
+
+Endpoint: u_ispMUX/u_isp_ccm/mult4_syn_3.clk
+3262 1.586000 1 0
+
+Endpoint: u_ispMUX/u_isp_ccm/mult0_syn_3.clk
+3263 1.586000 1 0
+
+
+
+clock: yuv_clk
+3264 18664 2448 2
+Setup check
+3274 3
+Endpoint: u_ispMUX/u_VIP_YCbCr444_RGB888/mult2_syn_1
+3274 -3.406000 8 3
+Timing path: u_ispMUX/reg1_syn_153.clk->u_ispMUX/u_VIP_YCbCr444_RGB888/mult2_syn_1
+u_ispMUX/reg1_syn_153.clk
+u_ispMUX/u_VIP_YCbCr444_RGB888/mult2_syn_1
+3276 -3.406000 3.423000 6.829000 1 1
+u_ispMUX/u_VIP_YCbCr444_RGB888/per_img_data[1] u_ispMUX/u_VIP_YCbCr444_RGB888/mult2_syn_1.a[1]
+
+Timing path: u_ispMUX/reg1_syn_150.clk->u_ispMUX/u_VIP_YCbCr444_RGB888/mult2_syn_1
+u_ispMUX/reg1_syn_150.clk
+u_ispMUX/u_VIP_YCbCr444_RGB888/mult2_syn_1
+3310 -3.300000 3.423000 6.723000 1 1
+u_ispMUX/u_VIP_YCbCr444_RGB888/per_img_data[0] u_ispMUX/u_VIP_YCbCr444_RGB888/mult2_syn_1.a[0]
+
+Timing path: u_ispMUX/reg1_syn_150.clk->u_ispMUX/u_VIP_YCbCr444_RGB888/mult2_syn_1
+u_ispMUX/reg1_syn_150.clk
+u_ispMUX/u_VIP_YCbCr444_RGB888/mult2_syn_1
+3344 -3.296000 3.423000 6.719000 1 1
+u_ispMUX/u_VIP_YCbCr444_RGB888/per_img_data[3] u_ispMUX/u_VIP_YCbCr444_RGB888/mult2_syn_1.a[3]
+
+
+Endpoint: u_ispMUX/u_VIP_YCbCr444_RGB888/reg4_syn_110
+3378 -3.261000 1 1
+Timing path: u_ispMUX/u_VIP_RGB888_YCbCr444/mult2_syn_2.clk->u_ispMUX/u_VIP_YCbCr444_RGB888/reg4_syn_110
+u_ispMUX/u_VIP_RGB888_YCbCr444/mult2_syn_2.clk
+u_ispMUX/u_VIP_YCbCr444_RGB888/reg4_syn_110
+3380 -3.261000 3.595000 6.856000 0 1
+u_ispMUX/u_VIP_YCbCr444_RGB888/img_cr_r0_b[5] u_ispMUX/u_VIP_YCbCr444_RGB888/reg4_syn_110.mi[0]
+
+
+Endpoint: u_ispMUX/u_VIP_YCbCr444_RGB888/reg4_syn_105
+3414 -3.255000 1 1
+Timing path: u_ispMUX/u_VIP_RGB888_YCbCr444/mult2_syn_2.clk->u_ispMUX/u_VIP_YCbCr444_RGB888/reg4_syn_105
+u_ispMUX/u_VIP_RGB888_YCbCr444/mult2_syn_2.clk
+u_ispMUX/u_VIP_YCbCr444_RGB888/reg4_syn_105
+3416 -3.255000 3.595000 6.850000 0 1
+u_ispMUX/u_VIP_YCbCr444_RGB888/img_cr_r0_b[18] u_ispMUX/u_VIP_YCbCr444_RGB888/reg4_syn_105.mi[0]
+
+
+
+Hold check
+3450 3
+Endpoint: u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/bram_256_8bit_inst0/inst_syn_17
+3452 0.096000 11 3
+Timing path: u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/reg1_syn_73.clk->u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/bram_256_8bit_inst0/inst_syn_17
+u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/reg1_syn_73.clk
+u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/bram_256_8bit_inst0/inst_syn_17
+3454 0.096000 2.183000 2.279000 1 1
+u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/ram_rd_addr_d0[9] u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/bram_256_8bit_inst0/inst_syn_17.addra[11]
+
+Timing path: u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/reg1_syn_68.clk->u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/bram_256_8bit_inst0/inst_syn_17
+u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/reg1_syn_68.clk
+u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/bram_256_8bit_inst0/inst_syn_17
+3488 0.205000 2.183000 2.388000 1 1
+u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/ram_rd_addr_d0[0] u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/bram_256_8bit_inst0/inst_syn_17.addra[2]
+
+Timing path: u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/reg1_syn_65.clk->u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/bram_256_8bit_inst0/inst_syn_17
+u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/reg1_syn_65.clk
+u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/bram_256_8bit_inst0/inst_syn_17
+3522 0.241000 2.183000 2.424000 1 1
+u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/ram_rd_addr_d0[3] u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/bram_256_8bit_inst0/inst_syn_17.addra[5]
+
+
+Endpoint: u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/bram_256_8bit_inst0/inst_syn_12
+3556 0.096000 11 3
+Timing path: u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/reg4_syn_71.clk->u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/bram_256_8bit_inst0/inst_syn_12
+u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/reg4_syn_71.clk
+u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/bram_256_8bit_inst0/inst_syn_12
+3558 0.096000 2.183000 2.279000 1 1
+u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/ram_rd_addr[7] u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/bram_256_8bit_inst0/inst_syn_12.addrb[9]
+
+Timing path: u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/reg4_syn_71.clk->u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/bram_256_8bit_inst0/inst_syn_12
+u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/reg4_syn_71.clk
+u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/bram_256_8bit_inst0/inst_syn_12
+3592 0.112000 2.183000 2.295000 1 1
+u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/ram_rd_addr[9] u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/bram_256_8bit_inst0/inst_syn_12.addrb[11]
+
+Timing path: u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/reg4_syn_68.clk->u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/bram_256_8bit_inst0/inst_syn_12
+u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/reg4_syn_68.clk
+u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/bram_256_8bit_inst0/inst_syn_12
+3626 0.210000 2.183000 2.393000 1 1
+u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/ram_rd_addr[0] u_ispMUX/u_laplacian_sharpen_proc/u_vip_matrix_generate_3x3_8bit/u_line_shift_ram_8bit_3x3/bram_256_8bit_inst0/inst_syn_12.addrb[2]
+
+
+Endpoint: u_ispMUX/u_laplacian_sharpen_proc/reg6_syn_90
+3660 0.167000 1 1
+Timing path: u_ispMUX/reg14_syn_141.clk->u_ispMUX/u_laplacian_sharpen_proc/reg6_syn_90
+u_ispMUX/reg14_syn_141.clk
+u_ispMUX/u_laplacian_sharpen_proc/reg6_syn_90
+3662 0.167000 2.191000 2.358000 0 1
+u_ispMUX/u_laplacian_sharpen_proc/per_img_data[5] u_ispMUX/u_laplacian_sharpen_proc/reg6_syn_90.mi[0]
+
+
+
+
+clock: raw_clk
+3696 56890 2504 4
+Setup check
+3706 3
+Endpoint: u_ispMUX/u_isp_blc/reg1_syn_63
+3706 -1.336000 11 3
+Timing path: u_ispMUX/reg7_syn_63.clk->u_ispMUX/u_isp_blc/reg1_syn_63
+u_ispMUX/reg7_syn_63.clk
+u_ispMUX/u_isp_blc/reg1_syn_63
+3708 -1.336000 3.716000 5.052000 5 5
+u_ispMUX/u_isp_blc/per_raw_data[3] u_ispMUX/u_isp_blc/lt0_syn_42.b[1]
+u_ispMUX/u_isp_blc/lt0_syn_10 u_ispMUX/u_isp_blc/lt0_syn_45.fci
+u_ispMUX/u_isp_blc/lt0_syn_14 u_ispMUX/u_isp_blc/lt0_syn_48.fci
+u_ispMUX/u_isp_blc/lt0_syn_18 u_ispMUX/u_isp_blc/lt0_syn_50.fci
+u_ispMUX/u_isp_blc/raw_nowtime_b4_n u_ispMUX/u_isp_blc/reg1_syn_63.d[1]
+
+Timing path: u_ispMUX/reg8_syn_62.clk->u_ispMUX/u_isp_blc/reg1_syn_63
+u_ispMUX/reg8_syn_62.clk
+u_ispMUX/u_isp_blc/reg1_syn_63
+3750 -1.334000 3.716000 5.050000 5 5
+u_ispMUX/u_isp_blc/per_raw_data[2] u_ispMUX/u_isp_blc/lt0_syn_42.b[0]
+u_ispMUX/u_isp_blc/lt0_syn_10 u_ispMUX/u_isp_blc/lt0_syn_45.fci
+u_ispMUX/u_isp_blc/lt0_syn_14 u_ispMUX/u_isp_blc/lt0_syn_48.fci
+u_ispMUX/u_isp_blc/lt0_syn_18 u_ispMUX/u_isp_blc/lt0_syn_50.fci
+u_ispMUX/u_isp_blc/raw_nowtime_b4_n u_ispMUX/u_isp_blc/reg1_syn_63.d[1]
+
+Timing path: u_ispMUX/reg8_syn_68.clk->u_ispMUX/u_isp_blc/reg1_syn_63
+u_ispMUX/reg8_syn_68.clk
+u_ispMUX/u_isp_blc/reg1_syn_63
+3792 -1.321000 3.716000 5.037000 6 6
+u_ispMUX/u_isp_blc/per_raw_data[1] u_ispMUX/u_isp_blc/lt0_syn_39.b[1]
+u_ispMUX/u_isp_blc/lt0_syn_6 u_ispMUX/u_isp_blc/lt0_syn_42.fci
+u_ispMUX/u_isp_blc/lt0_syn_10 u_ispMUX/u_isp_blc/lt0_syn_45.fci
+u_ispMUX/u_isp_blc/lt0_syn_14 u_ispMUX/u_isp_blc/lt0_syn_48.fci
+u_ispMUX/u_isp_blc/lt0_syn_18 u_ispMUX/u_isp_blc/lt0_syn_50.fci
+u_ispMUX/u_isp_blc/raw_nowtime_b4_n u_ispMUX/u_isp_blc/reg1_syn_63.d[1]
+
+
+Endpoint: u_ispMUX/u_isp_blc/reg1_syn_59
+3836 -1.332000 14 3
+Timing path: u_ispMUX/reg7_syn_63.clk->u_ispMUX/u_isp_blc/reg1_syn_59
+u_ispMUX/reg7_syn_63.clk
+u_ispMUX/u_isp_blc/reg1_syn_59
+3838 -1.332000 3.716000 5.048000 5 5
+u_ispMUX/u_isp_blc/per_raw_data[3] u_ispMUX/u_isp_blc/lt0_syn_42.b[1]
+u_ispMUX/u_isp_blc/lt0_syn_10 u_ispMUX/u_isp_blc/lt0_syn_45.fci
+u_ispMUX/u_isp_blc/lt0_syn_14 u_ispMUX/u_isp_blc/lt0_syn_48.fci
+u_ispMUX/u_isp_blc/lt0_syn_18 u_ispMUX/u_isp_blc/lt0_syn_50.fci
+u_ispMUX/u_isp_blc/raw_nowtime_b4_n u_ispMUX/u_isp_blc/reg1_syn_59.d[1]
+
+Timing path: u_ispMUX/reg8_syn_62.clk->u_ispMUX/u_isp_blc/reg1_syn_59
+u_ispMUX/reg8_syn_62.clk
+u_ispMUX/u_isp_blc/reg1_syn_59
+3880 -1.330000 3.716000 5.046000 5 5
+u_ispMUX/u_isp_blc/per_raw_data[2] u_ispMUX/u_isp_blc/lt0_syn_42.b[0]
+u_ispMUX/u_isp_blc/lt0_syn_10 u_ispMUX/u_isp_blc/lt0_syn_45.fci
+u_ispMUX/u_isp_blc/lt0_syn_14 u_ispMUX/u_isp_blc/lt0_syn_48.fci
+u_ispMUX/u_isp_blc/lt0_syn_18 u_ispMUX/u_isp_blc/lt0_syn_50.fci
+u_ispMUX/u_isp_blc/raw_nowtime_b4_n u_ispMUX/u_isp_blc/reg1_syn_59.d[1]
+
+Timing path: u_ispMUX/reg8_syn_68.clk->u_ispMUX/u_isp_blc/reg1_syn_59
+u_ispMUX/reg8_syn_68.clk
+u_ispMUX/u_isp_blc/reg1_syn_59
+3922 -1.317000 3.716000 5.033000 6 6
+u_ispMUX/u_isp_blc/per_raw_data[1] u_ispMUX/u_isp_blc/lt0_syn_39.b[1]
+u_ispMUX/u_isp_blc/lt0_syn_6 u_ispMUX/u_isp_blc/lt0_syn_42.fci
+u_ispMUX/u_isp_blc/lt0_syn_10 u_ispMUX/u_isp_blc/lt0_syn_45.fci
+u_ispMUX/u_isp_blc/lt0_syn_14 u_ispMUX/u_isp_blc/lt0_syn_48.fci
+u_ispMUX/u_isp_blc/lt0_syn_18 u_ispMUX/u_isp_blc/lt0_syn_50.fci
+u_ispMUX/u_isp_blc/raw_nowtime_b4_n u_ispMUX/u_isp_blc/reg1_syn_59.d[1]
+
+
+Endpoint: u_ispMUX/u_isp_blc/reg1_syn_66
+3966 -1.326000 8 3
+Timing path: u_ispMUX/reg7_syn_63.clk->u_ispMUX/u_isp_blc/reg1_syn_66
+u_ispMUX/reg7_syn_63.clk
+u_ispMUX/u_isp_blc/reg1_syn_66
+3968 -1.326000 3.716000 5.042000 5 5
+u_ispMUX/u_isp_blc/per_raw_data[3] u_ispMUX/u_isp_blc/lt0_syn_42.b[1]
+u_ispMUX/u_isp_blc/lt0_syn_10 u_ispMUX/u_isp_blc/lt0_syn_45.fci
+u_ispMUX/u_isp_blc/lt0_syn_14 u_ispMUX/u_isp_blc/lt0_syn_48.fci
+u_ispMUX/u_isp_blc/lt0_syn_18 u_ispMUX/u_isp_blc/lt0_syn_50.fci
+u_ispMUX/u_isp_blc/raw_nowtime_b4_n u_ispMUX/u_isp_blc/reg1_syn_66.d[0]
+
+Timing path: u_ispMUX/reg8_syn_62.clk->u_ispMUX/u_isp_blc/reg1_syn_66
+u_ispMUX/reg8_syn_62.clk
+u_ispMUX/u_isp_blc/reg1_syn_66
+4010 -1.324000 3.716000 5.040000 5 5
+u_ispMUX/u_isp_blc/per_raw_data[2] u_ispMUX/u_isp_blc/lt0_syn_42.b[0]
+u_ispMUX/u_isp_blc/lt0_syn_10 u_ispMUX/u_isp_blc/lt0_syn_45.fci
+u_ispMUX/u_isp_blc/lt0_syn_14 u_ispMUX/u_isp_blc/lt0_syn_48.fci
+u_ispMUX/u_isp_blc/lt0_syn_18 u_ispMUX/u_isp_blc/lt0_syn_50.fci
+u_ispMUX/u_isp_blc/raw_nowtime_b4_n u_ispMUX/u_isp_blc/reg1_syn_66.d[0]
+
+Timing path: u_ispMUX/reg8_syn_68.clk->u_ispMUX/u_isp_blc/reg1_syn_66
+u_ispMUX/reg8_syn_68.clk
+u_ispMUX/u_isp_blc/reg1_syn_66
+4052 -1.311000 3.716000 5.027000 6 6
+u_ispMUX/u_isp_blc/per_raw_data[1] u_ispMUX/u_isp_blc/lt0_syn_39.b[1]
+u_ispMUX/u_isp_blc/lt0_syn_6 u_ispMUX/u_isp_blc/lt0_syn_42.fci
+u_ispMUX/u_isp_blc/lt0_syn_10 u_ispMUX/u_isp_blc/lt0_syn_45.fci
+u_ispMUX/u_isp_blc/lt0_syn_14 u_ispMUX/u_isp_blc/lt0_syn_48.fci
+u_ispMUX/u_isp_blc/lt0_syn_18 u_ispMUX/u_isp_blc/lt0_syn_50.fci
+u_ispMUX/u_isp_blc/raw_nowtime_b4_n u_ispMUX/u_isp_blc/reg1_syn_66.d[0]
+
+
+
+Hold check
+4096 3
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/ram_inst/ramread0_syn_9
+4098 0.027000 9 3
+Timing path: u_window_split/reg4_syn_107.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/ram_inst/ramread0_syn_9
+u_window_split/reg4_syn_107.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/ram_inst/ramread0_syn_9
+4100 0.027000 2.430000 2.457000 1 1
+u_window_split/outdata[6] u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/ram_inst/ramread0_syn_9.dia[3]
+
+Timing path: u_window_split/reg4_syn_109.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/ram_inst/ramread0_syn_9
+u_window_split/reg4_syn_109.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/ram_inst/ramread0_syn_9
+4134 0.027000 2.430000 2.457000 1 1
+u_window_split/outdata[5] u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/ram_inst/ramread0_syn_9.dia[2]
+
+Timing path: u_window_split/reg4_syn_99.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/ram_inst/ramread0_syn_9
+u_window_split/reg4_syn_99.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/ram_inst/ramread0_syn_9
+4168 0.134000 2.430000 2.564000 1 1
+u_window_split/outdata[10] u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/ram_inst/ramread0_syn_9.dia[5]
+
+
+Endpoint: u_ispMUX/u_dpc_top/linebuffer/reg0_syn_50
+4202 0.067000 1 1
+Timing path: u_ispMUX/reg17_syn_181.clk->u_ispMUX/u_dpc_top/linebuffer/reg0_syn_50
+u_ispMUX/reg17_syn_181.clk
+u_ispMUX/u_dpc_top/linebuffer/reg0_syn_50
+4204 0.067000 2.291000 2.358000 0 1
+u_ispMUX/u_dpc_top/in_raw[0] u_ispMUX/u_dpc_top/linebuffer/reg0_syn_50.mi[0]
+
+
+Endpoint: u_ispMUX/u_dpc_top/linebuffer/reg0_syn_48
+4238 0.076000 1 1
+Timing path: u_ispMUX/reg7_syn_59.clk->u_ispMUX/u_dpc_top/linebuffer/reg0_syn_48
+u_ispMUX/reg7_syn_59.clk
+u_ispMUX/u_dpc_top/linebuffer/reg0_syn_48
+4240 0.076000 2.291000 2.367000 0 1
+u_ispMUX/u_dpc_top/in_raw[7] u_ispMUX/u_dpc_top/linebuffer/reg0_syn_48.mi[0]
+
+
+
+Recovery check
+4274 3
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/full_flag_reg_syn_5
+4276 4.818000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/asy_w_rst1_reg_syn_4.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/full_flag_reg_syn_5
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/asy_w_rst1_reg_syn_4.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/full_flag_reg_syn_5
+4278 4.818000 8.712000 3.894000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/asy_w_rst1 u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/full_flag_reg_syn_5.sr
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/reg1_syn_44
+4312 4.837000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/asy_w_rst1_reg_syn_4.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/reg1_syn_44
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/asy_w_rst1_reg_syn_4.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/reg1_syn_44
+4314 4.837000 8.712000 3.875000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/asy_w_rst1 u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/reg1_syn_44.sr
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/reg1_syn_49
+4348 4.981000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/asy_w_rst1_reg_syn_4.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/reg1_syn_49
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/asy_w_rst1_reg_syn_4.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/reg1_syn_49
+4350 4.981000 8.712000 3.731000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/asy_w_rst1 u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/reg1_syn_49.sr
+
+
+
+Removal check
+4384 3
+Endpoint: u_window_split/split_window0_en_n9_syn_25664
+4386 0.398000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/asy_w_rst1_reg_syn_4.clk->u_window_split/split_window0_en_n9_syn_25664
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/asy_w_rst1_reg_syn_4.clk
+u_window_split/split_window0_en_n9_syn_25664
+4388 0.398000 2.327000 2.725000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/asy_w_rst1 u_window_split/split_window0_en_n9_syn_25664.sr
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg2_syn_62
+4422 0.446000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/asy_w_rst1_reg_syn_4.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg2_syn_62
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/asy_w_rst1_reg_syn_4.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg2_syn_62
+4424 0.446000 2.327000 2.773000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/asy_w_rst1 u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg2_syn_62.sr
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg1_syn_44
+4458 0.446000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/asy_w_rst1_reg_syn_4.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg1_syn_44
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/asy_w_rst1_reg_syn_4.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg1_syn_44
+4460 0.446000 2.327000 2.773000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/asy_w_rst1 u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg1_syn_44.sr
+
+
+
+
+clock: hdmi_clk
+4494 42570 590 4
+Setup check
+4504 3
+Endpoint: u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_25
+4504 0.353000 503 3
+Timing path: u_hdmi_top/u_rgb2dvi_0/encoder_b/reg4_syn_31.clk->u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_25
+u_hdmi_top/u_rgb2dvi_0/encoder_b/reg4_syn_31.clk
+u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_25
+4506 0.353000 12.230000 11.877000 11 11
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n1d[1] u_ispMUX/u_isp_2dnr/reg2_syn_169.c[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_2 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_47.a[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_21 u_hdmi_top/u_rgb2dvi_0/encoder_r/reg6_syn_61.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_5 u_ispMUX/u_isp_2dnr/reg3_syn_4384.c[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[2] u_ispMUX/u_isp_2dnr/reg3_syn_4387.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[3] u_ispMUX/u_isp_2dnr/reg3_syn_4378.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[4] u_ispMUX/u_isp_2dnr/reg3_syn_4323.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[5] u_ispMUX/u_isp_2dnr/reg3_syn_3969.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_7 u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_38.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_11 u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_36.b[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_19 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_25.a[1]
+
+Timing path: u_hdmi_top/u_rgb2dvi_0/encoder_b/reg4_syn_33.clk->u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_25
+u_hdmi_top/u_rgb2dvi_0/encoder_b/reg4_syn_33.clk
+u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_25
+4560 0.534000 12.230000 11.696000 11 11
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n1d[0] u_ispMUX/u_isp_2dnr/reg2_syn_169.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_2 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_47.a[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_21 u_hdmi_top/u_rgb2dvi_0/encoder_r/reg6_syn_61.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_5 u_ispMUX/u_isp_2dnr/reg3_syn_4384.c[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[2] u_ispMUX/u_isp_2dnr/reg3_syn_4387.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[3] u_ispMUX/u_isp_2dnr/reg3_syn_4378.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[4] u_ispMUX/u_isp_2dnr/reg3_syn_4323.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[5] u_ispMUX/u_isp_2dnr/reg3_syn_3969.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_7 u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_38.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_11 u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_36.b[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_19 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_25.a[1]
+
+Timing path: u_hdmi_top/u_rgb2dvi_0/encoder_b/reg4_syn_31.clk->u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_25
+u_hdmi_top/u_rgb2dvi_0/encoder_b/reg4_syn_31.clk
+u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_25
+4614 0.721000 12.230000 11.509000 10 10
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n1d[1] u_ispMUX/u_isp_2dnr/reg2_syn_169.c[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_2 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_47.a[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_21 u_hdmi_top/u_rgb2dvi_0/encoder_r/reg6_syn_61.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_5 u_ispMUX/u_isp_2dnr/reg3_syn_4384.c[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[2] u_ispMUX/u_isp_2dnr/reg3_syn_4387.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[3] u_ispMUX/u_isp_2dnr/reg3_syn_4378.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[4] u_ispMUX/u_isp_2dnr/reg3_syn_4323.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[5] u_ispMUX/u_isp_2dnr/reg3_syn_4286.a[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_16 u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_36.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_19 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_25.a[1]
+
+
+Endpoint: u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_25
+4666 0.441000 467 3
+Timing path: u_hdmi_top/u_rgb2dvi_0/encoder_b/reg4_syn_31.clk->u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_25
+u_hdmi_top/u_rgb2dvi_0/encoder_b/reg4_syn_31.clk
+u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_25
+4668 0.441000 12.230000 11.789000 11 11
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n1d[1] u_ispMUX/u_isp_2dnr/reg2_syn_169.c[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_2 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_47.a[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_21 u_hdmi_top/u_rgb2dvi_0/encoder_r/reg6_syn_61.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_5 u_ispMUX/u_isp_2dnr/reg3_syn_4384.c[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[2] u_ispMUX/u_isp_2dnr/reg3_syn_4387.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[3] u_ispMUX/u_isp_2dnr/reg3_syn_4378.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[4] u_ispMUX/u_isp_2dnr/reg3_syn_4323.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[5] u_ispMUX/u_isp_2dnr/reg3_syn_3969.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_7 u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_38.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_11 u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_36.b[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_19 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_25.b[0]
+
+Timing path: u_hdmi_top/u_rgb2dvi_0/encoder_b/reg4_syn_33.clk->u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_25
+u_hdmi_top/u_rgb2dvi_0/encoder_b/reg4_syn_33.clk
+u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_25
+4722 0.622000 12.230000 11.608000 11 11
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n1d[0] u_ispMUX/u_isp_2dnr/reg2_syn_169.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_2 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_47.a[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_21 u_hdmi_top/u_rgb2dvi_0/encoder_r/reg6_syn_61.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_5 u_ispMUX/u_isp_2dnr/reg3_syn_4384.c[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[2] u_ispMUX/u_isp_2dnr/reg3_syn_4387.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[3] u_ispMUX/u_isp_2dnr/reg3_syn_4378.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[4] u_ispMUX/u_isp_2dnr/reg3_syn_4323.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[5] u_ispMUX/u_isp_2dnr/reg3_syn_3969.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_7 u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_38.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_11 u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_36.b[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_19 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_25.b[0]
+
+Timing path: u_hdmi_top/u_rgb2dvi_0/encoder_b/reg4_syn_31.clk->u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_25
+u_hdmi_top/u_rgb2dvi_0/encoder_b/reg4_syn_31.clk
+u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_25
+4776 0.809000 12.230000 11.421000 10 10
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n1d[1] u_ispMUX/u_isp_2dnr/reg2_syn_169.c[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_2 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_47.a[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/reg6_syn_21 u_hdmi_top/u_rgb2dvi_0/encoder_r/reg6_syn_61.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_5 u_ispMUX/u_isp_2dnr/reg3_syn_4384.c[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[2] u_ispMUX/u_isp_2dnr/reg3_syn_4387.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[3] u_ispMUX/u_isp_2dnr/reg3_syn_4378.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[4] u_ispMUX/u_isp_2dnr/reg3_syn_4323.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/q_m[5] u_ispMUX/u_isp_2dnr/reg3_syn_4286.a[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_16 u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_36.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_b/n0q_m_b[3]_syn_19 u_hdmi_top/u_rgb2dvi_0/encoder_b/reg3_syn_25.b[0]
+
+
+Endpoint: u_hdmi_top/u_rgb2dvi_0/encoder_g/reg3_syn_26
+4828 0.458000 903 3
+Timing path: u_hdmi_top/u_rgb2dvi_0/encoder_g/reg4_syn_29.clk->u_hdmi_top/u_rgb2dvi_0/encoder_g/reg3_syn_26
+u_hdmi_top/u_rgb2dvi_0/encoder_g/reg4_syn_29.clk
+u_hdmi_top/u_rgb2dvi_0/encoder_g/reg3_syn_26
+4830 0.458000 12.230000 11.772000 10 10
+u_hdmi_top/u_rgb2dvi_0/encoder_g/n1d[1] u_ispMUX/u_isp_2dnr/reg3_syn_4353.c[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_g/n0q_m_b[3]_syn_2 u_hdmi_top/u_rgb2dvi_0/encoder_g/reg6_syn_61.a[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_g/reg6_syn_21 u_ispMUX/u_isp_2dnr/reg3_syn_3994.b[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_g/q_m[2] u_ispMUX/u_isp_2dnr/reg3_syn_4381.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_g/q_m[3] u_ispMUX/u_isp_2dnr/reg3_syn_4369.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_g/q_m[4] u_ispMUX/u_isp_2dnr/reg3_syn_4369.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_g/q_m[5] u_hdmi_top/u_rgb2dvi_0/encoder_g/n0q_m_b[3]_syn_38.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_g/n0q_m_b[3]_syn_7 u_hdmi_top/u_rgb2dvi_0/encoder_g/n0q_m_b[3]_syn_44.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_g/n0q_m_b[3]_syn_11 u_hdmi_top/u_rgb2dvi_0/encoder_g/n0q_m_b[3]_syn_42.b[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_g/n0q_m_b[3]_syn_19 u_hdmi_top/u_rgb2dvi_0/encoder_g/reg3_syn_26.a[1]
+
+Timing path: u_hdmi_top/u_rgb2dvi_0/encoder_g/reg4_syn_29.clk->u_hdmi_top/u_rgb2dvi_0/encoder_g/reg3_syn_26
+u_hdmi_top/u_rgb2dvi_0/encoder_g/reg4_syn_29.clk
+u_hdmi_top/u_rgb2dvi_0/encoder_g/reg3_syn_26
+4882 0.458000 12.230000 11.772000 10 10
+u_hdmi_top/u_rgb2dvi_0/encoder_g/n1d[1] u_ispMUX/u_isp_2dnr/reg3_syn_4353.c[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_g/n0q_m_b[3]_syn_2 u_hdmi_top/u_rgb2dvi_0/encoder_g/reg6_syn_61.a[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_g/reg6_syn_21 u_ispMUX/u_isp_2dnr/reg3_syn_3994.b[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_g/q_m[2] u_ispMUX/u_isp_2dnr/reg3_syn_4381.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_g/q_m[3] u_ispMUX/u_isp_2dnr/reg3_syn_4369.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_g/q_m[4] u_ispMUX/u_isp_2dnr/reg3_syn_4369.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_g/q_m[5] u_hdmi_top/u_rgb2dvi_0/encoder_g/n0q_m_b[3]_syn_38.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_g/n0q_m_b[3]_syn_7 u_hdmi_top/u_rgb2dvi_0/encoder_g/n0q_m_b[3]_syn_44.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_g/n0q_m_b[3]_syn_11 u_hdmi_top/u_rgb2dvi_0/encoder_g/n0q_m_b[3]_syn_42.b[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_g/n0q_m_b[3]_syn_19 u_hdmi_top/u_rgb2dvi_0/encoder_g/reg3_syn_26.a[1]
+
+Timing path: u_hdmi_top/u_rgb2dvi_0/encoder_g/reg4_syn_32.clk->u_hdmi_top/u_rgb2dvi_0/encoder_g/reg3_syn_26
+u_hdmi_top/u_rgb2dvi_0/encoder_g/reg4_syn_32.clk
+u_hdmi_top/u_rgb2dvi_0/encoder_g/reg3_syn_26
+4934 0.716000 12.230000 11.514000 10 10
+u_hdmi_top/u_rgb2dvi_0/encoder_g/n1d[0] u_ispMUX/u_isp_2dnr/reg3_syn_4353.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_g/n0q_m_b[3]_syn_2 u_hdmi_top/u_rgb2dvi_0/encoder_g/reg6_syn_61.a[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_g/reg6_syn_21 u_ispMUX/u_isp_2dnr/reg3_syn_3994.b[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_g/q_m[2] u_ispMUX/u_isp_2dnr/reg3_syn_4381.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_g/q_m[3] u_ispMUX/u_isp_2dnr/reg3_syn_4369.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_g/q_m[4] u_ispMUX/u_isp_2dnr/reg3_syn_4369.d[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_g/q_m[5] u_hdmi_top/u_rgb2dvi_0/encoder_g/n0q_m_b[3]_syn_38.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_g/n0q_m_b[3]_syn_7 u_hdmi_top/u_rgb2dvi_0/encoder_g/n0q_m_b[3]_syn_44.d[0]
+u_hdmi_top/u_rgb2dvi_0/encoder_g/n0q_m_b[3]_syn_11 u_hdmi_top/u_rgb2dvi_0/encoder_g/n0q_m_b[3]_syn_42.b[1]
+u_hdmi_top/u_rgb2dvi_0/encoder_g/n0q_m_b[3]_syn_19 u_hdmi_top/u_rgb2dvi_0/encoder_g/reg3_syn_26.a[1]
+
+
+
+Hold check
+4986 3
+Endpoint: u_ispMUX/u_white_balenceb_top/u_wb_gain/AverageR_recip[9]_syn_8
+4988 0.323000 1 1
+Timing path: u_logic/Bfjpw6_reg_syn_3335.clk->u_ispMUX/u_white_balenceb_top/u_wb_gain/AverageR_recip[9]_syn_8
+u_logic/Bfjpw6_reg_syn_3335.clk
+u_ispMUX/u_white_balenceb_top/u_wb_gain/AverageR_recip[9]_syn_8
+4990 0.323000 2.135000 2.458000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/asy_r_rst0 u_ispMUX/u_white_balenceb_top/u_wb_gain/AverageR_recip[9]_syn_8.mi[0]
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg1_syn_41
+5024 0.330000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_51.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg1_syn_41
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_51.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg1_syn_41
+5026 0.330000 2.119000 2.449000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/sync_r1[0] u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg1_syn_41.mi[1]
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_51
+5060 0.330000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg0_syn_54.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_51
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg0_syn_54.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_51
+5062 0.330000 2.119000 2.449000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/sync_r1[9] u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_51.mi[0]
+
+
+
+Recovery check
+5096 3
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/ram_inst/reg2_syn_89
+5098 6.222000 1 1
+Timing path: u_ispMUX/u_white_balenceb_top/u_wb_gain/AverageR_recip[9]_syn_8.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/ram_inst/reg2_syn_89
+u_ispMUX/u_white_balenceb_top/u_wb_gain/AverageR_recip[9]_syn_8.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/ram_inst/reg2_syn_89
+5100 6.222000 12.046000 5.824000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/asy_r_rst1 u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/ram_inst/reg2_syn_89.sr
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/ram_inst/reg2_syn_95
+5134 6.932000 1 1
+Timing path: u_ispMUX/u_white_balenceb_top/u_wb_gain/AverageR_recip[9]_syn_8.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/ram_inst/reg2_syn_95
+u_ispMUX/u_white_balenceb_top/u_wb_gain/AverageR_recip[9]_syn_8.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/ram_inst/reg2_syn_95
+5136 6.932000 12.046000 5.114000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/asy_r_rst1 u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/ram_inst/reg2_syn_95.sr
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/ram_inst/reg2_syn_92
+5170 7.063000 1 1
+Timing path: u_ispMUX/u_white_balenceb_top/u_wb_gain/AverageR_recip[9]_syn_8.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/ram_inst/reg2_syn_92
+u_ispMUX/u_white_balenceb_top/u_wb_gain/AverageR_recip[9]_syn_8.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/ram_inst/reg2_syn_92
+5172 7.063000 12.046000 4.983000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/asy_r_rst1 u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/ram_inst/reg2_syn_92.sr
+
+
+
+Removal check
+5206 3
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg1_syn_41
+5208 0.274000 1 1
+Timing path: u_ispMUX/u_white_balenceb_top/u_wb_gain/AverageR_recip[9]_syn_8.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg1_syn_41
+u_ispMUX/u_white_balenceb_top/u_wb_gain/AverageR_recip[9]_syn_8.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg1_syn_41
+5210 0.274000 2.327000 2.601000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/asy_r_rst1 u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg1_syn_41.sr
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_51
+5244 0.274000 1 1
+Timing path: u_ispMUX/u_white_balenceb_top/u_wb_gain/AverageR_recip[9]_syn_8.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_51
+u_ispMUX/u_white_balenceb_top/u_wb_gain/AverageR_recip[9]_syn_8.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_51
+5246 0.274000 2.327000 2.601000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/asy_r_rst1 u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_51.sr
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/reg0_syn_77
+5280 0.282000 1 1
+Timing path: u_ispMUX/u_white_balenceb_top/u_wb_gain/AverageR_recip[9]_syn_8.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/reg0_syn_77
+u_ispMUX/u_white_balenceb_top/u_wb_gain/AverageR_recip[9]_syn_8.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/reg0_syn_77
+5282 0.282000 2.327000 2.609000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/asy_r_rst1 u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/reg0_syn_77.sr
+
+
+
+
+clock: hdmi_clk_5
+5316 424 106 2
+Setup check
+5326 3
+Endpoint: u_sd_top/u_sd_operation/reg9_syn_101
+5326 -0.716000 3 3
+Timing path: u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21.clk->u_sd_top/u_sd_operation/reg9_syn_101
+u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21.clk
+u_sd_top/u_sd_operation/reg9_syn_101
+5328 -0.716000 4.587000 5.303000 1 2
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt[1] u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_27.b[0]
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt_b_n u_sd_top/u_sd_operation/reg9_syn_101.sr
+
+Timing path: u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_19.clk->u_sd_top/u_sd_operation/reg9_syn_101
+u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_19.clk
+u_sd_top/u_sd_operation/reg9_syn_101
+5364 -0.482000 4.587000 5.069000 1 2
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt[2] u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_27.c[0]
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt_b_n u_sd_top/u_sd_operation/reg9_syn_101.sr
+
+Timing path: u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_19.clk->u_sd_top/u_sd_operation/reg9_syn_101
+u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_19.clk
+u_sd_top/u_sd_operation/reg9_syn_101
+5400 -0.448000 4.587000 5.035000 1 2
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt[0] u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_27.d[0]
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt_b_n u_sd_top/u_sd_operation/reg9_syn_101.sr
+
+
+Endpoint: u_sd_top/u_sd_operation/reg9_syn_105
+5436 -0.435000 3 3
+Timing path: u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21.clk->u_sd_top/u_sd_operation/reg9_syn_105
+u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21.clk
+u_sd_top/u_sd_operation/reg9_syn_105
+5438 -0.435000 4.587000 5.022000 1 2
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt[1] u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_27.b[0]
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt_b_n u_sd_top/u_sd_operation/reg9_syn_105.sr
+
+Timing path: u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_19.clk->u_sd_top/u_sd_operation/reg9_syn_105
+u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_19.clk
+u_sd_top/u_sd_operation/reg9_syn_105
+5474 -0.201000 4.587000 4.788000 1 2
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt[2] u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_27.c[0]
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt_b_n u_sd_top/u_sd_operation/reg9_syn_105.sr
+
+Timing path: u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_19.clk->u_sd_top/u_sd_operation/reg9_syn_105
+u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_19.clk
+u_sd_top/u_sd_operation/reg9_syn_105
+5510 -0.167000 4.587000 4.754000 1 2
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt[0] u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_27.d[0]
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt_b_n u_sd_top/u_sd_operation/reg9_syn_105.sr
+
+
+Endpoint: u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_32
+5546 -0.124000 3 3
+Timing path: u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21.clk->u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_32
+u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_21.clk
+u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_32
+5548 -0.124000 4.659000 4.783000 1 2
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt[1] u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_27.b[0]
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt_b_n u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_32.sr
+
+Timing path: u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_19.clk->u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_32
+u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_19.clk
+u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_32
+5584 0.110000 4.659000 4.549000 1 2
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt[2] u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_27.c[0]
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt_b_n u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_32.sr
+
+Timing path: u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_19.clk->u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_32
+u_hdmi_top/u_rgb2dvi_0/serializer_b/reg0_syn_19.clk
+u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_32
+5620 0.144000 4.659000 4.515000 1 2
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt[0] u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_27.d[0]
+u_hdmi_top/u_rgb2dvi_0/serializer_b/bit_cnt_b_n u_hdmi_top/u_rgb2dvi_0/serializer_clk/reg1_syn_32.sr
+
+
+
+Hold check
+5656 3
+Endpoint: u_hdmi_top/u_rgb2dvi_0/serializer_b/reg2_syn_32
+5658 0.283000 1 1
+Timing path: u_hdmi_top/u_rgb2dvi_0/encoder_r/reg2_syn_68.clk->u_hdmi_top/u_rgb2dvi_0/serializer_b/reg2_syn_32
+u_hdmi_top/u_rgb2dvi_0/encoder_r/reg2_syn_68.clk
+u_hdmi_top/u_rgb2dvi_0/serializer_b/reg2_syn_32
+5660 0.283000 2.291000 2.574000 0 1
+u_hdmi_top/u_rgb2dvi_0/serializer_r/paralell_data[8] u_hdmi_top/u_rgb2dvi_0/serializer_b/reg2_syn_32.mi[0]
+
+
+Endpoint: u_hdmi_top/u_rgb2dvi_0/serializer_g/reg1_syn_34
+5694 0.283000 1 1
+Timing path: u_hdmi_top/u_rgb2dvi_0/encoder_g/reg2_syn_66.clk->u_hdmi_top/u_rgb2dvi_0/serializer_g/reg1_syn_34
+u_hdmi_top/u_rgb2dvi_0/encoder_g/reg2_syn_66.clk
+u_hdmi_top/u_rgb2dvi_0/serializer_g/reg1_syn_34
+5696 0.283000 2.291000 2.574000 0 1
+u_hdmi_top/u_rgb2dvi_0/serializer_g/paralell_data[9] u_hdmi_top/u_rgb2dvi_0/serializer_g/reg1_syn_34.mi[1]
+
+
+Endpoint: u_hdmi_top/u_rgb2dvi_0/serializer_b/reg2_syn_32
+5730 0.312000 1 1
+Timing path: u_hdmi_top/u_rgb2dvi_0/encoder_r/reg2_syn_55.clk->u_hdmi_top/u_rgb2dvi_0/serializer_b/reg2_syn_32
+u_hdmi_top/u_rgb2dvi_0/encoder_r/reg2_syn_55.clk
+u_hdmi_top/u_rgb2dvi_0/serializer_b/reg2_syn_32
+5732 0.312000 2.291000 2.603000 0 1
+u_hdmi_top/u_rgb2dvi_0/serializer_b/paralell_data[8] u_hdmi_top/u_rgb2dvi_0/serializer_b/reg2_syn_32.mi[1]
+
+
+
+
+Path delay: 9.7ns max
+5766 10 10 1
+Max path
+5776 3
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_39
+5776 8.646000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg0_syn_60.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_39
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg0_syn_60.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_39
+5778 8.646000 11.994000 3.348000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/primary_addr_gray_reg[2] u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_39.mi[1]
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_41
+5806 8.733000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg0_syn_63.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_41
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg0_syn_63.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_41
+5808 8.733000 11.994000 3.261000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/primary_addr_gray_reg[3] u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_41.mi[1]
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/sub0_syn_54
+5836 8.809000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg0_syn_63.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/sub0_syn_54
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg0_syn_63.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/sub0_syn_54
+5838 8.809000 11.994000 3.185000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/primary_addr_gray_reg[5] u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/sub0_syn_54.mi[0]
+
+
+
+
+Path delay: 9.7ns max
+5868 10 10 1
+Max path
+5878 3
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_51
+5878 8.530000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg0_syn_56.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_51
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg0_syn_56.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_51
+5880 8.530000 9.584000 1.054000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/primary_addr_gray_reg[0] u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_51.mi[1]
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_45
+5909 8.693000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg0_syn_59.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_45
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg0_syn_59.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_45
+5911 8.693000 9.584000 0.891000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/primary_addr_gray_reg[3] u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_45.mi[1]
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_43
+5940 8.769000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg0_syn_56.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_43
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg0_syn_56.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_43
+5942 8.769000 9.584000 0.815000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/primary_addr_gray_reg[2] u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_43.mi[1]
+
+
+
+
+Path delay: 6.366ns max
+5973 10 10 1
+Max path
+5983 3
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg1_syn_44
+5983 5.225000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg0_syn_57.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg1_syn_44
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg0_syn_57.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg1_syn_44
+5985 5.225000 6.250000 1.025000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/primary_addr_gray_reg[2] u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg1_syn_44.mi[0]
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg1_syn_46
+6014 5.264000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg0_syn_60.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg1_syn_46
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg0_syn_60.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg1_syn_46
+6016 5.264000 6.250000 0.986000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/primary_addr_gray_reg[1] u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg1_syn_46.mi[0]
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg3_syn_39
+6045 5.264000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg0_syn_60.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg3_syn_39
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg0_syn_60.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg3_syn_39
+6047 5.264000 6.250000 0.986000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/primary_addr_gray_reg[6] u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg3_syn_39.mi[0]
+
+
+
+
+Path delay: 6.366ns max
+6078 10 10 1
+Max path
+6088 3
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg1_syn_36
+6088 5.254000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_66.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg1_syn_36
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_66.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg1_syn_36
+6090 5.254000 8.660000 3.406000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/primary_addr_gray_reg[8] u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg1_syn_36.mi[0]
+
+
+Endpoint: u_window_split/split_window0_en_n9_syn_25678
+6118 5.328000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_63.clk->u_window_split/split_window0_en_n9_syn_25678
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_63.clk
+u_window_split/split_window0_en_n9_syn_25678
+6120 5.328000 8.660000 3.332000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/primary_addr_gray_reg[4] u_window_split/split_window0_en_n9_syn_25678.mi[1]
+
+
+Endpoint: u_window_split/split_window0_en_n9_syn_25650
+6148 5.475000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_54.clk->u_window_split/split_window0_en_n9_syn_25650
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_54.clk
+u_window_split/split_window0_en_n9_syn_25650
+6150 5.475000 8.660000 3.185000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/primary_addr_gray_reg[5] u_window_split/split_window0_en_n9_syn_25650.mi[0]
+
+
+
+
+Path delay: 4.7ns max
+6180 20 20 1
+Max path
+6190 3
+Endpoint: u_window_split/u_tempfifoL0/wr_to_rd_cross_inst/reg3_syn_53
+6190 3.525000 1 1
+Timing path: u_window_split/u_tempfifoL0/wr_to_rd_cross_inst/reg0_syn_60.clk->u_window_split/u_tempfifoL0/wr_to_rd_cross_inst/reg3_syn_53
+u_window_split/u_tempfifoL0/wr_to_rd_cross_inst/reg0_syn_60.clk
+u_window_split/u_tempfifoL0/wr_to_rd_cross_inst/reg3_syn_53
+6192 3.525000 6.860000 3.335000 0 1
+u_window_split/u_tempfifoL0/wr_to_rd_cross_inst/primary_addr_gray_reg[5] u_window_split/u_tempfifoL0/wr_to_rd_cross_inst/reg3_syn_53.mi[1]
+
+
+Endpoint: u_window_split/u_tempfifoL0/add0_syn_62
+6225 3.546000 1 1
+Timing path: u_window_split/u_tempfifoL0/rd_to_wr_cross_inst/reg0_syn_60.clk->u_window_split/u_tempfifoL0/add0_syn_62
+u_window_split/u_tempfifoL0/rd_to_wr_cross_inst/reg0_syn_60.clk
+u_window_split/u_tempfifoL0/add0_syn_62
+6227 3.546000 6.860000 3.314000 0 1
+u_window_split/u_tempfifoL0/rd_to_wr_cross_inst/primary_addr_gray_reg[1] u_window_split/u_tempfifoL0/add0_syn_62.mi[0]
+
+
+Endpoint: u_window_split/u_tempfifoL0/wr_to_rd_cross_inst/reg3_syn_50
+6260 3.617000 1 1
+Timing path: u_window_split/u_tempfifoL0/rd_to_wr_cross_inst/reg3_syn_49.clk->u_window_split/u_tempfifoL0/wr_to_rd_cross_inst/reg3_syn_50
+u_window_split/u_tempfifoL0/rd_to_wr_cross_inst/reg3_syn_49.clk
+u_window_split/u_tempfifoL0/wr_to_rd_cross_inst/reg3_syn_50
+6262 3.617000 6.860000 3.243000 0 1
+u_window_split/u_tempfifoL0/wr_to_rd_cross_inst/primary_addr_gray_reg[6] u_window_split/u_tempfifoL0/wr_to_rd_cross_inst/reg3_syn_50.mi[1]
+
+
+
+
+Path delay: 4.7ns max
+6297 20 20 1
+Max path
+6307 3
+Endpoint: u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg3_syn_53
+6307 3.383000 1 1
+Timing path: u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg0_syn_58.clk->u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg3_syn_53
+u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg0_syn_58.clk
+u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg3_syn_53
+6309 3.383000 6.860000 3.477000 0 1
+u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/primary_addr_gray_reg[3] u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg3_syn_53.mi[1]
+
+
+Endpoint: u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg1_syn_41
+6342 3.470000 1 1
+Timing path: u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg0_syn_61.clk->u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg1_syn_41
+u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg0_syn_61.clk
+u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg1_syn_41
+6344 3.470000 6.860000 3.390000 0 1
+u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/primary_addr_gray_reg[6] u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg1_syn_41.mi[0]
+
+
+Endpoint: u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg3_syn_59
+6377 3.506000 1 1
+Timing path: u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg0_syn_61.clk->u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg3_syn_59
+u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg0_syn_61.clk
+u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg3_syn_59
+6379 3.506000 6.860000 3.354000 0 1
+u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/primary_addr_gray_reg[8] u_window_split/u_tempfifoL1/rd_to_wr_cross_inst/reg3_syn_59.mi[0]
+
+
+
+
+Path delay: 4.7ns max
+6414 20 20 1
+Max path
+6424 3
+Endpoint: u_window_split/u_tempfifoR0/rd_to_wr_cross_inst/reg3_syn_56
+6424 3.367000 1 1
+Timing path: u_window_split/u_tempfifoR0/rd_to_wr_cross_inst/reg0_syn_54.clk->u_window_split/u_tempfifoR0/rd_to_wr_cross_inst/reg3_syn_56
+u_window_split/u_tempfifoR0/rd_to_wr_cross_inst/reg0_syn_54.clk
+u_window_split/u_tempfifoR0/rd_to_wr_cross_inst/reg3_syn_56
+6426 3.367000 6.860000 3.493000 0 1
+u_window_split/u_tempfifoR0/rd_to_wr_cross_inst/primary_addr_gray_reg[5] u_window_split/u_tempfifoR0/rd_to_wr_cross_inst/reg3_syn_56.mi[1]
+
+
+Endpoint: u_window_split/u_tempfifoR0/sub0_syn_54
+6459 3.525000 1 1
+Timing path: u_window_split/u_tempfifoR0/wr_to_rd_cross_inst/reg0_syn_57.clk->u_window_split/u_tempfifoR0/sub0_syn_54
+u_window_split/u_tempfifoR0/wr_to_rd_cross_inst/reg0_syn_57.clk
+u_window_split/u_tempfifoR0/sub0_syn_54
+6461 3.525000 6.860000 3.335000 0 1
+u_window_split/u_tempfifoR0/wr_to_rd_cross_inst/primary_addr_gray_reg[4] u_window_split/u_tempfifoR0/sub0_syn_54.mi[1]
+
+
+Endpoint: u_window_split/u_tempfifoR0/rd_to_wr_cross_inst/reg3_syn_50
+6494 3.530000 1 1
+Timing path: u_window_split/u_tempfifoR0/rd_to_wr_cross_inst/reg0_syn_66.clk->u_window_split/u_tempfifoR0/rd_to_wr_cross_inst/reg3_syn_50
+u_window_split/u_tempfifoR0/rd_to_wr_cross_inst/reg0_syn_66.clk
+u_window_split/u_tempfifoR0/rd_to_wr_cross_inst/reg3_syn_50
+6496 3.530000 6.860000 3.330000 0 1
+u_window_split/u_tempfifoR0/rd_to_wr_cross_inst/primary_addr_gray_reg[8] u_window_split/u_tempfifoR0/rd_to_wr_cross_inst/reg3_syn_50.mi[1]
+
+
+
+
+Path delay: 4.7ns max
+6531 20 20 1
+Max path
+6541 3
+Endpoint: u_window_split/u_tempfifoR1/rd_to_wr_cross_inst/reg3_syn_49
+6541 3.292000 1 1
+Timing path: u_window_split/u_tempfifoR1/rd_to_wr_cross_inst/reg0_syn_60.clk->u_window_split/u_tempfifoR1/rd_to_wr_cross_inst/reg3_syn_49
+u_window_split/u_tempfifoR1/rd_to_wr_cross_inst/reg0_syn_60.clk
+u_window_split/u_tempfifoR1/rd_to_wr_cross_inst/reg3_syn_49
+6543 3.292000 6.860000 3.568000 0 1
+u_window_split/u_tempfifoR1/rd_to_wr_cross_inst/primary_addr_gray_reg[4] u_window_split/u_tempfifoR1/rd_to_wr_cross_inst/reg3_syn_49.mi[0]
+
+
+Endpoint: u_window_split/u_tempfifoR1/rd_to_wr_cross_inst/reg3_syn_49
+6576 3.397000 1 1
+Timing path: u_window_split/u_tempfifoR1/rd_to_wr_cross_inst/reg0_syn_57.clk->u_window_split/u_tempfifoR1/rd_to_wr_cross_inst/reg3_syn_49
+u_window_split/u_tempfifoR1/rd_to_wr_cross_inst/reg0_syn_57.clk
+u_window_split/u_tempfifoR1/rd_to_wr_cross_inst/reg3_syn_49
+6578 3.397000 6.860000 3.463000 0 1
+u_window_split/u_tempfifoR1/rd_to_wr_cross_inst/primary_addr_gray_reg[3] u_window_split/u_tempfifoR1/rd_to_wr_cross_inst/reg3_syn_49.mi[1]
+
+
+Endpoint: u_window_split/u_tempfifoR1/rd_to_wr_cross_inst/reg3_syn_44
+6611 3.410000 1 1
+Timing path: u_window_split/u_tempfifoR1/rd_to_wr_cross_inst/reg0_syn_63.clk->u_window_split/u_tempfifoR1/rd_to_wr_cross_inst/reg3_syn_44
+u_window_split/u_tempfifoR1/rd_to_wr_cross_inst/reg0_syn_63.clk
+u_window_split/u_tempfifoR1/rd_to_wr_cross_inst/reg3_syn_44
+6613 3.410000 6.860000 3.450000 0 1
+u_window_split/u_tempfifoR1/rd_to_wr_cross_inst/primary_addr_gray_reg[5] u_window_split/u_tempfifoR1/rd_to_wr_cross_inst/reg3_syn_44.mi[1]
+
+
+
+
+
+Timing group statistics: 
+	Clock constraints: 
+	  Clock Name                                  Min Period     Max Freq           Skew      Fanout            TNS
+	  sys_clk (50.0MHz)                             21.701ns      46.081MHz        0.326ns      1277      -56.076ns
+	  raw_clk (150.0MHz)                             8.002ns     124.969MHz        0.138ns       651      -24.198ns
+	  yuv_clk (150.0MHz)                            10.072ns      99.285MHz        0.254ns       646      -89.393ns
+	  mux_clk (200.0MHz)                             8.382ns     119.303MHz        0.326ns       542     -601.658ns
+	  sdcard_clk (100.0MHz)                          8.546ns     117.000MHz        0.326ns       463        0.000ns
+	  rgb_clk (200.0MHz)                             8.822ns     113.353MHz        0.326ns       369     -601.463ns
+	  hdmi_clk (100.0MHz)                            9.647ns     103.659MHz        0.066ns       144        0.000ns
+	  hdmi_clk_5 (400.0MHz)                          3.216ns     310.945MHz        0.326ns        31       -1.275ns
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+Warning: No clock constraint on 5 clock net(s): 
+	sdram_clk_dup_1
+	u_Keyboard/cnt[19]_syn_4
+	u_Keyboard/current_state[1]_syn_275
+	u_logic/SWCLKTCK
+	u_sdram_top/fifo_ctrl_inst/sys_clk
+
+	Exceptions:
+
+		Check Type:	MIN
+		----------------------------------------------------------------------------------------------------
+		       Path Num     Constraint                                                                      
+		             10     set_false_path -hold -from [ get_regs {rd_to_wr_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {rd_to_wr_cross_inst/sync_r1[*]} ]
+		             10     set_false_path -hold -from [ get_regs {wr_to_rd_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {wr_to_rd_cross_inst/sync_r1[*]} ]
+		             10     set_false_path -hold -from [ get_regs {rd_to_wr_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {rd_to_wr_cross_inst/sync_r1[*]} ]
+		             10     set_false_path -hold -from [ get_regs {wr_to_rd_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {wr_to_rd_cross_inst/sync_r1[*]} ]
+		             20     set_false_path -nowarn -hold -from [ get_regs -nowarn {*/primary_addr_gray_reg[*]} ] -to [ get_regs -nowarn {*/sync_r1[*]} ]
+		             20     set_false_path -nowarn -hold -from [ get_regs -nowarn {*/primary_addr_gray_reg[*]} ] -to [ get_regs -nowarn {*/sync_r1[*]} ]
+		             20     set_false_path -nowarn -hold -from [ get_regs -nowarn {*/primary_addr_gray_reg[*]} ] -to [ get_regs -nowarn {*/sync_r1[*]} ]
+		             20     set_false_path -nowarn -hold -from [ get_regs -nowarn {*/primary_addr_gray_reg[*]} ] -to [ get_regs -nowarn {*/sync_r1[*]} ]
+

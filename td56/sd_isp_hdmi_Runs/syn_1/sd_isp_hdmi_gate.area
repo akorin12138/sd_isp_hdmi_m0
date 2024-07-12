@@ -1,0 +1,112 @@
+standard
+***Report Model: sd_isp_hdmi_top Device: EG4S20BG256***
+
+IO Statistics
+#IO                        51
+  #input                    2
+  #output                  28
+  #inout                   21
+
+LUT Statistics
+#Total_luts              5859
+  #lut4                  2299
+  #lut5                   770
+  #lut6                   252
+  #lut5_mx41                0
+  #lut4_alu1b            2538
+
+Utilization Statistics
+#lut                     6111   out of  19600   31.18%
+#reg                     3221   out of  19600   16.43%
+#le                         0
+#dsp                       23   out of     29   79.31%
+#bram                      29   out of     64   45.31%
+  #bram9k                  29
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#pad                       55   out of    188   29.26%
+  #ireg                    16
+  #oreg                     5
+  #treg                    21
+#pll                        3   out of      4   75.00%
+
+Report Hierarchy Area:
++-------------------------------------------------------------------------------------------------------------------------------+
+|Instance                             |Module                                      |lut     |ripple  |seq     |bram    |dsp     |
++-------------------------------------------------------------------------------------------------------------------------------+
+|top                                  |sd_isp_hdmi_top                             |3573    |2538    |3263    |29      |23      |
+|  u_hdmi_top                         |hdmi_top                                    |250     |230     |191     |0       |0       |
+|    u1_Driver                        |Driver                                      |25      |110     |24      |0       |0       |
+|    u_rgb2dvi_0                      |dvi_transmitter_top                         |225     |120     |167     |0       |0       |
+|      encoder_b                      |dvi_encoder                                 |64      |40      |45      |0       |0       |
+|      encoder_g                      |dvi_encoder                                 |67      |40      |40      |0       |0       |
+|      encoder_r                      |dvi_encoder                                 |64      |40      |39      |0       |0       |
+|      reset_syn                      |asyn_rst_syn                                |0       |0       |2       |0       |0       |
+|      serializer_b                   |serializer_10_to_1                          |12      |0       |13      |0       |0       |
+|      serializer_clk                 |serializer_10_to_1                          |2       |0       |8       |0       |0       |
+|      serializer_g                   |serializer_10_to_1                          |8       |0       |10      |0       |0       |
+|      serializer_r                   |serializer_10_to_1                          |8       |0       |10      |0       |0       |
+|  u_ispMUX                           |ispMUX                                      |1858    |1318    |1543    |16      |23      |
+|    u_VIP_RGB888_YCbCr444            |VIP_RGB888_YCbCr444                         |46      |213     |88      |0       |9       |
+|    u_VIP_YCbCr444_RGB888            |VIP_YCbCr444_RGB888                         |38      |145     |80      |0       |2       |
+|    u_bayer2rgb                      |bayer2rgb                                   |59      |86      |150     |4       |0       |
+|      u_vip_matrix_generate_3x3_8bit |vip_matrix_generate_3x3_8bit                |9       |43      |113     |4       |0       |
+|        u_line_shift_ram_8bit_3x3    |line_shift_ram_8bit_3x3                     |9       |12      |31      |4       |0       |
+|          bram_256_8bit_inst0        |bram_256_8bit                               |0       |0       |0       |4       |0       |
+|    u_dpc_top                        |dpc_top                                     |331     |520     |580     |8       |0       |
+|      linebuffer                     |shift_register                              |18      |37      |19      |8       |0       |
+|        gen_ram_inst[0]$u_ram        |simple_dp_ram                               |0       |0       |0       |2       |0       |
+|        gen_ram_inst[1]$u_ram        |simple_dp_ram                               |0       |0       |0       |2       |0       |
+|        gen_ram_inst[2]$u_ram        |simple_dp_ram                               |0       |0       |0       |2       |0       |
+|        gen_ram_inst[3]$u_ram        |simple_dp_ram                               |7       |0       |0       |2       |0       |
+|    u_isp_ccm                        |isp_ccm                                     |0       |0       |2       |0       |0       |
+|    u_laplacian_sharpen_proc         |laplacian_sharpen_proc                      |17      |66      |196     |4       |0       |
+|      u_vip_matrix_generate_3x3_8bit |vip_matrix_generate_3x3_8bit                |9       |43      |97      |4       |0       |
+|        u_line_shift_ram_8bit_3x3    |line_shift_ram_8bit_3x3                     |9       |12      |31      |4       |0       |
+|          bram_256_8bit_inst0        |bram_256_8bit                               |0       |0       |0       |4       |0       |
+|    u_white_balenceb_top             |white_balenceb_top                          |955     |288     |312     |0       |12      |
+|      u_isp_wb                       |isp_wb                                      |24      |99      |72      |0       |6       |
+|      u_wb_gain                      |wb_gain                                     |931     |189     |240     |0       |6       |
+|        Reciprocal_B                 |Reciprocal                                  |170     |0       |0       |0       |0       |
+|        Reciprocal_G                 |Reciprocal                                  |170     |0       |0       |0       |0       |
+|        Reciprocal_R                 |Reciprocal                                  |170     |0       |0       |0       |0       |
+|  u_pll_gen                          |pll_gen                                     |0       |0       |0       |0       |0       |
+|  u_sd_pll                           |sd_pll                                      |0       |0       |0       |0       |0       |
+|  u_sd_top                           |sd_top                                      |853     |181     |611     |1       |0       |
+|    u_crc7                           |crc7                                        |94      |0       |59      |0       |0       |
+|    u_crc7_bram                      |crc7_bram                                   |0       |0       |0       |1       |0       |
+|    u_sd_operation                   |sd_operation                                |733     |137     |509     |0       |0       |
+|  u_sdram_top                        |sdram_top                                   |296     |237     |365     |4       |0       |
+|    fifo_ctrl_inst                   |fifo_ctrl                                   |130     |164     |268     |4       |0       |
+|      etr_fifo_rddata                |SDRAMFIFO                                   |41      |55      |121     |2       |0       |
+|        ram_inst                     |ram_infer_SDRAMFIFO                         |0       |0       |16      |2       |0       |
+|        rd_to_wr_cross_inst          |fifo_cross_domain_addr_process_al_SDRAMFIFO |18      |0       |40      |0       |0       |
+|        wr_to_rd_cross_inst          |fifo_cross_domain_addr_process_al_SDRAMFIFO |18      |0       |40      |0       |0       |
+|      etr_fifo_wrdata                |SDRAMFIFO                                   |41      |55      |119     |2       |0       |
+|        ram_inst                     |ram_infer_SDRAMFIFO                         |0       |0       |16      |2       |0       |
+|        rd_to_wr_cross_inst          |fifo_cross_domain_addr_process_al_SDRAMFIFO |18      |0       |40      |0       |0       |
+|        wr_to_rd_cross_inst          |fifo_cross_domain_addr_process_al_SDRAMFIFO |18      |0       |40      |0       |0       |
+|    sdram_ctrl_inst                  |sdram_ctrl                                  |166     |73      |97      |0       |0       |
+|      sdram_arbit_inst               |sdram_arbit                                 |29      |0       |5       |0       |0       |
+|      sdram_init_inst                |sdram_init                                  |38      |17      |33      |0       |0       |
+|      sdram_read_inst                |sdram_read                                  |60      |33      |30      |0       |0       |
+|      sdram_write_inst               |sdram_write                                 |39      |23      |29      |0       |0       |
+|  u_tx_pll                           |tx_pll                                      |0       |0       |0       |0       |0       |
+|  u_window_split                     |window_split                                |294     |547     |487     |8       |0       |
+|    u_tempfifoL0                     |tempfifo                                    |44      |56      |104     |2       |0       |
+|      ram_inst                       |ram_infer_tempfifo                          |0       |0       |0       |2       |0       |
+|      rd_to_wr_cross_inst            |fifo_cross_domain_addr_process_al_tempfifo  |19      |0       |40      |0       |0       |
+|      wr_to_rd_cross_inst            |fifo_cross_domain_addr_process_al_tempfifo  |19      |0       |40      |0       |0       |
+|    u_tempfifoL1                     |tempfifo                                    |44      |56      |104     |2       |0       |
+|      ram_inst                       |ram_infer_tempfifo                          |0       |0       |0       |2       |0       |
+|      rd_to_wr_cross_inst            |fifo_cross_domain_addr_process_al_tempfifo  |19      |0       |40      |0       |0       |
+|      wr_to_rd_cross_inst            |fifo_cross_domain_addr_process_al_tempfifo  |19      |0       |40      |0       |0       |
+|    u_tempfifoR0                     |tempfifo                                    |44      |56      |104     |2       |0       |
+|      ram_inst                       |ram_infer_tempfifo                          |0       |0       |0       |2       |0       |
+|      rd_to_wr_cross_inst            |fifo_cross_domain_addr_process_al_tempfifo  |19      |0       |40      |0       |0       |
+|      wr_to_rd_cross_inst            |fifo_cross_domain_addr_process_al_tempfifo  |19      |0       |40      |0       |0       |
+|    u_tempfifoR1                     |tempfifo                                    |44      |56      |104     |2       |0       |
+|      ram_inst                       |ram_infer_tempfifo                          |0       |0       |0       |2       |0       |
+|      rd_to_wr_cross_inst            |fifo_cross_domain_addr_process_al_tempfifo  |19      |0       |40      |0       |0       |
+|      wr_to_rd_cross_inst            |fifo_cross_domain_addr_process_al_tempfifo  |19      |0       |40      |0       |0       |
++-------------------------------------------------------------------------------------------------------------------------------+

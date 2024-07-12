@@ -1,0 +1,290 @@
+=========================================================================================================
+Auto created by Tang Dynasty v5.6.88061
+   Copyright (c) 2012-2023 Anlogic Inc.
+Sun May  5 15:49:58 2024
+=========================================================================================================
+
+
+Top Model:                CortexM0_SoC                                                    
+Device:                   eagle_s20                                                       
+Timing Constraint File:   ../../adc_sdc/hdmi_ph1.sdc                                      
+STA Level:                Detail                                                          
+Speed Grade:              NA                                                              
+
+	Exceptions:
+
+		Check Type:	MIN
+		----------------------------------------------------------------------------------------------------
+		       Path Num     Constraint                                                                      
+		             10     set_false_path -hold -from [ get_regs {rd_to_wr_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {rd_to_wr_cross_inst/sync_r1[*]} ]
+		             10     set_false_path -hold -from [ get_regs {wr_to_rd_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {wr_to_rd_cross_inst/sync_r1[*]} ]
+		             10     set_false_path -hold -from [ get_regs {rd_to_wr_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {rd_to_wr_cross_inst/sync_r1[*]} ]
+		             10     set_false_path -hold -from [ get_regs {wr_to_rd_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {wr_to_rd_cross_inst/sync_r1[*]} ]
+
+---------------------------------------------------------------------------------------------------------
+
+=========================================================================================================
+ Timing constraint:       false path info                                                 
+False path: set_false_path -hold -from [ get_regs {rd_to_wr_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {rd_to_wr_cross_inst/sync_r1[*]} ]
+
+10 endpoints analyzed totally, and 10 paths analyzed
+---------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------
+Paths for end point u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_48 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check):      0.000 ns                                                        
+ Start Point:             u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg0_syn_55.clk (rising edge triggered by clock hdmi_clk)
+ End Point:               u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_48.mi[0] (rising edge triggered by clock sdram_clk)
+ Clock group:             sys_clk                                                         
+ Process:                 Slow                                                            
+ Data Path Delay:         1.057ns  (logic 0.239ns, net 0.818ns, 22% logic)                
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg0_syn_55.clk clock                   0.000       0.000
+ launch clock edge                                                                   0.000       0.000
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg0_syn_55.q[0] clk2q                   0.128 r     0.128
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_48.mi[0] net  (fanout = 1)       0.818 r     0.946
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_48 path2reg0               0.111       1.057
+ Arrival time                                                                        1.057                  (0 lvl)       
+
+Paths for end point u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_46 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check):      0.000 ns                                                        
+ Start Point:             u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg0_syn_58.clk (rising edge triggered by clock hdmi_clk)
+ End Point:               u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_46.mi[1] (rising edge triggered by clock sdram_clk)
+ Clock group:             sys_clk                                                         
+ Process:                 Slow                                                            
+ Data Path Delay:         0.652ns  (logic 0.239ns, net 0.413ns, 36% logic)                
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg0_syn_58.clk clock                   0.000       0.000
+ launch clock edge                                                                   0.000       0.000
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg0_syn_58.q[0] clk2q                   0.128 r     0.128
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_46.mi[1] net  (fanout = 1)       0.413 r     0.541
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_46 path2reg1               0.111       0.652
+ Arrival time                                                                        0.652                  (0 lvl)       
+
+Paths for end point u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_46 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check):      0.000 ns                                                        
+ Start Point:             u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg0_syn_58.clk (rising edge triggered by clock hdmi_clk)
+ End Point:               u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_46.mi[0] (rising edge triggered by clock sdram_clk)
+ Clock group:             sys_clk                                                         
+ Process:                 Slow                                                            
+ Data Path Delay:         0.640ns  (logic 0.239ns, net 0.401ns, 37% logic)                
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg0_syn_58.clk clock                   0.000       0.000
+ launch clock edge                                                                   0.000       0.000
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg0_syn_58.q[1] clk2q                   0.128 r     0.128
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_46.mi[0] net  (fanout = 1)       0.401 r     0.529
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_46 path2reg0               0.111       0.640
+ Arrival time                                                                        0.640                  (0 lvl)       
+
+
+=========================================================================================================
+ Timing constraint:       false path info                                                 
+False path: set_false_path -hold -from [ get_regs {wr_to_rd_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {wr_to_rd_cross_inst/sync_r1[*]} ]
+
+10 endpoints analyzed totally, and 10 paths analyzed
+---------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------
+Paths for end point u_sdram_top/sdram_ctrl_inst/sdram_read_inst/lt0_syn_47 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check):      0.000 ns                                                        
+ Start Point:             u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg0_syn_57.clk (rising edge triggered by clock sdram_clk)
+ End Point:               u_sdram_top/sdram_ctrl_inst/sdram_read_inst/lt0_syn_47.mi[1] (rising edge triggered by clock hdmi_clk)
+ Clock group:             sys_clk                                                         
+ Process:                 Slow                                                            
+ Data Path Delay:         0.706ns  (logic 0.239ns, net 0.467ns, 33% logic)                
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg0_syn_57.clk clock                   0.000       0.000
+ launch clock edge                                                                   0.000       0.000
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg0_syn_57.q[1] clk2q                   0.128 r     0.128
+ u_sdram_top/sdram_ctrl_inst/sdram_read_inst/lt0_syn_47.mi[1] net  (fanout = 1)       0.467 r     0.595
+ u_sdram_top/sdram_ctrl_inst/sdram_read_inst/lt0_syn_47      path2reg1               0.111       0.706
+ Arrival time                                                                        0.706                  (0 lvl)       
+
+Paths for end point u_sdram_top/sdram_ctrl_inst/sdram_read_inst/lt0_syn_47 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check):      0.000 ns                                                        
+ Start Point:             u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg0_syn_57.clk (rising edge triggered by clock sdram_clk)
+ End Point:               u_sdram_top/sdram_ctrl_inst/sdram_read_inst/lt0_syn_47.mi[0] (rising edge triggered by clock hdmi_clk)
+ Clock group:             sys_clk                                                         
+ Process:                 Slow                                                            
+ Data Path Delay:         0.706ns  (logic 0.239ns, net 0.467ns, 33% logic)                
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg0_syn_57.clk clock                   0.000       0.000
+ launch clock edge                                                                   0.000       0.000
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg0_syn_57.q[0] clk2q                   0.128 r     0.128
+ u_sdram_top/sdram_ctrl_inst/sdram_read_inst/lt0_syn_47.mi[0] net  (fanout = 1)       0.467 r     0.595
+ u_sdram_top/sdram_ctrl_inst/sdram_read_inst/lt0_syn_47      path2reg0               0.111       0.706
+ Arrival time                                                                        0.706                  (0 lvl)       
+
+Paths for end point u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_59 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check):      0.000 ns                                                        
+ Start Point:             u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg0_syn_54.clk (rising edge triggered by clock sdram_clk)
+ End Point:               u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_59.mi[1] (rising edge triggered by clock hdmi_clk)
+ Clock group:             sys_clk                                                         
+ Process:                 Slow                                                            
+ Data Path Delay:         0.918ns  (logic 0.239ns, net 0.679ns, 26% logic)                
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg0_syn_54.clk clock                   0.000       0.000
+ launch clock edge                                                                   0.000       0.000
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg0_syn_54.q[1] clk2q                   0.128 r     0.128
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_59.mi[1] net  (fanout = 1)       0.679 r     0.807
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_59 path2reg1               0.111       0.918
+ Arrival time                                                                        0.918                  (0 lvl)       
+
+
+=========================================================================================================
+ Timing constraint:       false path info                                                 
+False path: set_false_path -hold -from [ get_regs {rd_to_wr_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {rd_to_wr_cross_inst/sync_r1[*]} ]
+
+10 endpoints analyzed totally, and 10 paths analyzed
+---------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------
+Paths for end point u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_57 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check):      0.000 ns                                                        
+ Start Point:             u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg0_syn_66.clk (rising edge triggered by clock sdram_clk)
+ End Point:               u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_57.mi[0] (rising edge triggered by clock isp_clk)
+ Clock group:             sys_clk                                                         
+ Process:                 Slow                                                            
+ Data Path Delay:         0.718ns  (logic 0.239ns, net 0.479ns, 33% logic)                
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg0_syn_66.clk clock                   0.000       0.000
+ launch clock edge                                                                   0.000       0.000
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg0_syn_66.q[0] clk2q                   0.128 r     0.128
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_57.mi[0] net  (fanout = 1)       0.479 r     0.607
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_57 path2reg0               0.111       0.718
+ Arrival time                                                                        0.718                  (0 lvl)       
+
+Paths for end point u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_55 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check):      0.000 ns                                                        
+ Start Point:             u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg0_syn_61.clk (rising edge triggered by clock sdram_clk)
+ End Point:               u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_55.mi[0] (rising edge triggered by clock isp_clk)
+ Clock group:             sys_clk                                                         
+ Process:                 Slow                                                            
+ Data Path Delay:         0.786ns  (logic 0.239ns, net 0.547ns, 30% logic)                
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg0_syn_61.clk clock                   0.000       0.000
+ launch clock edge                                                                   0.000       0.000
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg0_syn_61.q[1] clk2q                   0.128 r     0.128
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_55.mi[0] net  (fanout = 1)       0.547 r     0.675
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_55 path2reg0               0.111       0.786
+ Arrival time                                                                        0.786                  (0 lvl)       
+
+Paths for end point u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg3_syn_61 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check):      0.000 ns                                                        
+ Start Point:             u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/reg0_syn_81.clk (rising edge triggered by clock sdram_clk)
+ End Point:               u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg3_syn_61.mi[1] (rising edge triggered by clock isp_clk)
+ Clock group:             sys_clk                                                         
+ Process:                 Slow                                                            
+ Data Path Delay:         0.861ns  (logic 0.239ns, net 0.622ns, 27% logic)                
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/reg0_syn_81.clk  clock                   0.000       0.000
+ launch clock edge                                                                   0.000       0.000
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/reg0_syn_81.q[0] clk2q                   0.128 r     0.128
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg3_syn_61.mi[1] net  (fanout = 1)       0.622 r     0.750
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg3_syn_61 path2reg1               0.111       0.861
+ Arrival time                                                                        0.861                  (0 lvl)       
+
+
+=========================================================================================================
+ Timing constraint:       false path info                                                 
+False path: set_false_path -hold -from [ get_regs {wr_to_rd_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {wr_to_rd_cross_inst/sync_r1[*]} ]
+
+10 endpoints analyzed totally, and 10 paths analyzed
+---------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------
+Paths for end point u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_67 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check):      0.000 ns                                                        
+ Start Point:             u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_66.clk (rising edge triggered by clock isp_clk)
+ End Point:               u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_67.mi[0] (rising edge triggered by clock sdram_clk)
+ Clock group:             sys_clk                                                         
+ Process:                 Slow                                                            
+ Data Path Delay:         0.807ns  (logic 0.239ns, net 0.568ns, 29% logic)                
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_66.clk clock                   0.000       0.000
+ launch clock edge                                                                   0.000       0.000
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_66.q[1] clk2q                   0.128 r     0.128
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_67.mi[0] net  (fanout = 1)       0.568 r     0.696
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_67 path2reg0               0.111       0.807
+ Arrival time                                                                        0.807                  (0 lvl)       
+
+Paths for end point u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_65 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check):      0.000 ns                                                        
+ Start Point:             u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_66.clk (rising edge triggered by clock isp_clk)
+ End Point:               u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_65.mi[1] (rising edge triggered by clock sdram_clk)
+ Clock group:             sys_clk                                                         
+ Process:                 Slow                                                            
+ Data Path Delay:         0.652ns  (logic 0.239ns, net 0.413ns, 36% logic)                
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_66.clk clock                   0.000       0.000
+ launch clock edge                                                                   0.000       0.000
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_66.q[0] clk2q                   0.128 r     0.128
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_65.mi[1] net  (fanout = 1)       0.413 r     0.541
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_65 path2reg1               0.111       0.652
+ Arrival time                                                                        0.652                  (0 lvl)       
+
+Paths for end point u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_65 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check):      0.000 ns                                                        
+ Start Point:             u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_68.clk (rising edge triggered by clock isp_clk)
+ End Point:               u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_65.mi[0] (rising edge triggered by clock sdram_clk)
+ Clock group:             sys_clk                                                         
+ Process:                 Slow                                                            
+ Data Path Delay:         0.508ns  (logic 0.239ns, net 0.269ns, 47% logic)                
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path
+---------------------------------------------------------------------------------------------------------
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_68.clk clock                   0.000       0.000
+ launch clock edge                                                                   0.000       0.000
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_68.q[0] clk2q                   0.128 r     0.128
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_65.mi[0] net  (fanout = 1)       0.269 r     0.397
+ u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_65 path2reg0               0.111       0.508
+ Arrival time                                                                        0.508                  (0 lvl)       
+
+
+---------------------------------------------------------------------------------------------------------

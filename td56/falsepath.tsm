@@ -1,0 +1,148 @@
+eagle_s20
+13 0 0 0 0 0 0 0
+0.000 0.000 CortexM0_SoC eagle_s20 EG4S20BG256 Detail NA 11 4
+False path: set_false_path -hold -from [ get_regs {rd_to_wr_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {rd_to_wr_cross_inst/sync_r1[*]} ]
+13 10 10 1
+hold check
+21 3
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_48
+22 7721892365189299804767184596511547505334420277427562198279592907386369788684599845037650307500657940277670866277793509140821849378232638378909802591141829193729943093964520434461365729734114959476229776811506112005866775824564224.000000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg0_syn_55.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_48
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg0_syn_55.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_48
+24 1000.000000 0.000000 0.000000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/primary_addr_gray_reg[0] u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_48.mi[0]
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_46
+41 0.000000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg0_syn_58.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_46
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg0_syn_58.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_46
+43 1000.000000 0.000000 0.000000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/primary_addr_gray_reg[2] u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_46.mi[1]
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_46
+60 0.000000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg0_syn_58.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_46
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg0_syn_58.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_46
+62 1000.000000 0.000000 0.000000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/primary_addr_gray_reg[3] u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/rd_to_wr_cross_inst/reg3_syn_46.mi[0]
+
+
+
+
+False path: set_false_path -hold -from [ get_regs {wr_to_rd_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {wr_to_rd_cross_inst/sync_r1[*]} ]
+79 10 10 1
+hold check
+87 3
+Endpoint: u_sdram_top/sdram_ctrl_inst/sdram_read_inst/lt0_syn_47
+88 9109133801570708443178669654714514035961861047249139798105841513525824303411702290788859838455339925963423119403572102210459032035027818542306387590182219542646115532140220378362473499613172851634640558860866240385894055936.000000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg0_syn_57.clk->u_sdram_top/sdram_ctrl_inst/sdram_read_inst/lt0_syn_47
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg0_syn_57.clk
+u_sdram_top/sdram_ctrl_inst/sdram_read_inst/lt0_syn_47
+90 1000.000000 0.000000 0.000000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/primary_addr_gray_reg[1] u_sdram_top/sdram_ctrl_inst/sdram_read_inst/lt0_syn_47.mi[1]
+
+
+Endpoint: u_sdram_top/sdram_ctrl_inst/sdram_read_inst/lt0_syn_47
+107 9109133801570708443178669654714514035961861047249139798105841513525824303411702290788859838455339925963423119403572102210459032035027818542306387590182219542646115532140220378362473499613172851634640558860866240385894055936.000000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg0_syn_57.clk->u_sdram_top/sdram_ctrl_inst/sdram_read_inst/lt0_syn_47
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg0_syn_57.clk
+u_sdram_top/sdram_ctrl_inst/sdram_read_inst/lt0_syn_47
+109 1000.000000 0.000000 0.000000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/primary_addr_gray_reg[0] u_sdram_top/sdram_ctrl_inst/sdram_read_inst/lt0_syn_47.mi[0]
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_59
+126 0.000000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg0_syn_54.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_59
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg0_syn_54.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_59
+128 1000.000000 0.000000 0.000000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/primary_addr_gray_reg[6] u_sdram_top/fifo_ctrl_inst/etr_fifo_rddata/wr_to_rd_cross_inst/reg3_syn_59.mi[1]
+
+
+
+
+False path: set_false_path -hold -from [ get_regs {rd_to_wr_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {rd_to_wr_cross_inst/sync_r1[*]} ]
+145 10 10 1
+hold check
+153 3
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_57
+154 0.000000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg0_syn_66.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_57
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg0_syn_66.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_57
+156 1000.000000 0.000000 0.000000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/primary_addr_gray_reg[8] u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_57.mi[0]
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_55
+173 0.000000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg0_syn_61.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_55
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg0_syn_61.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_55
+175 1000.000000 0.000000 0.000000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/primary_addr_gray_reg[4] u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_55.mi[0]
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg3_syn_61
+192 4247387475039849744127005898407219741619530398220063565391569399109296014936445016795286391132570872164815530335357261622679376457268746911613825719677872208746624764608942448323594363157644689372588034495609272839091420082995200.000000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/reg0_syn_81.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg3_syn_61
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/reg0_syn_81.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg3_syn_61
+194 1000.000000 0.000000 0.000000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/primary_addr_gray_reg[0] u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/rd_to_wr_cross_inst/reg3_syn_61.mi[1]
+
+
+
+
+False path: set_false_path -hold -from [ get_regs {wr_to_rd_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {wr_to_rd_cross_inst/sync_r1[*]} ]
+211 10 10 1
+hold check
+219 3
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_67
+220 9109133801570708443178669654714514035961861047249139798105841513525824303411702290788859838455339925963423119403572102210459032035027818542306387590182219542646115532140220378362473499613172851634640558860866240385894055936.000000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_66.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_67
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_66.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_67
+222 1000.000000 0.000000 0.000000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/primary_addr_gray_reg[6] u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_67.mi[0]
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_65
+239 0.000000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_66.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_65
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_66.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_65
+241 1000.000000 0.000000 0.000000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/primary_addr_gray_reg[5] u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_65.mi[1]
+
+
+Endpoint: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_65
+258 0.000000 1 1
+Timing path: u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_68.clk->u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_65
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg0_syn_68.clk
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_65
+260 1000.000000 0.000000 0.000000 0 1
+u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/primary_addr_gray_reg[7] u_sdram_top/fifo_ctrl_inst/etr_fifo_wrdata/wr_to_rd_cross_inst/reg3_syn_65.mi[0]
+
+
+
+
+
+Timing group statistics: 
+
+	Exceptions:
+
+		Check Type:	MIN
+		----------------------------------------------------------------------------------------------------
+		       Path Num     Constraint                                                                      
+		             10     set_false_path -hold -from [ get_regs {rd_to_wr_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {rd_to_wr_cross_inst/sync_r1[*]} ]
+		             10     set_false_path -hold -from [ get_regs {wr_to_rd_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {wr_to_rd_cross_inst/sync_r1[*]} ]
+		             10     set_false_path -hold -from [ get_regs {rd_to_wr_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {rd_to_wr_cross_inst/sync_r1[*]} ]
+		             10     set_false_path -hold -from [ get_regs {wr_to_rd_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {wr_to_rd_cross_inst/sync_r1[*]} ]
+

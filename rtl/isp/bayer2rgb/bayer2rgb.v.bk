@@ -1,0 +1,779 @@
+module bayer2rgb #(
+    parameter WIN_X = 11'd500,      //窗口x坐标
+    parameter WIN_Y = 11'd500,      //窗口y坐标
+    parameter HDMI_HPIXEL = 11'd640,
+    parameter HDMI_VPIXEL = 11'd480,
+    parameter RAW_HPIXEL = 11'd1936,
+    parameter RAW_VPIXEL = 11'd1088
+)(
+    input  wire clk,
+    input  wire rstn,
+
+    input  wire         in_href,
+    input  wire [7:0]   in_raw,
+
+    output wire         out_href,
+    output wire [23:0]  out_rgb //synthesis keep = 1
+);
+// parameter RAW_HPIXEL = 11'd1920;
+// parameter RAW_VPIXEL = 11'd1080;
+//输入的一帧图像大小为1936x1088
+reg [10:0]  h_cnt;
+reg [10:0]  v_cnt;
+
+//h_cnt:行同步信号计数器
+always@(posedge clk or negedge rstn)
+    if(rstn == 1'b0)
+        h_cnt   <=  12'd0   ;
+    else if(matrix_frame_clken == 1'b1)
+        if(h_cnt == RAW_HPIXEL - 1'd1)
+            h_cnt   <=  12'd0   ;
+        else
+            h_cnt   <=  h_cnt + 1'd1   ;
+    else
+        h_cnt <= h_cnt;
+//v_cnt:场同步信号计数器
+always@(posedge clk or negedge rstn)
+    if(rstn == 1'b0)
+        v_cnt   <=  12'd0 ;
+    else    if(matrix_frame_clken == 1'b1)
+        if((v_cnt == RAW_VPIXEL - 1'd1) &&  (h_cnt == RAW_HPIXEL-1'd1))
+            v_cnt   <=  12'd0 ;
+        else    if(h_cnt == RAW_HPIXEL - 1'd1)
+            v_cnt   <=  v_cnt + 1'd1 ;
+        else
+            v_cnt   <=  v_cnt ;
+    else
+        v_cnt   <=  v_cnt ;
+
+// outports wire
+wire        	matrix_frame_vsync;
+wire        	matrix_frame_href;
+wire        	matrix_frame_clken;
+wire [15:0]matrix_p11;
+wire [15:0]matrix_p12;
+wire [15:0]matrix_p13;
+wire [15:0]matrix_p21;
+wire [15:0]matrix_p22;
+wire [15:0]matrix_p23;
+wire [15:0]matrix_p31;
+wire [15:0]matrix_p32;
+wire [15:0]matrix_p33;
+
+vip_matrix_generate_3x3_8bit u_vip_matrix_generate_3x3_8bit(
+    .clk                	( clk                       ),
+    .rst_n              	( rstn                      ),
+    .per_frame_vsync    	( 1'b1                      ),
+    .per_frame_href     	( 1'b1                      ),
+    .per_frame_clken    	( in_href                   ),
+    .per_img_y          	( in_raw                    ),
+    .matrix_frame_vsync 	( matrix_frame_vsync        ),
+    .matrix_frame_href  	( matrix_frame_href         ),
+    .matrix_frame_clken 	( matrix_frame_clken        ),
+    .matrix_p11( matrix_p11          ),.matrix_p12( matrix_p12          ),.matrix_p13( matrix_p13          ),
+    .matrix_p21( matrix_p21          ),.matrix_p22( matrix_p22          ),.matrix_p23( matrix_p23          ),
+    .matrix_p31( matrix_p31          ),.matrix_p32( matrix_p32          ),.matrix_p33( matrix_p33          )
+);
+//bayer2rgb算法
+reg  [7:0]   RGB_R;
+reg  [7:0]   RGB_G;
+reg  [7:0]   RGB_B;
+always @(posedge clk or negedge rstn) begin
+    if(rstn == 1'b0)begin
+        RGB_R <= 8'd0;
+        RGB_G <= 8'd0;
+        RGB_B <= 8'd0;
+    end
+    else if(matrix_frame_clken == 1'b1)
+        case ({v_cnt[0],h_cnt[0]})
+            2'b00:begin
+                RGB_R <= (matrix_p12 + matrix_p32)>>1;
+                RGB_G <= matrix_p22;
+                RGB_B <= (matrix_p21 + matrix_p23)>>1;
+            end
+            2'b01:begin
+                RGB_R <= (matrix_p11 + matrix_p13 + matrix_p31 + matrix_p33)>>2;
+                RGB_G <= (matrix_p21 + matrix_p23 + matrix_p12 + matrix_p32)>>2;
+                RGB_B <= matrix_p22;
+            end
+            2'b10:begin
+                RGB_R <= matrix_p22;
+                RGB_G <= (matrix_p21 + matrix_p23 + matrix_p12 + matrix_p32)>>2;
+                RGB_B <= (matrix_p11 + matrix_p13 + matrix_p31 + matrix_p33)>>2;
+            end
+            2'b11:begin
+                RGB_R <= (matrix_p21 + matrix_p23)>>1;
+                RGB_G <= matrix_p22;
+                RGB_B <= (matrix_p12 + matrix_p32)>>1;
+            end
+            default: begin
+                RGB_R <= 8'd0;
+                RGB_G <= 8'd0;
+                RGB_B <= 8'd0;
+            end
+        endcase
+end
+wire windows_en = (h_cnt <= HDMI_HPIXEL-1 + WIN_X) && (v_cnt <= HDMI_VPIXEL-1 + WIN_Y) && 
+    (h_cnt >= WIN_X) && (v_cnt >= WIN_Y) && 
+    (matrix_frame_clken == 1'b1) ? 1'b1 : 1'b0;
+reg matrix_frame_clken_r;
+always@(posedge clk or negedge rstn) begin
+    if(rstn == 1'b0)begin
+        matrix_frame_clken_r <= 1'b0;
+    end
+    else
+        matrix_frame_clken_r <= matrix_frame_clken;
+end
+//取640x480窗
+assign out_href = matrix_frame_clken_r;
+// assign out_href = windows_en ;
+assign out_rgb = {RGB_R,RGB_G,RGB_B};
+// assign out_rgb = in_raw;
+
+endmodule //bayer2rgb
+
+// module bayer2rgb
+// #(
+// 	parameter BITS = 8,
+// 	parameter WIDTH = 1936,
+// 	parameter HEIGHT = 960,
+// 	parameter BAYER = 2 //0:RGGB 1:GRBG 2:GBRG 3:BGGR
+// )
+// (
+// 	input pclk,
+// 	input rst_n,
+
+// 	input in_href,
+// 	input [BITS-1:0] in_raw,
+
+// 	output out_href,
+// 	output [23:0] out_rgb
+// );
+
+//     wire [BITS-1:0] out_r;
+//     wire [BITS-1:0] out_g;
+//     wire [BITS-1:0] out_b;
+//     assign out_rgb = {out_r,out_g,out_b};
+
+// 	wire [BITS-1:0] shiftout;
+// 	wire [BITS-1:0] tap5x, tap4x, tap3x, tap2x, tap1x, tap0x;
+// 	shift_register #(BITS, WIDTH, 6) linebuffer(pclk, in_href, in_raw, shiftout, {tap5x, tap4x, tap3x, tap2x, tap1x, tap0x});
+	
+// 	reg [BITS-1:0] in_raw_r;
+// 	reg [BITS-1:0] p11,p12,p13,p14,p15,p16,p17;
+// 	reg [BITS-1:0] p21,p22,p23,p24,p25,p26,p27;
+// 	reg [BITS-1:0] p31,p32,p33,p34,p35,p36,p37;
+// 	reg [BITS-1:0] p41,p42,p43,p44,p45,p46,p47;
+// 	reg [BITS-1:0] p51,p52,p53,p54,p55,p56,p57;
+// 	reg [BITS-1:0] p61,p62,p63,p64,p65,p66,p67;
+// 	reg [BITS-1:0] p71,p72,p73,p74,p75,p76,p77;
+// 	always @ (posedge pclk or negedge rst_n) begin
+// 		if (!rst_n) begin
+// 			in_raw_r <= 0;
+// 			p11 <= 0; p12 <= 0; p13 <= 0; p14 <= 0; p15 <= 0; p16 <= 0; p17 <= 0;
+// 			p21 <= 0; p22 <= 0; p23 <= 0; p24 <= 0; p25 <= 0; p26 <= 0; p27 <= 0;
+// 			p31 <= 0; p32 <= 0; p33 <= 0; p34 <= 0; p35 <= 0; p36 <= 0; p37 <= 0;
+// 			p41 <= 0; p42 <= 0; p43 <= 0; p44 <= 0; p45 <= 0; p46 <= 0; p47 <= 0;
+// 			p51 <= 0; p52 <= 0; p53 <= 0; p54 <= 0; p55 <= 0; p56 <= 0; p57 <= 0;
+// 			p61 <= 0; p62 <= 0; p63 <= 0; p64 <= 0; p65 <= 0; p66 <= 0; p67 <= 0;
+// 			p71 <= 0; p72 <= 0; p73 <= 0; p74 <= 0; p75 <= 0; p76 <= 0; p77 <= 0;
+// 		end
+// 		else begin
+// 			in_raw_r <= in_raw;
+// 			p11 <= p12; p12 <= p13; p13 <= p14; p14 <= p15; p15 <= p16; p16 <= p17; p17 <= tap5x;
+// 			p21 <= p22; p22 <= p23; p23 <= p24; p24 <= p25; p25 <= p26; p26 <= p27; p27 <= tap4x;
+// 			p31 <= p32; p32 <= p33; p33 <= p34; p34 <= p35; p35 <= p36; p36 <= p37; p37 <= tap3x;
+// 			p41 <= p42; p42 <= p43; p43 <= p44; p44 <= p45; p45 <= p46; p46 <= p47; p47 <= tap2x;
+// 			p51 <= p52; p52 <= p53; p53 <= p54; p54 <= p55; p55 <= p56; p56 <= p57; p57 <= tap1x;
+// 			p61 <= p62; p62 <= p63; p63 <= p64; p64 <= p65; p65 <= p66; p66 <= p67; p67 <= tap0x;
+// 			p71 <= p72; p72 <= p73; p73 <= p74; p74 <= p75; p75 <= p76; p76 <= p77; p77 <= in_raw_r;
+// 		end
+// 	end
+
+// 	reg odd_pix;
+// 	reg in_href_r;
+// 	always @ (posedge pclk or negedge rst_n)
+// 		if (!rst_n)
+// 			in_href_r <= 0;
+// 		else 
+// 			in_href_r <= in_href;
+
+// 	always @ (posedge pclk or negedge rst_n) begin
+// 		if (!rst_n)
+// 			odd_pix <= 0;
+// 		else if (in_href_r)
+// 			odd_pix <= ~odd_pix;
+// 		else
+// 			odd_pix <= odd_pix;
+// 	end
+// 	wire odd_pix_sync_shift = odd_pix;
+	
+// 	reg [11:0] herfcnt;
+// 	always @ (posedge pclk or negedge rst_n) begin
+// 		if (!rst_n) 
+// 			herfcnt <= 12'd0;
+// 		else if(herfcnt != 12'd1935 && in_href == 1'b1)
+// 			herfcnt <= herfcnt + 1'b1;
+//         else if(herfcnt == 12'd1935 && in_href == 1'b1)
+// 			herfcnt <= 12'd0;
+//         else herfcnt <= herfcnt;
+// 	end	
+	
+// 	reg odd_line;
+// 	always @ (posedge pclk or negedge rst_n) begin
+// 		if (!rst_n) 
+// 			odd_line <= 0;
+// 		else if (herfcnt == 12'd1935)
+// 			odd_line <= ~odd_line;
+// 		else
+// 			odd_line <= odd_line;
+// 	end
+// 	wire odd_line_sync_shift = odd_line;
+// 	wire [1:0] fmt = BAYER[1:0] ^ {odd_line_sync_shift, odd_pix_sync_shift}; //pixel format 0:[R]GGB 1:R[G]GB 2:RG[G]B 3:RGG[B]
+// 	localparam FMT_R = 2'd0;  //[R]GGB
+// 	localparam FMT_Gr = 2'd1; //R[G]GB
+// 	localparam FMT_Gb = 2'd2; //RG[G]B
+// 	localparam FMT_B = 2'd3;  //RGG[B]
+
+// 	//calc G stage 1
+// 	reg [1:0] t1_fmt;
+// 	reg [(BITS+1)*5+BITS*2-1:0] t1_g, t1_g1, t1_g2, t1_g3, t1_g4;
+// 	reg [BITS-1:0] t1_rb, t1_rb1, t1_rb2, t1_rb3, t1_rb4;
+// 	always @ (posedge pclk or negedge rst_n) begin
+// 		if (!rst_n) begin
+// 			t1_fmt <= 0;
+// 			t1_g<=0; t1_g1<=0; t1_g2<=0; t1_g3<=0; t1_g4<=0;
+// 			t1_rb<=0; t1_rb1<=0; t1_rb2<=0; t1_rb3<=0; t1_rb4<=0;
+// 		end
+// 		else begin
+// 			t1_fmt <= fmt;
+// 			case (fmt)
+// 				FMT_R, FMT_B: begin //[R]GGB, RGG[B]
+// 					t1_rb  <= p44;
+// 					t1_rb1 <= p33;
+// 					t1_rb2 <= p35;
+// 					t1_rb3 <= p53;
+// 					t1_rb4 <= p55;
+// 					t1_g  <= interpolate_G_on_R_stage1(p44, p42, p46, p24, p64, p43, p45, p34, p54);
+// 					t1_g1 <= interpolate_G_on_R_stage1(p33, p31, p35, p13, p53, p32, p34, p23, p43);
+// 					t1_g2 <= interpolate_G_on_R_stage1(p35, p33, p37, p15, p55, p34, p36, p25, p45);
+// 					t1_g3 <= interpolate_G_on_R_stage1(p53, p51, p55, p33, p73, p52, p54, p43, p63);
+// 					t1_g4 <= interpolate_G_on_R_stage1(p55, p53, p57, p35, p75, p54, p56, p45, p65);
+// 				end
+// 				FMT_Gr, FMT_Gb: begin //R[G]GB RG[G]B
+// 					t1_rb  <= 0;
+// 					t1_rb1 <= p43;
+// 					t1_rb2 <= p45;
+// 					t1_rb3 <= p34;
+// 					t1_rb4 <= p54;
+// 					t1_g  <= p44;
+// 					t1_g1 <= interpolate_G_on_R_stage1(p43, p41, p45, p23, p63, p42, p44, p33, p53);
+// 					t1_g2 <= interpolate_G_on_R_stage1(p45, p43, p47, p25, p65, p44, p46, p35, p55);
+// 					t1_g3 <= interpolate_G_on_R_stage1(p34, p32, p36, p14, p54, p33, p35, p24, p44);
+// 					t1_g4 <= interpolate_G_on_R_stage1(p54, p52, p56, p34, p74, p53, p55, p44, p64);
+// 				end
+// 				default: begin
+// 					t1_g<=0; t1_g1<=0; t1_g2<=0; t1_g3<=0; t1_g4<=0;
+// 					t1_rb<=0; t1_rb1<=0; t1_rb2<=0; t1_rb3<=0; t1_rb4<=0;
+// 				end
+// 			endcase
+// 		end
+// 	end
+
+// 	//calc G stage 2
+// 	reg [1:0] t2_fmt;
+// 	reg [(BITS+2)*5-1:0] t2_g, t2_g1, t2_g2, t2_g3, t2_g4;
+// 	reg [BITS-1:0] t2_rb, t2_rb1, t2_rb2, t2_rb3, t2_rb4;
+// 	always @ (posedge pclk or negedge rst_n) begin
+// 		if (!rst_n) begin
+// 			t2_fmt <= 0;
+// 			t2_g<=0; t2_g1<=0; t2_g2<=0; t2_g3<=0; t2_g4<=0;
+// 			t2_rb<=0; t2_rb1<=0; t2_rb2<=0; t2_rb3<=0; t2_rb4<=0;
+// 		end
+// 		else begin
+// 			t2_fmt <= t1_fmt;
+// 			t2_rb  <= t1_rb;
+// 			t2_rb1 <= t1_rb1;
+// 			t2_rb2 <= t1_rb2;
+// 			t2_rb3 <= t1_rb3;
+// 			t2_rb4 <= t1_rb4;
+// 			t2_g1 <= interpolate_G_on_R_stage2(t1_g1);
+// 			t2_g2 <= interpolate_G_on_R_stage2(t1_g2);
+// 			t2_g3 <= interpolate_G_on_R_stage2(t1_g3);
+// 			t2_g4 <= interpolate_G_on_R_stage2(t1_g4);
+// 			case (t1_fmt)
+// 				FMT_R, FMT_B: t2_g <= interpolate_G_on_R_stage2(t1_g);
+// 				default:      t2_g <= t1_g[BITS-1:0];
+// 			endcase
+// 		end
+// 	end
+
+// 	//calc G stage 3
+// 	reg [1:0] t3_fmt;
+// 	reg [BITS-1:0] t3_g, t3_g1, t3_g2, t3_g3, t3_g4;
+// 	reg [BITS-1:0] t3_rb, t3_rb1, t3_rb2, t3_rb3, t3_rb4;
+// 	always @ (posedge pclk or negedge rst_n) begin
+// 		if (!rst_n) begin
+// 			t3_fmt <= 0;
+// 			t3_g<=0; t3_g1<=0; t3_g2<=0; t3_g3<=0; t3_g4<=0;
+// 			t3_rb<=0; t3_rb1<=0; t3_rb2<=0; t3_rb3<=0; t3_rb4<=0;
+// 		end
+// 		else begin
+// 			t3_fmt <= t2_fmt;
+// 			t3_rb  <= t2_rb;
+// 			t3_rb1 <= t2_rb1;
+// 			t3_rb2 <= t2_rb2;
+// 			t3_rb3 <= t2_rb3;
+// 			t3_rb4 <= t2_rb4;
+// 			t3_g1 <= interpolate_G_on_R_stage3(t2_g1);
+// 			t3_g2 <= interpolate_G_on_R_stage3(t2_g2);
+// 			t3_g3 <= interpolate_G_on_R_stage3(t2_g3);
+// 			t3_g4 <= interpolate_G_on_R_stage3(t2_g4);
+// 			case (t2_fmt)
+// 				FMT_R, FMT_B: t3_g <= interpolate_G_on_R_stage3(t2_g);
+// 				default:      t3_g <= t2_g[BITS-1:0];
+// 			endcase
+// 		end
+// 	end
+
+// 	//calc R/B stage 1
+// 	reg [1:0] t4_fmt;
+// 	reg [BITS-1:0] t4_g;
+// 	reg [(BITS+1)*4+BITS*3-1:0] t4_r, t4_b;
+// 	always @ (posedge pclk or negedge rst_n) begin
+// 		if (!rst_n) begin
+// 			t4_fmt <= 0;
+// 			t4_g <= 0;
+// 			t4_r <= 0;
+// 			t4_b <= 0;
+// 		end
+// 		else begin
+// 			t4_fmt <= t3_fmt;
+// 			t4_g <= t3_g;
+// 			case (t3_fmt)
+// 				FMT_R: begin
+// 					t4_r <= t3_rb;
+// 					t4_b <= interpolate_R_on_B_stage1(t3_g, t3_g1, t3_g2, t3_g3, t3_g4, t3_rb1, t3_rb2, t3_rb3, t3_rb4);
+// 				end
+// 				FMT_Gr: begin
+// 					t4_r <= interpolate_R_on_G_stage1(t3_g, t3_g1, t3_g2, t3_rb1, t3_rb2);
+// 					t4_b <= interpolate_R_on_G_stage1(t3_g, t3_g3, t3_g4, t3_rb3, t3_rb4);
+// 				end
+// 				FMT_Gb: begin
+// 					t4_r <= interpolate_R_on_G_stage1(t3_g, t3_g3, t3_g4, t3_rb3, t3_rb4);
+// 					t4_b <= interpolate_R_on_G_stage1(t3_g, t3_g1, t3_g2, t3_rb1, t3_rb2);
+// 				end
+// 				FMT_B: begin
+// 					t4_r <= interpolate_R_on_B_stage1(t3_g, t3_g1, t3_g2, t3_g3, t3_g4, t3_rb1, t3_rb2, t3_rb3, t3_rb4);
+// 					t4_b <= t3_rb;
+// 				end
+// 				default: begin
+// 					t4_r <= 0;
+// 					t4_b <= 0;
+// 				end
+// 			endcase
+// 		end
+// 	end
+
+// 	//calc R/B stage 2
+// 	reg [1:0] t5_fmt;
+// 	reg [BITS-1:0] t5_g;
+// 	reg [(BITS+2)*5-1:0] t5_r, t5_b;
+// 	always @ (posedge pclk or negedge rst_n) begin
+// 		if (!rst_n) begin
+// 			t5_fmt <= 0;
+// 			t5_g <= 0;
+// 			t5_r <= 0;
+// 			t5_b <= 0;
+// 		end
+// 		else begin
+// 			t5_fmt <= t4_fmt;
+// 			t5_g <= t4_g;
+// 			case (t4_fmt)
+// 				FMT_R: begin
+// 					t5_r <= t4_r[BITS-1:0];
+// 					t5_b <= interpolate_R_on_B_stage2(t4_b);
+// 				end
+// 				FMT_Gr: begin
+// 					t5_r <= interpolate_R_on_G_stage2(t4_r[BITS*2:0]);
+// 					t5_b <= interpolate_R_on_G_stage2(t4_b[BITS*2:0]);
+// 				end
+// 				FMT_Gb: begin
+// 					t5_r <= interpolate_R_on_G_stage2(t4_r[BITS*2:0]);
+// 					t5_b <= interpolate_R_on_G_stage2(t4_b[BITS*2:0]);
+// 				end
+// 				FMT_B: begin
+// 					t5_r <= interpolate_R_on_B_stage2(t4_r);
+// 					t5_b <= t4_b[BITS-1:0];
+// 				end
+// 				default: begin
+// 					t5_r <= 0;
+// 					t5_b <= 0;
+// 				end
+// 			endcase
+// 		end
+// 	end
+
+// 	//calc R/B stage 3
+// 	reg [BITS-1:0] r_now, g_now, b_now;
+// 	always @ (posedge pclk or negedge rst_n) begin
+// 		if (!rst_n) begin
+// 			r_now <= 0;
+// 			g_now <= 0;
+// 			b_now <= 0;
+// 		end
+// 		else begin
+// 			g_now <= t5_g;
+// 			case (t5_fmt)
+// 				FMT_R: begin
+// 					r_now <= t5_r[BITS-1:0];
+// 					b_now <= interpolate_R_on_B_stage3(t5_b);
+// 				end
+// 				FMT_Gr: begin
+// 					r_now <= t5_r[BITS-1:0];
+// 					b_now <= t5_b[BITS-1:0];
+// 				end
+// 				FMT_Gb: begin
+// 					r_now <= t5_r[BITS-1:0];
+// 					b_now <= t5_b[BITS-1:0];
+// 				end
+// 				FMT_B: begin
+// 					r_now <= interpolate_R_on_B_stage3(t5_r);
+// 					b_now <= t5_b[BITS-1:0];
+// 				end
+// 				default: begin
+// 					r_now <= 0;
+// 					b_now <= 0;
+// 				end
+// 			endcase
+// 		end
+// 	end
+
+// 	localparam DLY_CLK = 9;
+// 	reg [DLY_CLK-1:0] href_dly;
+// 	always @ (posedge pclk or negedge rst_n) begin
+// 		if (!rst_n) begin
+// 			href_dly <= 0;
+// 		end
+// 		else begin
+// 			href_dly <= {href_dly[DLY_CLK-2:0], in_href};
+// 		end
+// 	end
+	
+// 	assign out_href = href_dly[DLY_CLK-1];
+// 	assign out_r = out_href ? r_now : {BITS{1'b0}};
+// 	assign out_g = out_href ? g_now : {BITS{1'b0}};
+// 	assign out_b = out_href ? b_now : {BITS{1'b0}};
+
+// 	function [(BITS+1)*5+BITS*2-1:0] interpolate_G_on_R_stage1;
+// 		input [BITS-1:0] R, R_left, R_right, R_up, R_down, G_left, G_right, G_up, G_down;
+// 		reg [BITS:0] Rx2, R_lr_sum, R_ud_sum, G_lr_sum, G_ud_sum;
+// 		reg [BITS-1:0] G_lr_diff, G_ud_diff;
+// 		begin
+// 			Rx2 = {R,1'b0};
+// 			R_lr_sum = R_left + R_right;
+// 			R_ud_sum = R_up + R_down;
+// 			G_lr_sum = G_left + G_right;
+// 			G_ud_sum = G_up + G_down;
+// 			G_lr_diff = G_left > G_right ? G_left - G_right : G_right - G_left;
+// 			G_ud_diff = G_up > G_down ? G_up - G_down : G_down - G_up;
+// 			interpolate_G_on_R_stage1 = {Rx2, R_lr_sum, R_ud_sum, G_lr_sum, G_ud_sum, G_lr_diff, G_ud_diff};
+// 		end
+// 	endfunction
+
+// 	function [(BITS+2)*5-1:0] interpolate_G_on_R_stage2;
+// 		input [(BITS+1)*5+BITS*2-1:0] stage1_in;
+// 		reg [BITS:0]   Rx2, R_lr_sum, R_ud_sum, G_lr_sum, G_ud_sum;
+// 		reg [BITS-1:0] G_lr_diff, G_ud_diff;
+// 		reg [BITS+1:0] Rx2_lr_diff_G_lr_diff, Rx2_ud_diff_G_ud_diff;
+// 		reg signed [BITS:0]   s_G_lr_avg, s_G_ud_avg, s_G_lrud_avg;
+// 		reg signed [BITS+1:0] s_Rx2, s_R_lr_sum, s_R_ud_sum;
+// 		reg signed [BITS+2:0] s_Rx4, s_R_lrud_sum;
+// 		reg signed [BITS+1:0] s_G_lr_out, s_G_ud_out, s_G_lrud_out;
+// 		begin
+// 			{Rx2, R_lr_sum, R_ud_sum, G_lr_sum, G_ud_sum, G_lr_diff, G_ud_diff} = stage1_in;
+// 			Rx2_lr_diff_G_lr_diff = (Rx2 > R_lr_sum ? Rx2 - R_lr_sum : R_lr_sum - Rx2) + G_lr_diff;
+// 			Rx2_ud_diff_G_ud_diff = (Rx2 > R_ud_sum ? Rx2 - R_ud_sum : R_ud_sum - Rx2) + G_ud_diff;
+// 			s_G_lr_avg = G_lr_sum[BITS:1];
+// 			s_G_ud_avg = G_ud_sum[BITS:1];
+// 			s_G_lrud_avg = ({1'b0,G_lr_sum} + {1'b0,G_ud_sum}) >> 2;
+// 			s_Rx2 = Rx2;
+// 			s_R_lr_sum = R_lr_sum;
+// 			s_R_ud_sum = R_ud_sum;
+// 			s_Rx4 = {Rx2, 1'b0};
+// 			s_R_lrud_sum = R_lr_sum + R_ud_sum;
+// 			s_G_lr_out = s_G_lr_avg + ((s_Rx2 - s_R_lr_sum) >>> 2);
+// 			s_G_ud_out = s_G_ud_avg + ((s_Rx2 - s_R_ud_sum) >>> 2);
+// 			s_G_lrud_out = s_G_lrud_avg + ((s_Rx4 - s_R_lrud_sum) >>> 3);
+// 			interpolate_G_on_R_stage2 = {Rx2_lr_diff_G_lr_diff, Rx2_ud_diff_G_ud_diff, s_G_lr_out, s_G_ud_out, s_G_lrud_out};
+// 		end
+// 	endfunction
+
+// 	function [BITS-1:0] interpolate_G_on_R_stage3;
+// 		input [(BITS+2)*5-1:0] stage2_in;
+// 		reg [BITS+1:0] Rx2_lr_diff_G_lr_diff, Rx2_ud_diff_G_ud_diff;
+// 		reg signed [BITS+1:0] s_G_lr_out, s_G_ud_out, s_G_lrud_out;
+// 		reg signed [BITS+1:0] out;
+// 		begin
+// 			{Rx2_lr_diff_G_lr_diff, Rx2_ud_diff_G_ud_diff, s_G_lr_out, s_G_ud_out, s_G_lrud_out} = stage2_in;
+// 			out = Rx2_lr_diff_G_lr_diff < Rx2_ud_diff_G_ud_diff ? s_G_lr_out : (Rx2_lr_diff_G_lr_diff > Rx2_ud_diff_G_ud_diff ? s_G_ud_out : s_G_lrud_out);
+// 			interpolate_G_on_R_stage3 = out[BITS+1] ? 0 : (out[BITS] ? {BITS{1'b1}} : out[BITS-1:0]);
+// 		end
+// 	endfunction
+
+// 	function [BITS*2:0] interpolate_R_on_G_stage1;
+// 		input [BITS-1:0] G, Gr1, Gr2, R1, R2;
+// 		reg [BITS:0] R_sum, Gr_sum;
+// 		reg [BITS:0] G_add_R_avg;
+// 		begin
+// 			R_sum = {1'd0,R1} + {1'd0,R2};
+// 			Gr_sum = {1'd0,Gr1} + {1'd0,Gr2};
+// 			G_add_R_avg = G + R_sum[BITS:1];
+// 			interpolate_R_on_G_stage1 = {G_add_R_avg, Gr_sum[BITS:1]};
+// 		end
+// 	endfunction
+
+// 	function [BITS-1:0] interpolate_R_on_G_stage2;
+// 		input [BITS*2:0] stage1_in;
+// 		reg [BITS:0] G_add_R_avg;
+// 		reg [BITS-1:0] Gr_avg;
+// 		reg [BITS:0] R_out;
+// 		begin
+// 			Gr_avg = stage1_in[0+:BITS];
+// 			G_add_R_avg = stage1_in[BITS+:BITS+1];
+// 			R_out = G_add_R_avg > Gr_avg ? G_add_R_avg - Gr_avg : 0;
+// 			interpolate_R_on_G_stage2 = R_out[BITS] ? {BITS{1'b1}} : R_out[BITS-1:0];
+// 		end
+// 	endfunction
+
+// 	function [(BITS+1)*4+BITS*3-1:0] interpolate_R_on_B_stage1;
+// 		input [BITS-1:0] G, Gr1, Gr2, Gr3, Gr4, R1, R2, R3, R4;
+// 		reg [BITS:0] G_14_sum, G_23_sum, R_14_sum, R_23_sum;
+// 		reg [BITS-1:0] R_14_diff, R_23_diff;
+// 		begin
+// 			G_14_sum = Gr1 + Gr4;
+// 			G_23_sum = Gr2 + Gr3;
+// 			R_14_sum = R1 + R4;
+// 			R_23_sum = R2 + R3;
+// 			R_14_diff = R1 > R4 ? R1 - R4 : R4 - R1;
+// 			R_23_diff = R2 > R3 ? R2 - R3 : R3 - R2;
+// 			interpolate_R_on_B_stage1 = {G_14_sum, G_23_sum, R_14_sum, R_23_sum, R_14_diff, R_23_diff, G};
+// 		end
+// 	endfunction
+
+// 	function [(BITS+2)*5-1:0] interpolate_R_on_B_stage2;
+// 		input [(BITS+1)*4+BITS*3-1:0] stage1_in;
+// 		reg [BITS:0] G_14_sum, G_23_sum, R_14_sum, R_23_sum;
+// 		reg [BITS-1:0] R_14_diff, R_23_diff, G;
+// 		reg [BITS+1:0] Gx2_14_diff_R_14_diff, Gx2_23_diff_R_23_diff;
+// 		reg signed [BITS:0]   s_R_14_avg, s_R_23_avg, s_R_1234_avg, s_G_14_avg, s_G_23_avg, s_G_1234_avg, s_G;
+// 		reg signed [BITS+1:0] s_R_14_out, s_R_23_out, s_R_1234_out;
+// 		begin
+// 			{G_14_sum, G_23_sum, R_14_sum, R_23_sum, R_14_diff, R_23_diff, G} = stage1_in;
+// 			Gx2_14_diff_R_14_diff = ({G,1'b0} > G_14_sum ? {G,1'b0} - G_14_sum : G_14_sum - {G,1'b0}) + R_14_diff;
+// 			Gx2_23_diff_R_23_diff = ({G,1'b0} > G_23_sum ? {G,1'b0} - G_23_sum : G_23_sum - {G,1'b0}) + R_23_diff;
+// 			s_R_14_avg = R_14_sum[BITS:1];
+// 			s_R_23_avg = R_23_sum[BITS:1];
+// 			s_R_1234_avg = ({1'b0,R_14_sum} + {1'b0,R_23_sum}) >> 2;
+// 			s_G_14_avg = G_14_sum[BITS:1];
+// 			s_G_23_avg = G_23_sum[BITS:1];
+// 			s_G_1234_avg = ({1'b0,G_14_sum} + {1'b0,G_23_sum}) >> 2;
+// 			s_G = G;
+// 			s_R_14_out = s_G + s_R_14_avg - s_G_14_avg;
+// 			s_R_23_out = s_G + s_R_23_avg - s_G_23_avg;
+// 			s_R_1234_out = s_G + s_R_1234_avg - s_G_1234_avg;
+// 			interpolate_R_on_B_stage2 = {Gx2_14_diff_R_14_diff, Gx2_23_diff_R_23_diff, s_R_14_out, s_R_23_out, s_R_1234_out};
+// 		end
+// 	endfunction
+
+// 	function [BITS-1:0] interpolate_R_on_B_stage3;
+// 		input [(BITS+2)*5-1:0] stage2_in;
+// 		reg [BITS+1:0] Gx2_14_diff_R_14_diff, Gx2_23_diff_R_23_diff;
+// 		reg signed [BITS+1:0] s_R_14_out, s_R_23_out, s_R_1234_out;
+// 		reg signed [BITS+1:0] out;
+// 		begin
+// 			{Gx2_14_diff_R_14_diff, Gx2_23_diff_R_23_diff, s_R_14_out, s_R_23_out, s_R_1234_out} = stage2_in;
+// 			out = Gx2_14_diff_R_14_diff < Gx2_23_diff_R_23_diff ? s_R_14_out : (Gx2_14_diff_R_14_diff > Gx2_23_diff_R_23_diff ? s_R_23_out : s_R_1234_out);
+// 			interpolate_R_on_B_stage3 = out[BITS+1] ? 0 : (out[BITS] ? {BITS{1'b1}} : out[BITS-1:0]);
+// 		end
+// 	endfunction
+// endmodule
+
+// @Deprecated 双线性插值
+// module bayer2rgb
+// #(
+// 	parameter BITS = 8,
+// 	parameter WIDTH = 1936,
+// 	parameter HEIGHT = 960,
+// 	parameter BAYER = 2 //0:RGGB 1:GRBG 2:GBRG 3:BGGR
+// )
+// (
+// 	input pclk,
+// 	input rst_n,
+
+// 	input in_href,
+// 	input [BITS-1:0] in_raw,
+
+// 	output out_href,
+// 	output [23:0] out_rgb
+// );
+
+//     wire [BITS-1:0] out_r;
+//     wire [BITS-1:0] out_g;
+//     wire [BITS-1:0] out_b;
+// 	assign out_rgb = {out_r,out_g,out_b};
+
+// 	wire [BITS-1:0] shiftout;
+// 	wire [BITS-1:0] tap1x, tap0x;
+// 	shift_register #(BITS, WIDTH, 2) linebuffer(pclk, in_href, in_raw, shiftout, {tap1x, tap0x});
+	
+// 	reg [BITS-1:0] in_raw_r;
+// 	reg [BITS-1:0] p11,p12,p13;
+// 	reg [BITS-1:0] p21,p22,p23;
+// 	reg [BITS-1:0] p31,p32,p33;
+// 	always @ (posedge pclk or negedge rst_n) begin
+// 		if (!rst_n) begin
+// 			in_raw_r <= 0;
+// 			p13 <= 0; p12 <= 0; p11 <= 0;
+// 			p23 <= 0; p22 <= 0; p21 <= 0;
+// 			p33 <= 0; p32 <= 0; p31 <= 0;
+// 		end
+// 		else begin
+// 			in_raw_r <= in_raw;
+// 			p11 <= p12; p12 <= p13; p13 <= tap1x;
+// 			p21 <= p22; p22 <= p23; p23 <= tap0x;
+// 			p31 <= p32; p32 <= p33; p33 <= in_raw_r;
+// 		end
+// 	end
+
+// 	reg odd_pix;
+// 	reg in_href_r1;
+// 	reg in_href_r2;
+// 	always @ (posedge pclk or negedge rst_n)
+// 		if (!rst_n)begin
+// 			in_href_r1 <= 0;
+// 			in_href_r2 <= 0;
+// 		end
+// 		else begin
+// 			in_href_r1 <= in_href;
+// 			in_href_r2 <= in_href_r1;
+// 		end
+// 	always @ (posedge pclk or negedge rst_n) begin
+// 		if (!rst_n)
+// 			odd_pix <= 0;
+// 		else if (in_href_r2)
+// 			odd_pix <= ~odd_pix;
+// 		else
+// 			odd_pix <= odd_pix;
+// 	end
+// 	wire odd_pix_sync_shift = odd_pix;
+	
+// 	reg [11:0] herfcnt;
+// 	always @ (posedge pclk or negedge rst_n) begin
+// 		if (!rst_n) 
+// 			herfcnt <= 12'd0;
+// 		else if(herfcnt != 12'd1935 && in_href_r2 == 1'b1)
+// 			herfcnt <= herfcnt + 1'b1;
+//         else if(herfcnt == 12'd1935 && in_href_r2 == 1'b1)
+// 			herfcnt <= 12'd0;
+//         else herfcnt <= herfcnt;
+// 	end	
+	
+// 	reg odd_line;
+// 	always @ (posedge pclk or negedge rst_n) begin
+// 		if (!rst_n) 
+// 			odd_line <= 0;
+// 		else if (herfcnt == 12'd1935 && in_href_r2 == 1'b1)
+// 			odd_line <= ~odd_line;
+// 		else
+// 			odd_line <= odd_line;
+// 	end
+// 	wire odd_line_sync_shift = odd_line;
+
+// 	wire [1:0] p22_fmt = {odd_line_sync_shift, odd_pix_sync_shift}; //pixel format 0:[R]GGB 1:R[G]GB 2:RG[G]B 3:RGG[B]
+
+// 	reg [BITS-1:0] r_now, g_now, b_now;
+// 	always @ (posedge pclk or negedge rst_n) begin
+// 		if (!rst_n) begin
+// 			r_now <=  0;
+// 			g_now <=  0;
+// 			b_now <=  0;
+// 		end
+// 		else begin
+// 			r_now <= raw2r(p22_fmt,p11,p12,p13,p21,p22,p23,p31,p32,p33);
+// 			g_now <= raw2g(p22_fmt,p11,p12,p13,p21,p22,p23,p31,p32,p33);
+// 			b_now <= raw2b(p22_fmt,p11,p12,p13,p21,p22,p23,p31,p32,p33);
+// 		end
+// 	end
+
+// 	localparam DLY_CLK = 4;
+// 	reg [DLY_CLK-1:0] href_dly;
+// 	always @ (posedge pclk or negedge rst_n) begin
+// 		if (!rst_n) begin
+// 			href_dly <= 0;
+// 		end
+// 		else begin
+// 			href_dly <= {href_dly[DLY_CLK-2:0], in_href};
+// 		end
+// 	end
+	
+// 	assign out_href = href_dly[DLY_CLK-1];
+// 	assign out_r = out_href ? r_now : {BITS{1'b0}};
+// 	assign out_g = out_href ? g_now : {BITS{1'b0}};
+// 	assign out_b = out_href ? b_now : {BITS{1'b0}};
+
+// 	function [BITS-1:0] raw2r;
+// 		input [1:0] format;//0:R 1:Gr 2:Gb 3:B
+// 		input [BITS-1:0] p11,p12,p13;
+// 		input [BITS-1:0] p21,p22,p23;
+// 		input [BITS-1:0] p31,p32,p33;
+// 		reg [BITS+1:0] r;
+// 		begin
+// 			case (format)
+// 				2'b00: r = (p12 + p32) >> 1;
+// 				2'b01: r = (p11 + p13 + p31 + p33) >> 2;
+// 				2'b10: r = p22;
+// 				2'b11: r = (p21 + p23) >> 1;
+// 				default: r = {BITS{1'b0}};
+// 			endcase
+// 			raw2r = r > {BITS{1'b1}} ? {BITS{1'b1}} : r[BITS-1:0];
+// 		end
+// 	endfunction
+
+// 	function [BITS-1:0] raw2g;
+// 		input [1:0] format;//0:R 1:Gr 2:Gb 3:B
+// 		input [BITS-1:0] p11,p12,p13;
+// 		input [BITS-1:0] p21,p22,p23;
+// 		input [BITS-1:0] p31,p32,p33;
+// 		reg [BITS+1:0] g;
+// 		begin
+// 			case (format)
+// 				2'b00: g = p22;
+// 				2'b01: g = (p12 + p32 + p21 + p23) >> 2;
+// 				2'b10: g = (p12 + p32 + p21 + p23) >> 2;
+// 				2'b11: g = p22;
+// 				default: g = {BITS{1'b0}};
+// 			endcase
+// 			raw2g = g > {BITS{1'b1}} ? {BITS{1'b1}} : g[BITS-1:0];
+// 		end
+// 	endfunction
+
+// 	function [BITS-1:0] raw2b;
+// 		input [1:0] format;//0:R 1:Gr 2:Gb 3:B
+// 		input [BITS-1:0] p11,p12,p13;
+// 		input [BITS-1:0] p21,p22,p23;
+// 		input [BITS-1:0] p31,p32,p33;
+// 		reg [BITS+1:0] b;
+// 		begin
+// 			case (format)
+// 				2'b00: b = (p21 + p23) >> 1;
+// 				2'b01: b = p22;
+// 				2'b10: b = (p11 + p13 + p31 + p33) >> 2;
+// 				2'b11: b = (p12 + p32) >> 1;
+// 				default: b = {BITS{1'b0}};
+// 			endcase
+// 			raw2b = b > {BITS{1'b1}} ? {BITS{1'b1}} : b[BITS-1:0];
+// 		end
+// 	endfunction
+// endmodule
+

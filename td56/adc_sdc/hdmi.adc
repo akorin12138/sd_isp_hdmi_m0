@@ -1,0 +1,81 @@
+set_pin_assignment	{ HDMI_CLK_P }	{ LOCATION = P4; IOSTANDARD = LVDS25; PULLTYPE = NONE; }
+set_pin_assignment	{ HDMI_D0_P }	{ LOCATION = J3; IOSTANDARD = LVDS25; PULLTYPE = NONE; }
+set_pin_assignment	{ HDMI_D1_P }	{ LOCATION = N1; IOSTANDARD = LVDS25; PULLTYPE = NONE; }
+set_pin_assignment	{ HDMI_D2_P }	{ LOCATION = P1; IOSTANDARD = LVDS25; PULLTYPE = NONE; }
+
+set_pin_assignment	{ sd_clk }	{ LOCATION = J1; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ sd_cmd }	{ LOCATION = H1; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ sd_dat[0] }	{ LOCATION = G1; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ sd_dat[1] }	{ LOCATION = H2; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ sd_dat[2] }	{ LOCATION = K1; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ sd_dat[3] }	{ LOCATION = K2; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ sdram_addr[0] }	{ LOCATION = K14; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ sdram_addr[10] }	{ LOCATION = J16; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ sdram_addr[11] }	{ LOCATION = M14; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ sdram_addr[1] }	{ LOCATION = J13; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ sdram_addr[2] }	{ LOCATION = L14; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ sdram_addr[3] }	{ LOCATION = J12; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ sdram_addr[4] }	{ LOCATION = M16; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ sdram_addr[5] }	{ LOCATION = P15; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ sdram_addr[6] }	{ LOCATION = L16; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ sdram_addr[7] }	{ LOCATION = P16; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ sdram_addr[8] }	{ LOCATION = P14; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ sdram_addr[9] }	{ LOCATION = N14; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ sdram_ba[0] }	{ LOCATION = K16; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ sdram_ba[1] }	{ LOCATION = J14; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ sdram_cas_n }	{ LOCATION = M13; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ sdram_cke }	{ LOCATION = N16; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ sdram_clk }	{ LOCATION = L13; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ sdram_cs_n }	{ LOCATION = K11; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ sdram_data[0] }	{ LOCATION = G11; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ sdram_data[10] }	{ LOCATION = F13; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ sdram_data[11] }	{ LOCATION = F14; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ sdram_data[12] }	{ LOCATION = F15; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ sdram_data[13] }	{ LOCATION = D14; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ sdram_data[14] }	{ LOCATION = D16; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ sdram_data[15] }	{ LOCATION = E15; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ sdram_data[1] }	{ LOCATION = K15; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ sdram_data[2] }	{ LOCATION = J11; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ sdram_data[3] }	{ LOCATION = G16; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ sdram_data[4] }	{ LOCATION = H15; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ sdram_data[5] }	{ LOCATION = H16; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ sdram_data[6] }	{ LOCATION = H13; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ sdram_data[7] }	{ LOCATION = H14; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ sdram_data[8] }	{ LOCATION = G12; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ sdram_data[9] }	{ LOCATION = G14; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ sdram_ras_n }	{ LOCATION = K12; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ sdram_we_n }	{ LOCATION = M15; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+
+
+
+
+
+#-------<sd_isp_hdmi_top.v>--------#
+set_pin_assignment	{ sys_clk }	    { LOCATION = R7; IOSTANDARD = LVCMOS25; }
+set_pin_assignment	{ sys_rst_n }	{ LOCATION = A14; IOSTANDARD = LVCMOS25; }
+set_pin_assignment	{ LED }	{ LOCATION = B14; IOSTANDARD = LVCMOS25; }
+
+
+#-------<CortexM0_SoC.v>--------#
+#set_pin_assignment	{ sysclk }	{ LOCATION = R7; IOSTANDARD = LVCMOS25;}
+#set_pin_assignment	{ RSTn }	{ LOCATION = E3; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+#set_pin_assignment	{ RXD }	{ LOCATION = F12; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+#set_pin_assignment	{ SWCLK }	{ LOCATION = R2; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+#set_pin_assignment	{ SWDIO }	{ LOCATION = P2; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+#set_pin_assignment	{ TXD }	{ LOCATION = D12; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+#set_pin_assignment	{ ioPin[0] }	{ LOCATION = B14; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+#set_pin_assignment	{ ioPin[1] }	{ LOCATION = B15; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+#set_pin_assignment	{ ioPin[2] }	{ LOCATION = B16; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+#set_pin_assignment	{ ioPin[3] }	{ LOCATION = C15; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+#set_pin_assignment	{ ioPin[4] }	{ LOCATION = C16; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+#set_pin_assignment	{ ioPin[5] }	{ LOCATION = E13; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+#set_pin_assignment	{ ioPin[6] }	{ LOCATION = E16; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+#set_pin_assignment	{ ioPin[7] }	{ LOCATION = F16; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+#set_pin_assignment	{ key_col[0] }	{ LOCATION = E11; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+#set_pin_assignment	{ key_col[1] }	{ LOCATION = D11; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+#set_pin_assignment	{ key_col[2] }	{ LOCATION = C11; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+#set_pin_assignment	{ key_col[3] }	{ LOCATION = F10; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+#set_pin_assignment	{ key_row[0] }	{ LOCATION = E10; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+#set_pin_assignment	{ key_row[1] }	{ LOCATION = C10; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+#set_pin_assignment	{ key_row[2] }	{ LOCATION = F9; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+#set_pin_assignment	{ key_row[3] }	{ LOCATION = D9; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }

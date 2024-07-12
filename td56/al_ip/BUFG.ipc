@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<BUFGConfig>
+    <GeneralConfig>
+        <Type>EG_LOGIC_BUFG</Type>
+        <Device>EG4S20BG256</Device>
+        <create_VHDL>true</create_VHDL>
+        <inst>BUFG</inst>
+    </GeneralConfig>
+    <GeneratedFiles>
+        <Verilog Enable="true">BUFG.v</Verilog>
+        <VHDL Enable="false">BUFG.vhd</VHDL>
+    </GeneratedFiles>
+</BUFGConfig>
